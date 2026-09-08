@@ -1,0 +1,13 @@
+{
+  "name": "resume-maker",
+  "version": "0.1.0",
+  "description": "SynRes-KR — Korean synthetic resume dataset generator for resume-missingness research",
+  "private": true,
+  "scripts": {
+    "examples": "python3 src/build_examples.py --data output/resumes.jsonl"
+  },
+  "dependencies": {
+    "docx": "^8.5.0"
+  },
+  "license": "Apache-2.0"
+}
