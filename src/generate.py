@@ -855,12 +855,17 @@ def main():
     ap.add_argument("--p-date", type=float, default=0.10, help="기간 해상도 저하 확률(경력 단위)")
     ap.add_argument("--p-thesis", type=float, default=0.40, help="학위 연구주제 누락 확률")
     ap.add_argument("--p-extra", type=float, default=0.45, help="대외활동 상세 누락 확률")
+    ap.add_argument("--p-clean", type=float, default=0.18,
+                    help="결측이 전혀 없는 음성 샘플 비율")
     args = ap.parse_args()
 
     rng = random.Random(args.seed)
     cfg = {"gap_threshold": args.gap_threshold, "p_gap": args.p_gap,
            "p_role": args.p_role, "p_ach": args.p_ach, "p_date": args.p_date,
            "p_thesis": args.p_thesis, "p_extra": args.p_extra}
+    # 음성 샘플용 설정: 어떤 결측도 주입하지 않는다
+    cfg_clean = dict(cfg, p_gap=0.0, p_role=0.0, p_ach=0.0,
+                     p_date=0.0, p_thesis=0.0, p_extra=0.0)
 
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     keys = list(DOMAINS.keys())
@@ -875,7 +880,10 @@ def main():
             dom = keys[i % len(keys)]            # 직군 균등 배분
             rid = f"R{i + 1:05d}"
             gold = make_gold(rng, dom, rid)
-            obs, labels = inject(rng, gold, cfg)
+            # 이미 잘 작성된 이력서(결측 0건)를 일정 비율 섞어야
+            # 정밀도 평가가 관대해지지 않는다
+            is_clean = rng.random() < args.p_clean
+            obs, labels = inject(rng, gold, cfg_clean if is_clean else cfg)
             for lb in labels:
                 stats[lb["type"]] += 1
             per_domain[dom] += 1
@@ -883,7 +891,8 @@ def main():
             rec = {
                 "resume_id": rid,
                 "domain": dom,
-                "config": cfg,
+                "clean": is_clean,
+                "config": cfg_clean if is_clean else cfg,
                 "gold": gold,
                 "observed": obs,
                 "missingness": labels,
@@ -898,6 +907,7 @@ def main():
 
     total_lab = sum(stats.values())
     print(f"생성 완료: {args.out}  ({args.n}건, 직군 {len(keys)}종)")
+    print(f"음성 샘플(결측 0건) 비율 목표 {args.p_clean:.0%}")
     print(f"결측 라벨 총 {total_lab}개 (이력서당 평균 {total_lab / args.n:.2f}개)")
     for k, v in stats.items():
         print(f"  - {k:22s} {v:5d}")

@@ -1,0 +1,149 @@
+{
+  "model": "claude-sonnet-5",
+  "n": 60,
+  "summary": {
+    "chat": {
+      "tp": 62,
+      "fp": 16,
+      "fn": 99,
+      "P": 0.7948717948717948,
+      "R": 0.38509316770186336,
+      "F1": 0.5188284518828452,
+      "clean_fp": 8,
+      "errors": 0
+    },
+    "file": {
+      "tp": 66,
+      "fp": 18,
+      "fn": 95,
+      "P": 0.7857142857142857,
+      "R": 0.40993788819875776,
+      "F1": 0.5387755102040817,
+      "clean_fp": 7,
+      "errors": 0
+    },
+    "url": {
+      "tp": 63,
+      "fp": 36,
+      "fn": 83,
+      "P": 0.6363636363636364,
+      "R": 0.4315068493150685,
+      "F1": 0.5142857142857142,
+      "clean_fp": 22,
+      "errors": 0
+    }
+  },
+  "per_type": {
+    "chat": {
+      "TEMPORAL_GAP": [
+        5,
+        5,
+        14
+      ],
+      "POST_GRAD_GAP": [
+        9,
+        0,
+        2
+      ],
+      "ROLE_OMISSION": [
+        6,
+        0,
+        12
+      ],
+      "ACHIEVEMENT_OMISSION": [
+        18,
+        3,
+        49
+      ],
+      "THESIS_OMISSION": [
+        3,
+        4,
+        1
+      ],
+      "EXTRACURRICULAR_OMISSION": [
+        19,
+        4,
+        17
+      ],
+      "DATE_INCOMPLETE": [
+        2,
+        0,
+        4
+      ]
+    },
+    "file": {
+      "TEMPORAL_GAP": [
+        8,
+        0,
+        11
+      ],
+      "POST_GRAD_GAP": [
+        9,
+        0,
+        2
+      ],
+      "ROLE_OMISSION": [
+        5,
+        0,
+        13
+      ],
+      "ACHIEVEMENT_OMISSION": [
+        22,
+        1,
+        45
+      ],
+      "THESIS_OMISSION": [
+        3,
+        1,
+        1
+      ],
+      "EXTRACURRICULAR_OMISSION": [
+        17,
+        16,
+        19
+      ],
+      "DATE_INCOMPLETE": [
+        2,
+        0,
+        4
+      ]
+    },
+    "url": {
+      "TEMPORAL_GAP": [
+        7,
+        20,
+        12
+      ],
+      "POST_GRAD_GAP": [
+        0,
+        0,
+        0
+      ],
+      "ROLE_OMISSION": [
+        5,
+        0,
+        13
+      ],
+      "ACHIEVEMENT_OMISSION": [
+        24,
+        9,
+        43
+      ],
+      "THESIS_OMISSION": [
+        0,
+        0,
+        0
+      ],
+      "EXTRACURRICULAR_OMISSION": [
+        25,
+        7,
+        11
+      ],
+      "DATE_INCOMPLETE": [
+        2,
+        0,
+        4
+      ]
+    }
+  }
+}
