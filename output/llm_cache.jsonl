@@ -1,0 +1,1080 @@
+{"rid": "R00181", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00181", "ch": "chat", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "오픈소스프로젝트기여"]]}
+{"rid": "R00181", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "구독관리시스템"], ["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "오픈소스프로젝트기여"]]}
+{"rid": "R00181", "ch": "file", "meth": "rules", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "오픈소스프로젝트기여"]]}
+{"rid": "R00181", "ch": "file", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "오픈소스프로젝트기여"]]}
+{"rid": "R00181", "ch": "file", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "오픈소스프로젝트기여"]]}
+{"rid": "R00181", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00181", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "오픈소스프로젝트기여"]]}
+{"rid": "R00181", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "오픈소스프로젝트기여"]]}
+{"rid": "R00433", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00433", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00433", "ch": "chat", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "㈜퀀텀웍스"], ["ROLE_OMISSION", "퀀텀파트너스"], ["ACHIEVEMENT_OMISSION", "부동산모바일앱신규개발"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["TEMPORAL_GAP", "퀀텀파트너스"], ["TEMPORAL_GAP", "그리드다이나믹스"]]}
+{"rid": "R00433", "ch": "file", "meth": "rules", "pred": [["TEMPORAL_GAP", "㈜퀀텀웍스"], ["ROLE_OMISSION", "퀀텀파트너스"], ["ACHIEVEMENT_OMISSION", "부동산모바일앱신규개발"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["TEMPORAL_GAP", "퀀텀파트너스"], ["TEMPORAL_GAP", "그리드다이나믹스"]]}
+{"rid": "R00433", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00433", "ch": "file", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "㈜퀀텀웍스"], ["ROLE_OMISSION", "퀀텀파트너스"], ["ACHIEVEMENT_OMISSION", "부동산모바일앱신규개발"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["TEMPORAL_GAP", "퀀텀파트너스"], ["TEMPORAL_GAP", "그리드다이나믹스"]]}
+{"rid": "R00433", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00433", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00433", "ch": "url", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "㈜퀀텀웍스"], ["ROLE_OMISSION", "퀀텀파트너스"], ["ACHIEVEMENT_OMISSION", "부동산모바일앱신규개발"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["TEMPORAL_GAP", "퀀텀파트너스"], ["TEMPORAL_GAP", "그리드다이나믹스"]]}
+{"rid": "R00459", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00459", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00459", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "핀테크회원등급제도입"], ["ACHIEVEMENT_OMISSION", "여행온보딩개선프로젝트"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "픽셀시스템즈주식회사"], ["THESIS_OMISSION", "서원대학교"], ["THESIS_OMISSION", "남강대학교"], ["ROLE_OMISSION", "세움테크㈜"], ["DATE_INCOMPLETE", "한국소프트웨어연구원"]]}
+{"rid": "R00459", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "핀테크회원등급제도입"], ["ACHIEVEMENT_OMISSION", "여행온보딩개선프로젝트"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "픽셀시스템즈주식회사"], ["THESIS_OMISSION", "서원대학교"], ["ROLE_OMISSION", "세움테크㈜"], ["DATE_INCOMPLETE", "한국소프트웨어연구원"]]}
+{"rid": "R00459", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00459", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "핀테크회원등급제도입"], ["ACHIEVEMENT_OMISSION", "여행온보딩개선프로젝트"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "픽셀시스템즈주식회사"], ["ROLE_OMISSION", "세움테크㈜"], ["DATE_INCOMPLETE", "한국소프트웨어연구원"], ["THESIS_OMISSION", "서원대학교미디어커뮤니케이션학과대학원"]]}
+{"rid": "R00459", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00459", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00459", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "핀테크회원등급제도입"], ["ACHIEVEMENT_OMISSION", "여행온보딩개선프로젝트"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "픽셀시스템즈주식회사"], ["ROLE_OMISSION", "세움테크㈜"], ["DATE_INCOMPLETE", "한국소프트웨어연구원"]]}
+{"rid": "R00576", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00576", "ch": "chat", "meth": "direct", "pred": [["THESIS_OMISSION", "한빛대학교"], ["THESIS_OMISSION", "소로대학교"]]}
+{"rid": "R00576", "ch": "chat", "meth": "hybrid", "pred": [["THESIS_OMISSION", "한빛대학교대학원"], ["THESIS_OMISSION", "소로대학교대학원"]]}
+{"rid": "R00576", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00576", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00576", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00576", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00576", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00576", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00411", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00411", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00411", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "여행온보딩개선프로젝트"], ["ACHIEVEMENT_OMISSION", "헬스케어회원등급제도입"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["THESIS_OMISSION", "동림대학교미디어커뮤니케이션학과대학원"], ["ROLE_OMISSION", "세움네트웍스㈜"], ["DATE_INCOMPLETE", "인디고솔루션"], ["EXTRACURRICULAR_OMISSION", "sw마에스트로형교육과정"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["TEMPORAL_GAP", "㈜실린테크"], ["TEMPORAL_GAP", "인디고솔루션"], ["THESIS_OMISSION", "청람대학교미디어커뮤니케이션학과대학원"], ["ACHIEVEMENT_OMISSION", "핀테크온보딩개선프로젝트"]]}
+{"rid": "R00411", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "여행온보딩개선프로젝트"], ["ACHIEVEMENT_OMISSION", "헬스케어회원등급제도입"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["ROLE_OMISSION", "세움네트웍스㈜"], ["DATE_INCOMPLETE", "인디고솔루션"], ["EXTRACURRICULAR_OMISSION", "sw마에스트로형교육과정"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["TEMPORAL_GAP", "㈜실린테크"], ["TEMPORAL_GAP", "인디고솔루션"], ["THESIS_OMISSION", "동림대학교"], ["ACHIEVEMENT_OMISSION", "핀테크온보딩개선프로젝트"]]}
+{"rid": "R00411", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00411", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "여행온보딩개선프로젝트"], ["ACHIEVEMENT_OMISSION", "헬스케어회원등급제도입"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["THESIS_OMISSION", "동림대학교미디어커뮤니케이션학과대학원"], ["ROLE_OMISSION", "세움네트웍스㈜"], ["DATE_INCOMPLETE", "인디고솔루션"], ["EXTRACURRICULAR_OMISSION", "sw마에스트로형교육과정"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["TEMPORAL_GAP", "㈜실린테크"], ["TEMPORAL_GAP", "인디고솔루션"], ["ACHIEVEMENT_OMISSION", "핀테크온보딩개선프로젝트"]]}
+{"rid": "R00411", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00411", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00411", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "여행온보딩개선프로젝트"], ["ACHIEVEMENT_OMISSION", "헬스케어회원등급제도입"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["ROLE_OMISSION", "세움네트웍스㈜"], ["EXTRACURRICULAR_OMISSION", "sw마에스트로형교육과정교육과정"], ["DATE_INCOMPLETE", "인디고솔루션"], ["TEMPORAL_GAP", "㈜실린테크"], ["TEMPORAL_GAP", "인디고솔루션"], ["EXTRACURRICULAR_OMISSION", "총학생회학생자치"], ["ACHIEVEMENT_OMISSION", "핀테크온보딩개선프로젝트"]]}
+{"rid": "R00223", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00223", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00223", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "전국대학생창업경진대회"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["ACHIEVEMENT_OMISSION", "사내교육체계구축"], ["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00223", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "전국대학생창업경진대회"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["ACHIEVEMENT_OMISSION", "사내교육체계구축"], ["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00223", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "전국대학생창업경진대회"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["ACHIEVEMENT_OMISSION", "사내교육체계구축"], ["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00223", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "공모전전국대학생창업경진대회"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["ACHIEVEMENT_OMISSION", "사내교육체계구축"], ["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00223", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00223", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "전국대학생창업경진대회"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["ACHIEVEMENT_OMISSION", "사내교육체계구축"]]}
+{"rid": "R00223", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "전국대학생창업경진대회"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["ACHIEVEMENT_OMISSION", "사내교육체계구축"], ["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00026", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00026", "ch": "chat", "meth": "direct", "pred": [["TEMPORAL_GAP", "실린소프트주식회사"]]}
+{"rid": "R00026", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00026", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00026", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00026", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00026", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00026", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00026", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00563", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00563", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00563", "ch": "chat", "meth": "hybrid", "pred": [["ROLE_OMISSION", "터닝웍스㈜"], ["ACHIEVEMENT_OMISSION", "상담품질관리체계수립"], ["ACHIEVEMENT_OMISSION", "금융voc분석체계구축"]]}
+{"rid": "R00563", "ch": "file", "meth": "rules", "pred": [["ROLE_OMISSION", "터닝웍스㈜"], ["ACHIEVEMENT_OMISSION", "상담품질관리체계수립"], ["ACHIEVEMENT_OMISSION", "금융voc분석체계구축"]]}
+{"rid": "R00563", "ch": "file", "meth": "direct", "pred": [["ROLE_OMISSION", "터닝웍스㈜"], ["ACHIEVEMENT_OMISSION", "상담품질관리체계수립"], ["ACHIEVEMENT_OMISSION", "금융voc분석체계구축"]]}
+{"rid": "R00563", "ch": "file", "meth": "hybrid", "pred": [["ROLE_OMISSION", "터닝웍스㈜"], ["ACHIEVEMENT_OMISSION", "상담품질관리체계수립"], ["ACHIEVEMENT_OMISSION", "금융voc분석체계구축"]]}
+{"rid": "R00563", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00563", "ch": "url", "meth": "direct", "pred": [["ROLE_OMISSION", "터닝웍스㈜"], ["ACHIEVEMENT_OMISSION", "상담품질관리체계수립"], ["ACHIEVEMENT_OMISSION", "금융voc분석체계구축"]]}
+{"rid": "R00563", "ch": "url", "meth": "hybrid", "pred": [["ROLE_OMISSION", "터닝웍스㈜"], ["ACHIEVEMENT_OMISSION", "상담품질관리체계수립"], ["ACHIEVEMENT_OMISSION", "금융voc분석체계구축"]]}
+{"rid": "R00453", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00453", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00453", "ch": "chat", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "픽셀네트웍스주식회사"], ["ACHIEVEMENT_OMISSION", "식품라인공정개선"], ["ROLE_OMISSION", "픽셀네트웍스㈜"], ["EXTRACURRICULAR_OMISSION", "하계인턴십"], ["ACHIEVEMENT_OMISSION", "기계신제품양산이관"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00453", "ch": "file", "meth": "rules", "pred": [["TEMPORAL_GAP", "픽셀네트웍스주식회사"], ["ACHIEVEMENT_OMISSION", "식품라인공정개선"], ["ROLE_OMISSION", "픽셀네트웍스㈜"], ["EXTRACURRICULAR_OMISSION", "하계인턴십"], ["ACHIEVEMENT_OMISSION", "기계신제품양산이관"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00453", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00453", "ch": "file", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "픽셀네트웍스주식회사"], ["EXTRACURRICULAR_OMISSION", "인턴하계인턴십"], ["ACHIEVEMENT_OMISSION", "식품라인공정개선"], ["ROLE_OMISSION", "픽셀네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "기계신제품양산이관"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00453", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00453", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00453", "ch": "url", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "픽셀네트웍스주식회사"], ["ACHIEVEMENT_OMISSION", "식품라인공정개선"], ["ROLE_OMISSION", "픽셀네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "기계신제품양산이관"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00150", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00150", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "개인프로젝트및포트폴리오제작"], ["EXTRACURRICULAR_OMISSION", "공공기관현장실습"]]}
+{"rid": "R00150", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "공공기관현장실습"]]}
+{"rid": "R00150", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "공공기관현장실습"]]}
+{"rid": "R00150", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "개인프로젝트및포트폴리오제작"], ["EXTRACURRICULAR_OMISSION", "공공기관현장실습"]]}
+{"rid": "R00150", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "현장실습공공기관현장실습"]]}
+{"rid": "R00150", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00150", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "개인프로젝트및포트폴리오제작"], ["EXTRACURRICULAR_OMISSION", "공공기관현장실습"]]}
+{"rid": "R00150", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "공공기관현장실습"]]}
+{"rid": "R00180", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00180", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00180", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00180", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00180", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00180", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00180", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00180", "ch": "url", "meth": "direct", "pred": [["TEMPORAL_GAP", "링크커머스"]]}
+{"rid": "R00180", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00283", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00283", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00283", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00283", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00283", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "개인프로젝트및포트폴리오제작"], ["EXTRACURRICULAR_OMISSION", "이직준비및구직활동"], ["EXTRACURRICULAR_OMISSION", "개인사정으로인한휴식기"]]}
+{"rid": "R00283", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00283", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00283", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00283", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00289", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00289", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00289", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00289", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00289", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00289", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00289", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00289", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "교환학생in일본"]]}
+{"rid": "R00289", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00410", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00410", "ch": "chat", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00410", "ch": "chat", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00410", "ch": "file", "meth": "rules", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00410", "ch": "file", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00410", "ch": "file", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00410", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00410", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00410", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00366", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00366", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00366", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["TEMPORAL_GAP", "아토시스템즈주식회사"], ["EXTRACURRICULAR_OMISSION", "기계공학과학생회활동"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"], ["ROLE_OMISSION", "포레시스템즈"], ["ACHIEVEMENT_OMISSION", "it솔루션대리점채널확대"]]}
+{"rid": "R00366", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["TEMPORAL_GAP", "아토시스템즈주식회사"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"], ["ROLE_OMISSION", "포레시스템즈"], ["ACHIEVEMENT_OMISSION", "it솔루션대리점채널확대"], ["EXTRACURRICULAR_OMISSION", "기계공학과학생회"]]}
+{"rid": "R00366", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00366", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["TEMPORAL_GAP", "아토시스템즈주식회사"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"], ["ROLE_OMISSION", "포레시스템즈"], ["EXTRACURRICULAR_OMISSION", "학생자치기계공학과학생회"], ["ACHIEVEMENT_OMISSION", "it솔루션대리점채널확대"]]}
+{"rid": "R00366", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00366", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00366", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["TEMPORAL_GAP", "아토시스템즈주식회사"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"], ["ROLE_OMISSION", "포레시스템즈"], ["ACHIEVEMENT_OMISSION", "it솔루션대리점채널확대"], ["EXTRACURRICULAR_OMISSION", "기계공학과학생회"]]}
+{"rid": "R00600", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00600", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "연합ai동아리"], ["EXTRACURRICULAR_OMISSION", "국비지원전기부트캠프"]]}
+{"rid": "R00600", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "연합ai동아리"], ["EXTRACURRICULAR_OMISSION", "국비지원전기부트캠프"]]}
+{"rid": "R00600", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "국비지원전기부트캠프"]]}
+{"rid": "R00600", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "국비지원전기부트캠프"]]}
+{"rid": "R00600", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "교육과정국비지원전기부트캠프"]]}
+{"rid": "R00600", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00600", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "연합ai동아리"], ["EXTRACURRICULAR_OMISSION", "국비지원전기부트캠프"]]}
+{"rid": "R00600", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "연합ai동아리"], ["EXTRACURRICULAR_OMISSION", "국비지원전기부트캠프"]]}
+{"rid": "R00105", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00105", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00105", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00105", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00105", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00105", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00105", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00105", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00105", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00061", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00061", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00061", "ch": "chat", "meth": "hybrid", "pred": [["ROLE_OMISSION", "국가데이터센터"], ["ACHIEVEMENT_OMISSION", "헬스케어웹프론트엔드리뉴얼"], ["ROLE_OMISSION", "콘텐츠산업진흥공단"], ["TEMPORAL_GAP", "한국데이터진흥원"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"], ["ACHIEVEMENT_OMISSION", "여행모바일앱신규개발"], ["ACHIEVEMENT_OMISSION", "사내관리자페이지구축"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["ACHIEVEMENT_OMISSION", "헬스케어서비스백엔드api개발"], ["ACHIEVEMENT_OMISSION", "이커머스모바일앱신규개발"]]}
+{"rid": "R00061", "ch": "file", "meth": "rules", "pred": [["ROLE_OMISSION", "국가데이터센터"], ["ACHIEVEMENT_OMISSION", "헬스케어웹프론트엔드리뉴얼"], ["ROLE_OMISSION", "콘텐츠산업진흥공단"], ["TEMPORAL_GAP", "한국데이터진흥원"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"], ["ACHIEVEMENT_OMISSION", "여행모바일앱신규개발"], ["ACHIEVEMENT_OMISSION", "사내관리자페이지구축"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["ACHIEVEMENT_OMISSION", "헬스케어서비스백엔드api개발"], ["ACHIEVEMENT_OMISSION", "이커머스모바일앱신규개발"]]}
+{"rid": "R00061", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00061", "ch": "file", "meth": "hybrid", "pred": [["ROLE_OMISSION", "국가데이터센터"], ["ACHIEVEMENT_OMISSION", "헬스케어웹프론트엔드리뉴얼"], ["ROLE_OMISSION", "콘텐츠산업진흥공단"], ["TEMPORAL_GAP", "한국데이터진흥원"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"], ["ACHIEVEMENT_OMISSION", "여행모바일앱신규개발"], ["ACHIEVEMENT_OMISSION", "사내관리자페이지구축"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["ACHIEVEMENT_OMISSION", "헬스케어서비스백엔드api개발"], ["ACHIEVEMENT_OMISSION", "이커머스모바일앱신규개발"]]}
+{"rid": "R00061", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00061", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00061", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "이커머스모바일앱신규개발"], ["ACHIEVEMENT_OMISSION", "헬스케어웹프론트엔드리뉴얼"], ["ACHIEVEMENT_OMISSION", "헬스케어서비스백엔드api개발"], ["ACHIEVEMENT_OMISSION", "여행모바일앱신규개발"], ["ACHIEVEMENT_OMISSION", "사내관리자페이지구축"], ["ROLE_OMISSION", "콘텐츠산업진흥공단"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["ROLE_OMISSION", "국가데이터센터"], ["TEMPORAL_GAP", "한국데이터진흥원"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"]]}
+{"rid": "R00560", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00560", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "erp회계모듈전환"], ["ACHIEVEMENT_OMISSION", "결산프로세스자동화"], ["EXTRACURRICULAR_OMISSION", "경제학과학생회"]]}
+{"rid": "R00560", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "erp회계모듈전환"], ["ACHIEVEMENT_OMISSION", "결산프로세스자동화"], ["EXTRACURRICULAR_OMISSION", "경제학과학생회"]]}
+{"rid": "R00560", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "erp회계모듈전환"], ["ACHIEVEMENT_OMISSION", "결산프로세스자동화"], ["EXTRACURRICULAR_OMISSION", "경제학과학생회"]]}
+{"rid": "R00560", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "erp회계모듈전환"], ["ACHIEVEMENT_OMISSION", "결산프로세스자동화"], ["EXTRACURRICULAR_OMISSION", "경제학과학생회"]]}
+{"rid": "R00560", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "erp회계모듈전환"], ["ACHIEVEMENT_OMISSION", "결산프로세스자동화"], ["EXTRACURRICULAR_OMISSION", "경제학과학생회"]]}
+{"rid": "R00560", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00560", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "erp회계모듈전환"], ["ACHIEVEMENT_OMISSION", "결산프로세스자동화"], ["EXTRACURRICULAR_OMISSION", "경제학과학생회"]]}
+{"rid": "R00560", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "erp회계모듈전환"], ["ACHIEVEMENT_OMISSION", "결산프로세스자동화"], ["EXTRACURRICULAR_OMISSION", "경제학과학생회"]]}
+{"rid": "R00290", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00290", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00290", "ch": "chat", "meth": "hybrid", "pred": [["ROLE_OMISSION", "㈜픽셀테크"], ["ACHIEVEMENT_OMISSION", "통신대시보드구축"], ["ACHIEVEMENT_OMISSION", "추천시스템고도화"], ["ROLE_OMISSION", "포레인더스트리"], ["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"], ["TEMPORAL_GAP", "㈜그리드솔루션"]]}
+{"rid": "R00290", "ch": "file", "meth": "rules", "pred": [["ROLE_OMISSION", "㈜픽셀테크"], ["ACHIEVEMENT_OMISSION", "통신대시보드구축"], ["ACHIEVEMENT_OMISSION", "추천시스템고도화"], ["ROLE_OMISSION", "포레인더스트리"], ["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"], ["TEMPORAL_GAP", "㈜그리드솔루션"]]}
+{"rid": "R00290", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00290", "ch": "file", "meth": "hybrid", "pred": [["ROLE_OMISSION", "㈜픽셀테크"], ["ACHIEVEMENT_OMISSION", "통신대시보드구축"], ["ACHIEVEMENT_OMISSION", "추천시스템고도화"], ["ROLE_OMISSION", "포레인더스트리"], ["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"], ["TEMPORAL_GAP", "㈜그리드솔루션"]]}
+{"rid": "R00290", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00290", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00290", "ch": "url", "meth": "hybrid", "pred": [["ROLE_OMISSION", "㈜픽셀테크"], ["ACHIEVEMENT_OMISSION", "통신대시보드구축"], ["ACHIEVEMENT_OMISSION", "추천시스템고도화"], ["ROLE_OMISSION", "포레인더스트리"], ["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"], ["TEMPORAL_GAP", "㈜그리드솔루션"]]}
+{"rid": "R00414", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00414", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "의료기기시장조사프로젝트"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00414", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "의료기기시장조사프로젝트"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00414", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "의료기기시장조사프로젝트"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00414", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "의료기기시장조사프로젝트"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00414", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "의료기기시장조사프로젝트"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "서포터즈정부기관대학생기자단"]]}
+{"rid": "R00414", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00414", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "의료기기시장조사프로젝트"]]}
+{"rid": "R00414", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "의료기기시장조사프로젝트"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"]]}
+{"rid": "R00042", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00042", "ch": "chat", "meth": "direct", "pred": [["THESIS_OMISSION", "서원대학교"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["ACHIEVEMENT_OMISSION", "식품신규거래처개척"], ["THESIS_OMISSION", "소로대학교"], ["ACHIEVEMENT_OMISSION", "화학대리점채널확대"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"], ["EXTRACURRICULAR_OMISSION", "국비지원프로그래밍부트캠프"]]}
+{"rid": "R00042", "ch": "chat", "meth": "hybrid", "pred": [["THESIS_OMISSION", "서원대학교"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["ACHIEVEMENT_OMISSION", "식품신규거래처개척"], ["THESIS_OMISSION", "소로대학교"], ["ACHIEVEMENT_OMISSION", "화학대리점채널확대"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"], ["EXTRACURRICULAR_OMISSION", "국비지원프로그래밍부트캠프"]]}
+{"rid": "R00042", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["ACHIEVEMENT_OMISSION", "식품신규거래처개척"], ["EXTRACURRICULAR_OMISSION", "국비지원프로그래밍부트캠프"], ["ACHIEVEMENT_OMISSION", "화학대리점채널확대"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"]]}
+{"rid": "R00042", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["ACHIEVEMENT_OMISSION", "식품신규거래처개척"], ["EXTRACURRICULAR_OMISSION", "국비지원프로그래밍부트캠프"], ["ACHIEVEMENT_OMISSION", "화학대리점채널확대"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"]]}
+{"rid": "R00042", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["ACHIEVEMENT_OMISSION", "식품신규거래처개척"], ["ACHIEVEMENT_OMISSION", "화학대리점채널확대"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"]]}
+{"rid": "R00042", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00042", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00042", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["ACHIEVEMENT_OMISSION", "식품신규거래처개척"], ["ACHIEVEMENT_OMISSION", "화학대리점채널확대"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"]]}
+{"rid": "R00468", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00468", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00468", "ch": "chat", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "온새커머스주식회사"], ["ACHIEVEMENT_OMISSION", "이러닝콘텐츠제작"], ["DATE_INCOMPLETE", "링크시스템즈주식회사"], ["THESIS_OMISSION", "동림대학교"], ["TEMPORAL_GAP", "퀀텀커머스주식회사"], ["ACHIEVEMENT_OMISSION", "lms도입및운영"], ["TEMPORAL_GAP", "링크시스템즈주식회사"], ["ROLE_OMISSION", "퀀텀커머스주식회사"], ["ROLE_OMISSION", "아토다이나믹스"], ["DATE_INCOMPLETE", "온새커머스주식회사"], ["EXTRACURRICULAR_OMISSION", "스타트업인턴십"]]}
+{"rid": "R00468", "ch": "file", "meth": "rules", "pred": [["TEMPORAL_GAP", "온새커머스주식회사"], ["ACHIEVEMENT_OMISSION", "이러닝콘텐츠제작"], ["DATE_INCOMPLETE", "링크시스템즈주식회사"], ["THESIS_OMISSION", "동림대학교"], ["TEMPORAL_GAP", "퀀텀커머스주식회사"], ["ACHIEVEMENT_OMISSION", "lms도입및운영"], ["TEMPORAL_GAP", "링크시스템즈주식회사"], ["ROLE_OMISSION", "퀀텀커머스주식회사"], ["ROLE_OMISSION", "아토다이나믹스"], ["DATE_INCOMPLETE", "온새커머스주식회사"], ["EXTRACURRICULAR_OMISSION", "스타트업인턴십"]]}
+{"rid": "R00468", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00468", "ch": "file", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "온새커머스주식회사"], ["ACHIEVEMENT_OMISSION", "이러닝콘텐츠제작"], ["DATE_INCOMPLETE", "링크시스템즈주식회사"], ["THESIS_OMISSION", "동림대학교"], ["EXTRACURRICULAR_OMISSION", "인턴스타트업인턴십"], ["TEMPORAL_GAP", "퀀텀커머스주식회사"], ["ACHIEVEMENT_OMISSION", "lms도입및운영"], ["TEMPORAL_GAP", "링크시스템즈주식회사"], ["ROLE_OMISSION", "퀀텀커머스주식회사"], ["ROLE_OMISSION", "아토다이나믹스"], ["DATE_INCOMPLETE", "온새커머스주식회사"]]}
+{"rid": "R00468", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00468", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00468", "ch": "url", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "온새커머스주식회사"], ["ACHIEVEMENT_OMISSION", "이러닝콘텐츠제작"], ["DATE_INCOMPLETE", "링크시스템즈주식회사"], ["TEMPORAL_GAP", "퀀텀커머스주식회사"], ["ACHIEVEMENT_OMISSION", "lms도입및운영"], ["TEMPORAL_GAP", "링크시스템즈주식회사"], ["ROLE_OMISSION", "퀀텀커머스주식회사"], ["ROLE_OMISSION", "아토다이나믹스"], ["DATE_INCOMPLETE", "온새커머스주식회사"]]}
+{"rid": "R00315", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00315", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00315", "ch": "chat", "meth": "hybrid", "pred": [["THESIS_OMISSION", "한빛대학교"], ["ACHIEVEMENT_OMISSION", "여행신규서비스런칭기획"], ["DATE_INCOMPLETE", "㈜터닝웍스"], ["TEMPORAL_GAP", "㈜터닝웍스"], ["ACHIEVEMENT_OMISSION", "콘텐츠신규서비스런칭기획"], ["ACHIEVEMENT_OMISSION", "교육온보딩개선프로젝트"]]}
+{"rid": "R00315", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "여행신규서비스런칭기획"], ["DATE_INCOMPLETE", "㈜터닝웍스"], ["TEMPORAL_GAP", "㈜터닝웍스"], ["ACHIEVEMENT_OMISSION", "콘텐츠신규서비스런칭기획"], ["ACHIEVEMENT_OMISSION", "교육온보딩개선프로젝트"]]}
+{"rid": "R00315", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00315", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "여행신규서비스런칭기획"], ["DATE_INCOMPLETE", "㈜터닝웍스"], ["TEMPORAL_GAP", "㈜터닝웍스"], ["ACHIEVEMENT_OMISSION", "콘텐츠신규서비스런칭기획"], ["ACHIEVEMENT_OMISSION", "교육온보딩개선프로젝트"]]}
+{"rid": "R00315", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00315", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00315", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "여행신규서비스런칭기획"], ["DATE_INCOMPLETE", "㈜터닝웍스"], ["TEMPORAL_GAP", "㈜터닝웍스"], ["ACHIEVEMENT_OMISSION", "콘텐츠신규서비스런칭기획"], ["ACHIEVEMENT_OMISSION", "교육온보딩개선프로젝트"]]}
+{"rid": "R00079", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00079", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00079", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["ACHIEVEMENT_OMISSION", "신규채용프로세스개선"], ["TEMPORAL_GAP", "아토테크㈜"], ["ROLE_OMISSION", "하람솔루션"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["TEMPORAL_GAP", "스카이다이나믹스주식회사"]]}
+{"rid": "R00079", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["ACHIEVEMENT_OMISSION", "신규채용프로세스개선"], ["TEMPORAL_GAP", "아토테크㈜"], ["ROLE_OMISSION", "하람솔루션"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["TEMPORAL_GAP", "스카이다이나믹스주식회사"]]}
+{"rid": "R00079", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00079", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["ACHIEVEMENT_OMISSION", "신규채용프로세스개선"], ["TEMPORAL_GAP", "아토테크㈜"], ["ROLE_OMISSION", "하람솔루션"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["TEMPORAL_GAP", "스카이다이나믹스주식회사"]]}
+{"rid": "R00079", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00079", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["ROLE_OMISSION", "하람솔루션"], ["TEMPORAL_GAP", "아토테크㈜"], ["TEMPORAL_GAP", "스카이다이나믹스주식회사"]]}
+{"rid": "R00079", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["ACHIEVEMENT_OMISSION", "신규채용프로세스개선"], ["TEMPORAL_GAP", "아토테크㈜"], ["ROLE_OMISSION", "하람솔루션"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["TEMPORAL_GAP", "스카이다이나믹스주식회사"]]}
+{"rid": "R00517", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00517", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00517", "ch": "chat", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "㈜퀀텀파트너스"], ["ACHIEVEMENT_OMISSION", "헬스케어웹프론트엔드리뉴얼"], ["ROLE_OMISSION", "브릿지시스템즈㈜"], ["ROLE_OMISSION", "㈜퀀텀파트너스"]]}
+{"rid": "R00517", "ch": "file", "meth": "rules", "pred": [["TEMPORAL_GAP", "㈜퀀텀파트너스"], ["ACHIEVEMENT_OMISSION", "헬스케어웹프론트엔드리뉴얼"], ["ROLE_OMISSION", "브릿지시스템즈㈜"], ["ROLE_OMISSION", "㈜퀀텀파트너스"]]}
+{"rid": "R00517", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00517", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "헬스케어웹프론트엔드리뉴얼"], ["THESIS_OMISSION", "독일해외대학원"], ["TEMPORAL_GAP", "㈜퀀텀파트너스"], ["ROLE_OMISSION", "브릿지시스템즈㈜"], ["ROLE_OMISSION", "㈜퀀텀파트너스"]]}
+{"rid": "R00517", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00517", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "헬스케어웹프론트엔드리뉴얼"], ["EXTRACURRICULAR_OMISSION", "해외대학원in독일"], ["TEMPORAL_GAP", "㈜퀀텀파트너스"], ["ROLE_OMISSION", "브릿지시스템즈㈜"], ["ROLE_OMISSION", "㈜퀀텀파트너스"]]}
+{"rid": "R00517", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "헬스케어웹프론트엔드리뉴얼"], ["ROLE_OMISSION", "브릿지시스템즈㈜"], ["ROLE_OMISSION", "㈜퀀텀파트너스"]]}
+{"rid": "R00055", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00055", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00055", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["ROLE_OMISSION", "온새시스템즈주식회사"], ["EXTRACURRICULAR_OMISSION", "교내자격증취득반"], ["ROLE_OMISSION", "하람테크"], ["DATE_INCOMPLETE", "온새시스템즈주식회사"]]}
+{"rid": "R00055", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["ROLE_OMISSION", "온새시스템즈주식회사"], ["EXTRACURRICULAR_OMISSION", "교내자격증취득반"], ["ROLE_OMISSION", "하람테크"], ["DATE_INCOMPLETE", "온새시스템즈주식회사"]]}
+{"rid": "R00055", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00055", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["ROLE_OMISSION", "온새시스템즈주식회사"], ["ROLE_OMISSION", "하람테크"], ["EXTRACURRICULAR_OMISSION", "자격취득교내자격증취득반"], ["DATE_INCOMPLETE", "온새시스템즈주식회사"]]}
+{"rid": "R00055", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00055", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00055", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["EXTRACURRICULAR_OMISSION", "교내자격증취득반자격취득"], ["ROLE_OMISSION", "온새시스템즈주식회사"], ["ROLE_OMISSION", "하람테크"], ["DATE_INCOMPLETE", "온새시스템즈주식회사"]]}
+{"rid": "R00010", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00010", "ch": "chat", "meth": "direct", "pred": [["TEMPORAL_GAP", "루미랩스주식회사"]]}
+{"rid": "R00010", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00010", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00010", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00010", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00010", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00010", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "총학생회"]]}
+{"rid": "R00010", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "총학생회"]]}
+{"rid": "R00350", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00350", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00350", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "교내마케팅학회"], ["ACHIEVEMENT_OMISSION", "제조이탈예측모델개발"], ["THESIS_OMISSION", "동림대학교"], ["ROLE_OMISSION", "㈜하람솔루션"], ["ACHIEVEMENT_OMISSION", "통신데이터파이프라인구축"], ["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"], ["EXTRACURRICULAR_OMISSION", "핀란드교환학생"]]}
+{"rid": "R00350", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "제조이탈예측모델개발"], ["THESIS_OMISSION", "동림대학교"], ["ROLE_OMISSION", "㈜하람솔루션"], ["ACHIEVEMENT_OMISSION", "통신데이터파이프라인구축"], ["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"]]}
+{"rid": "R00350", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00350", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "제조이탈예측모델개발"], ["THESIS_OMISSION", "동림대학교"], ["ROLE_OMISSION", "㈜하람솔루션"], ["ACHIEVEMENT_OMISSION", "통신데이터파이프라인구축"], ["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"]]}
+{"rid": "R00350", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00350", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00350", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"], ["ACHIEVEMENT_OMISSION", "제조이탈예측모델개발"], ["ACHIEVEMENT_OMISSION", "통신데이터파이프라인구축"], ["ROLE_OMISSION", "㈜하람솔루션"]]}
+{"rid": "R00243", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00243", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00243", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00243", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00243", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00243", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00243", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00243", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00243", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00139", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00139", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00139", "ch": "chat", "meth": "hybrid", "pred": [["ROLE_OMISSION", "코어솔루션㈜"], ["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["TEMPORAL_GAP", "스카이다이나믹스㈜"], ["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00139", "ch": "file", "meth": "rules", "pred": [["ROLE_OMISSION", "코어솔루션㈜"], ["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["TEMPORAL_GAP", "스카이다이나믹스㈜"], ["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00139", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00139", "ch": "file", "meth": "hybrid", "pred": [["ROLE_OMISSION", "코어솔루션㈜"], ["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["TEMPORAL_GAP", "스카이다이나믹스㈜"], ["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00139", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00139", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00139", "ch": "url", "meth": "hybrid", "pred": [["ROLE_OMISSION", "코어솔루션㈜"], ["ACHIEVEMENT_OMISSION", "인사평가제도개편"], ["TEMPORAL_GAP", "스카이다이나믹스㈜"], ["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00448", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00448", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00448", "ch": "chat", "meth": "hybrid", "pred": [["ROLE_OMISSION", "링크네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "브랜드아이덴티티리브랜딩"], ["ROLE_OMISSION", "아토소프트㈜"], ["ACHIEVEMENT_OMISSION", "금융앱ui전면리뉴얼"], ["ACHIEVEMENT_OMISSION", "교육앱ui전면리뉴얼"], ["ROLE_OMISSION", "㈜코어플랫폼"], ["DATE_INCOMPLETE", "링크네트웍스㈜"], ["TEMPORAL_GAP", "세움파트너스"], ["TEMPORAL_GAP", "그리드솔루션"], ["TEMPORAL_GAP", "링크네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "금융상세페이지제작"], ["ACHIEVEMENT_OMISSION", "여행프로모션영상제작"], ["EXTRACURRICULAR_OMISSION", "마케팅아카데미수료"]]}
+{"rid": "R00448", "ch": "file", "meth": "rules", "pred": [["ROLE_OMISSION", "링크네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "브랜드아이덴티티리브랜딩"], ["ROLE_OMISSION", "아토소프트㈜"], ["ACHIEVEMENT_OMISSION", "금융앱ui전면리뉴얼"], ["ACHIEVEMENT_OMISSION", "교육앱ui전면리뉴얼"], ["ROLE_OMISSION", "㈜코어플랫폼"], ["DATE_INCOMPLETE", "링크네트웍스㈜"], ["TEMPORAL_GAP", "세움파트너스"], ["TEMPORAL_GAP", "그리드솔루션"], ["TEMPORAL_GAP", "링크네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "금융상세페이지제작"], ["ACHIEVEMENT_OMISSION", "여행프로모션영상제작"], ["EXTRACURRICULAR_OMISSION", "마케팅아카데미수료"]]}
+{"rid": "R00448", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00448", "ch": "file", "meth": "hybrid", "pred": [["ROLE_OMISSION", "링크네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "브랜드아이덴티티리브랜딩"], ["ROLE_OMISSION", "아토소프트㈜"], ["ACHIEVEMENT_OMISSION", "금융앱ui전면리뉴얼"], ["ACHIEVEMENT_OMISSION", "교육앱ui전면리뉴얼"], ["ROLE_OMISSION", "㈜코어플랫폼"], ["DATE_INCOMPLETE", "링크네트웍스㈜"], ["EXTRACURRICULAR_OMISSION", "교육과정마케팅아카데미수료"], ["TEMPORAL_GAP", "세움파트너스"], ["TEMPORAL_GAP", "그리드솔루션"], ["TEMPORAL_GAP", "링크네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "금융상세페이지제작"], ["ACHIEVEMENT_OMISSION", "여행프로모션영상제작"]]}
+{"rid": "R00448", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00448", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00448", "ch": "url", "meth": "hybrid", "pred": [["ROLE_OMISSION", "링크네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "브랜드아이덴티티리브랜딩"], ["ROLE_OMISSION", "아토소프트㈜"], ["ACHIEVEMENT_OMISSION", "금융앱ui전면리뉴얼"], ["ACHIEVEMENT_OMISSION", "교육앱ui전면리뉴얼"], ["ROLE_OMISSION", "㈜코어플랫폼"], ["DATE_INCOMPLETE", "링크네트웍스㈜"], ["TEMPORAL_GAP", "세움파트너스"], ["TEMPORAL_GAP", "그리드솔루션"], ["TEMPORAL_GAP", "링크네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "금융상세페이지제작"], ["ACHIEVEMENT_OMISSION", "여행프로모션영상제작"], ["EXTRACURRICULAR_OMISSION", "마케팅아카데미수료"]]}
+{"rid": "R00343", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00343", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00343", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00343", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00343", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00343", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00343", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00343", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00343", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "조직문화개선프로젝트"]]}
+{"rid": "R00234", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00234", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "의료기기대리점채널확대"], ["THESIS_OMISSION", "서원대학교"], ["THESIS_OMISSION", "소로대학교"], ["TEMPORAL_GAP", "온새웍스주식회사"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"]]}
+{"rid": "R00234", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "의료기기대리점채널확대"], ["THESIS_OMISSION", "서원대학교"], ["THESIS_OMISSION", "소로대학교"], ["TEMPORAL_GAP", "온새웍스주식회사"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"]]}
+{"rid": "R00234", "ch": "file", "meth": "rules", "pred": [["THESIS_OMISSION", "소로대학교"], ["ACHIEVEMENT_OMISSION", "의료기기대리점채널확대"], ["TEMPORAL_GAP", "온새웍스주식회사"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"]]}
+{"rid": "R00234", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"], ["ACHIEVEMENT_OMISSION", "의료기기대리점채널확대"], ["TEMPORAL_GAP", "온새웍스주식회사"], ["THESIS_OMISSION", "소로대학교"]]}
+{"rid": "R00234", "ch": "file", "meth": "hybrid", "pred": [["THESIS_OMISSION", "소로대학교"], ["ACHIEVEMENT_OMISSION", "의료기기대리점채널확대"], ["TEMPORAL_GAP", "온새웍스주식회사"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"]]}
+{"rid": "R00234", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00234", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"], ["TEMPORAL_GAP", "온새웍스주식회사"]]}
+{"rid": "R00234", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"], ["ACHIEVEMENT_OMISSION", "의료기기대리점채널확대"], ["TEMPORAL_GAP", "온새웍스주식회사"]]}
+{"rid": "R00418", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00418", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00418", "ch": "chat", "meth": "hybrid", "pred": [["THESIS_OMISSION", "가온대학교"], ["THESIS_OMISSION", "서원대학교"]]}
+{"rid": "R00418", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00418", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "창업준비"]]}
+{"rid": "R00418", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00418", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00418", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "창업준비"]]}
+{"rid": "R00418", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00550", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00550", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00550", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00550", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00550", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00550", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00550", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00550", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "어학연수in미국"]]}
+{"rid": "R00550", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00565", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00565", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00565", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00565", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00565", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "직무전환을위한국비교육과정수강"]]}
+{"rid": "R00565", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00565", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00565", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00565", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00094", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00094", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["TEMPORAL_GAP", "포레커머스주식회사"]]}
+{"rid": "R00094", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["TEMPORAL_GAP", "포레커머스주식회사"]]}
+{"rid": "R00094", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["TEMPORAL_GAP", "포레커머스주식회사"]]}
+{"rid": "R00094", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["TEMPORAL_GAP", "포레커머스주식회사"]]}
+{"rid": "R00094", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["TEMPORAL_GAP", "포레커머스주식회사"]]}
+{"rid": "R00094", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00094", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["TEMPORAL_GAP", "포레커머스주식회사"]]}
+{"rid": "R00094", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["TEMPORAL_GAP", "포레커머스주식회사"]]}
+{"rid": "R00427", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00427", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00427", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00427", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00427", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00427", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00427", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00427", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00427", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00510", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00510", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00510", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["TEMPORAL_GAP", "실린소프트"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00510", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["TEMPORAL_GAP", "실린소프트"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["EXTRACURRICULAR_OMISSION", "국비지원금융부트캠프"]]}
+{"rid": "R00510", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00510", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["TEMPORAL_GAP", "실린소프트"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00510", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00510", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00510", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["TEMPORAL_GAP", "실린소프트"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00361", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00361", "ch": "chat", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사"], ["EXTRACURRICULAR_OMISSION", "교환학생"]]}
+{"rid": "R00361", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사활동"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00361", "ch": "file", "meth": "rules", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사"]]}
+{"rid": "R00361", "ch": "file", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사"]]}
+{"rid": "R00361", "ch": "file", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사"]]}
+{"rid": "R00361", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00361", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사"], ["EXTRACURRICULAR_OMISSION", "교환학생in네덜란드"]]}
+{"rid": "R00361", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사"]]}
+{"rid": "R00441", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00441", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00441", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"], ["ACHIEVEMENT_OMISSION", "식품라인공정개선"], ["TEMPORAL_GAP", "물류산업진흥공단"], ["TEMPORAL_GAP", "㈜온새플랫폼"], ["TEMPORAL_GAP", "다온테크"], ["ROLE_OMISSION", "㈜브릿지다이나믹스"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "자동차부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "2차전지신제품양산이관"], ["ROLE_OMISSION", "물류산업진흥공단"], ["TEMPORAL_GAP", "포레랩스"], ["TEMPORAL_GAP", "메타솔루션"], ["ACHIEVEMENT_OMISSION", "전자부품신제품양산이관"]]}
+{"rid": "R00441", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"], ["ACHIEVEMENT_OMISSION", "식품라인공정개선"], ["TEMPORAL_GAP", "물류산업진흥공단"], ["TEMPORAL_GAP", "㈜온새플랫폼"], ["TEMPORAL_GAP", "다온테크"], ["ROLE_OMISSION", "㈜브릿지다이나믹스"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "자동차부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "2차전지신제품양산이관"], ["ROLE_OMISSION", "물류산업진흥공단"], ["TEMPORAL_GAP", "포레랩스"], ["TEMPORAL_GAP", "메타솔루션"], ["ACHIEVEMENT_OMISSION", "전자부품신제품양산이관"]]}
+{"rid": "R00441", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00441", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"], ["ACHIEVEMENT_OMISSION", "식품라인공정개선"], ["TEMPORAL_GAP", "물류산업진흥공단"], ["TEMPORAL_GAP", "㈜온새플랫폼"], ["TEMPORAL_GAP", "다온테크"], ["ROLE_OMISSION", "㈜브릿지다이나믹스"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "자동차부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "2차전지신제품양산이관"], ["ROLE_OMISSION", "물류산업진흥공단"], ["TEMPORAL_GAP", "포레랩스"], ["TEMPORAL_GAP", "메타솔루션"], ["ACHIEVEMENT_OMISSION", "전자부품신제품양산이관"]]}
+{"rid": "R00441", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00441", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00441", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"], ["ACHIEVEMENT_OMISSION", "식품라인공정개선"], ["TEMPORAL_GAP", "물류산업진흥공단"], ["TEMPORAL_GAP", "㈜온새플랫폼"], ["TEMPORAL_GAP", "다온테크"], ["ROLE_OMISSION", "㈜브릿지다이나믹스"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "자동차부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "2차전지신제품양산이관"], ["ROLE_OMISSION", "물류산업진흥공단"], ["TEMPORAL_GAP", "포레랩스"], ["TEMPORAL_GAP", "메타솔루션"], ["ACHIEVEMENT_OMISSION", "전자부품신제품양산이관"]]}
+{"rid": "R00089", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00089", "ch": "chat", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "해외봉사단"]]}
+{"rid": "R00089", "ch": "chat", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "게임브랜드마케팅공모전출품"], ["EXTRACURRICULAR_OMISSION", "해외봉사단"], ["ACHIEVEMENT_OMISSION", "개인sns채널운영"]]}
+{"rid": "R00089", "ch": "file", "meth": "rules", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "해외봉사단"], ["ACHIEVEMENT_OMISSION", "개인sns채널운영"]]}
+{"rid": "R00089", "ch": "file", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "해외봉사단"], ["ACHIEVEMENT_OMISSION", "개인sns채널운영"]]}
+{"rid": "R00089", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "봉사해외봉사단"], ["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "개인sns채널운영"]]}
+{"rid": "R00089", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00089", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "해외봉사단"], ["ACHIEVEMENT_OMISSION", "개인sns채널운영"]]}
+{"rid": "R00089", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "게임브랜드마케팅공모전출품"], ["EXTRACURRICULAR_OMISSION", "해외봉사단"], ["ACHIEVEMENT_OMISSION", "개인sns채널운영"]]}
+{"rid": "R00409", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00409", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00409", "ch": "chat", "meth": "hybrid", "pred": [["THESIS_OMISSION", "동림대학교"]]}
+{"rid": "R00409", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00409", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "가족간병"]]}
+{"rid": "R00409", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "독일교환학생"]]}
+{"rid": "R00409", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00409", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "가족간병"], ["EXTRACURRICULAR_OMISSION", "교환학생in독일"]]}
+{"rid": "R00409", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00040", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00040", "ch": "chat", "meth": "direct", "pred": [["DATE_INCOMPLETE", "포레파트너스주식회사"]]}
+{"rid": "R00040", "ch": "chat", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "포레파트너스주식회사"], ["DATE_INCOMPLETE", "포레파트너스주식회사"]]}
+{"rid": "R00040", "ch": "file", "meth": "rules", "pred": [["TEMPORAL_GAP", "포레파트너스주식회사"], ["DATE_INCOMPLETE", "포레파트너스주식회사"]]}
+{"rid": "R00040", "ch": "file", "meth": "direct", "pred": [["DATE_INCOMPLETE", "포레파트너스주식회사"]]}
+{"rid": "R00040", "ch": "file", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "포레파트너스주식회사"], ["DATE_INCOMPLETE", "포레파트너스주식회사"]]}
+{"rid": "R00040", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00040", "ch": "url", "meth": "direct", "pred": [["DATE_INCOMPLETE", "포레파트너스주식회사"]]}
+{"rid": "R00040", "ch": "url", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "포레파트너스주식회사"], ["DATE_INCOMPLETE", "포레파트너스주식회사"]]}
+{"rid": "R00478", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00478", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "패션재고관리체계개선"], ["ROLE_OMISSION", "㈜코어소프트"], ["ROLE_OMISSION", "링크플랫폼"], ["EXTRACURRICULAR_OMISSION", "교환학생"]]}
+{"rid": "R00478", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "패션재고관리체계개선"], ["ROLE_OMISSION", "㈜코어소프트"], ["ROLE_OMISSION", "링크플랫폼"]]}
+{"rid": "R00478", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "패션재고관리체계개선"], ["ROLE_OMISSION", "㈜코어소프트"], ["ROLE_OMISSION", "링크플랫폼"]]}
+{"rid": "R00478", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "패션재고관리체계개선"], ["ROLE_OMISSION", "㈜코어소프트"], ["ROLE_OMISSION", "링크플랫폼"], ["EXTRACURRICULAR_OMISSION", "네덜란드교환학생"]]}
+{"rid": "R00478", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "패션재고관리체계개선"], ["ROLE_OMISSION", "링크플랫폼스타트업"], ["ROLE_OMISSION", "㈜코어소프트스타트업"]]}
+{"rid": "R00478", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00478", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "패션재고관리체계개선"], ["EXTRACURRICULAR_OMISSION", "교환학생"]]}
+{"rid": "R00478", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "패션재고관리체계개선"], ["ROLE_OMISSION", "㈜코어소프트"], ["ROLE_OMISSION", "링크플랫폼"]]}
+{"rid": "R00253", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00253", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "교환학생"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "구독관리시스템"]]}
+{"rid": "R00253", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "총학생회"], ["ACHIEVEMENT_OMISSION", "구독관리시스템"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00253", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "졸업작품구독관리시스템"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "총학생회"]]}
+{"rid": "R00253", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "총학생회"], ["ACHIEVEMENT_OMISSION", "구독관리시스템"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00253", "ch": "file", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "학생자치총학생회부회장"], ["EXTRACURRICULAR_OMISSION", "인턴하계인턴십현업부서인턴"], ["EXTRACURRICULAR_OMISSION", "서포터즈정부기관대학생기자단"], ["ACHIEVEMENT_OMISSION", "졸업작품구독관리시스템"]]}
+{"rid": "R00253", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00253", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00253", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "졸업작품구독관리시스템"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"]]}
+{"rid": "R00374", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00374", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00374", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "해외봉사단"], ["EXTRACURRICULAR_OMISSION", "디자인아이디어공모전"], ["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"], ["ACHIEVEMENT_OMISSION", "공개데이터기반물류분석프로젝트"]]}
+{"rid": "R00374", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "해외봉사단"], ["EXTRACURRICULAR_OMISSION", "디자인아이디어공모전"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00374", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "공모전디자인아이디어공모전"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "봉사해외봉사단"]]}
+{"rid": "R00374", "ch": "file", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "해외봉사단"], ["EXTRACURRICULAR_OMISSION", "디자인아이디어공모전"], ["EXTRACURRICULAR_OMISSION", "호주워킹홀리데이"]]}
+{"rid": "R00374", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00374", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "워킹홀리데이in호주"], ["EXTRACURRICULAR_OMISSION", "해외봉사단"], ["EXTRACURRICULAR_OMISSION", "디자인아이디어공모전"]]}
+{"rid": "R00374", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "캐글경진대회참가"], ["ACHIEVEMENT_OMISSION", "공개데이터기반물류분석프로젝트"]]}
+{"rid": "R00416", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00416", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "모의재무제표분석과제"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00416", "ch": "chat", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "모의재무제표분석과제"]]}
+{"rid": "R00416", "ch": "file", "meth": "rules", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "모의재무제표분석과제"]]}
+{"rid": "R00416", "ch": "file", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "모의재무제표분석과제"]]}
+{"rid": "R00416", "ch": "file", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "모의재무제표분석과제"]]}
+{"rid": "R00416", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00416", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "모의재무제표분석과제"]]}
+{"rid": "R00416", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "모의재무제표분석과제"]]}
+{"rid": "R00239", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00239", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "연합데이터분석동아리"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["ACHIEVEMENT_OMISSION", "교내상담부스운영"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "디자인기업서포터즈"]]}
+{"rid": "R00239", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "연합데이터분석동아리"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["ACHIEVEMENT_OMISSION", "교내상담부스운영"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "디자인기업서포터즈"]]}
+{"rid": "R00239", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "연합데이터분석동아리"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["ACHIEVEMENT_OMISSION", "교내상담부스운영"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "디자인기업서포터즈"]]}
+{"rid": "R00239", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "연합데이터분석동아리"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["ACHIEVEMENT_OMISSION", "교내상담부스운영"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "디자인기업서포터즈"]]}
+{"rid": "R00239", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "서포터즈디자인기업서포터즈"], ["EXTRACURRICULAR_OMISSION", "동아리연합데이터분석동아리"], ["EXTRACURRICULAR_OMISSION", "학생자치총학생회"], ["ACHIEVEMENT_OMISSION", "교내상담부스운영"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00239", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00239", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "디자인기업서포터즈"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["ACHIEVEMENT_OMISSION", "교내상담부스운영"], ["EXTRACURRICULAR_OMISSION", "연합데이터분석동아리"]]}
+{"rid": "R00239", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "디자인기업서포터즈"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["ACHIEVEMENT_OMISSION", "교내상담부스운영"], ["EXTRACURRICULAR_OMISSION", "연합데이터분석동아리"]]}
+{"rid": "R00113", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00113", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "금융기업서포터즈"], ["TEMPORAL_GAP", "브릿지커머스"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"]]}
+{"rid": "R00113", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "금융기업서포터즈"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"]]}
+{"rid": "R00113", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "금융기업서포터즈"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"]]}
+{"rid": "R00113", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "금융기업서포터즈"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"]]}
+{"rid": "R00113", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "서포터즈금융기업서포터즈"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"]]}
+{"rid": "R00113", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00113", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "금융기업서포터즈"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"]]}
+{"rid": "R00113", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "금융기업서포터즈"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"]]}
+{"rid": "R00435", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00435", "ch": "chat", "meth": "direct", "pred": [["TEMPORAL_GAP", "루미소프트㈜"], ["EXTRACURRICULAR_OMISSION", "워킹홀리데이"]]}
+{"rid": "R00435", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00435", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00435", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "뉴질랜드워킹홀리데이"]]}
+{"rid": "R00435", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00435", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00435", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "워킹홀리데이in뉴질랜드"]]}
+{"rid": "R00435", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00556", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00556", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00556", "ch": "chat", "meth": "hybrid", "pred": [["THESIS_OMISSION", "청람대학교대학원"]]}
+{"rid": "R00556", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00556", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00556", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00556", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00556", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00556", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00047", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00047", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "복지관봉사활동"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "창업자율동아리"]]}
+{"rid": "R00047", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "교내상담부스운영"], ["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "상담응대시나리오설계과제"], ["EXTRACURRICULAR_OMISSION", "복지관봉사활동"], ["EXTRACURRICULAR_OMISSION", "창업자율동아리"]]}
+{"rid": "R00047", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "복지관봉사활동"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "창업자율동아리"]]}
+{"rid": "R00047", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "복지관봉사활동"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "창업자율동아리"]]}
+{"rid": "R00047", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "복지관봉사활동"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "창업자율동아리"]]}
+{"rid": "R00047", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00047", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "복지관봉사활동"], ["EXTRACURRICULAR_OMISSION", "교내데이터분석동아리"], ["EXTRACURRICULAR_OMISSION", "창업자율동아리"]]}
+{"rid": "R00047", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "복지관봉사활동"], ["ACHIEVEMENT_OMISSION", "교내상담부스운영"], ["ACHIEVEMENT_OMISSION", "상담응대시나리오설계과제"], ["EXTRACURRICULAR_OMISSION", "창업자율동아리"]]}
+{"rid": "R00054", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00054", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "제조신규거래처개척"], ["THESIS_OMISSION", "청람대학교"]]}
+{"rid": "R00054", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "제조신규거래처개척"], ["THESIS_OMISSION", "청람대학교"]]}
+{"rid": "R00054", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "제조신규거래처개척"]]}
+{"rid": "R00054", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "제조신규거래처개척"]]}
+{"rid": "R00054", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "제조신규거래처개척"]]}
+{"rid": "R00054", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00054", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "제조신규거래처개척"]]}
+{"rid": "R00054", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "제조신규거래처개척"]]}
+{"rid": "R00032", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00032", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00032", "ch": "chat", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "루미인더스트리㈜"], ["TEMPORAL_GAP", "포레커머스"], ["EXTRACURRICULAR_OMISSION", "sw마에스트로형교육과정"], ["ROLE_OMISSION", "스카이커머스"], ["ACHIEVEMENT_OMISSION", "원가관리체계구축"], ["TEMPORAL_GAP", "다온랩스㈜"], ["ROLE_OMISSION", "밸런파트너스주식회사"], ["ACHIEVEMENT_OMISSION", "erp회계모듈전환"], ["ACHIEVEMENT_OMISSION", "결산프로세스자동화"]]}
+{"rid": "R00032", "ch": "file", "meth": "rules", "pred": [["TEMPORAL_GAP", "루미인더스트리㈜"], ["TEMPORAL_GAP", "포레커머스"], ["EXTRACURRICULAR_OMISSION", "sw마에스트로형교육과정"], ["ROLE_OMISSION", "스카이커머스"], ["ACHIEVEMENT_OMISSION", "원가관리체계구축"], ["TEMPORAL_GAP", "다온랩스㈜"], ["ROLE_OMISSION", "밸런파트너스주식회사"], ["ACHIEVEMENT_OMISSION", "erp회계모듈전환"], ["ACHIEVEMENT_OMISSION", "결산프로세스자동화"]]}
+{"rid": "R00032", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00032", "ch": "file", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "루미인더스트리㈜"], ["TEMPORAL_GAP", "포레커머스"], ["ROLE_OMISSION", "스카이커머스"], ["ACHIEVEMENT_OMISSION", "원가관리체계구축"], ["TEMPORAL_GAP", "다온랩스㈜"], ["ROLE_OMISSION", "밸런파트너스주식회사"], ["ACHIEVEMENT_OMISSION", "erp회계모듈전환"], ["ACHIEVEMENT_OMISSION", "결산프로세스자동화"]]}
+{"rid": "R00032", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00032", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00032", "ch": "url", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "루미인더스트리㈜"], ["TEMPORAL_GAP", "포레커머스"], ["ROLE_OMISSION", "스카이커머스"], ["ACHIEVEMENT_OMISSION", "원가관리체계구축"], ["TEMPORAL_GAP", "다온랩스㈜"], ["ROLE_OMISSION", "밸런파트너스주식회사"], ["ACHIEVEMENT_OMISSION", "erp회계모듈전환"], ["ACHIEVEMENT_OMISSION", "결산프로세스자동화"]]}
+{"rid": "R00041", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00041", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "구독제휴마케팅확대"], ["ACHIEVEMENT_OMISSION", "교육제휴마케팅확대"], ["TEMPORAL_GAP", "㈜그리드시스템즈"]]}
+{"rid": "R00041", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "구독제휴마케팅확대"], ["ACHIEVEMENT_OMISSION", "교육제휴마케팅확대"], ["TEMPORAL_GAP", "㈜그리드시스템즈"]]}
+{"rid": "R00041", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "구독제휴마케팅확대"], ["ACHIEVEMENT_OMISSION", "교육제휴마케팅확대"], ["TEMPORAL_GAP", "㈜그리드시스템즈"]]}
+{"rid": "R00041", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "구독제휴마케팅확대"], ["ACHIEVEMENT_OMISSION", "교육제휴마케팅확대"], ["EXTRACURRICULAR_OMISSION", "건강회복"], ["TEMPORAL_GAP", "㈜그리드시스템즈"]]}
+{"rid": "R00041", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "구독제휴마케팅확대"], ["ACHIEVEMENT_OMISSION", "교육제휴마케팅확대"], ["TEMPORAL_GAP", "㈜그리드시스템즈"]]}
+{"rid": "R00041", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00041", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "구독제휴마케팅확대"], ["ACHIEVEMENT_OMISSION", "교육제휴마케팅확대"], ["TEMPORAL_GAP", "㈜그리드시스템즈"]]}
+{"rid": "R00041", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "구독제휴마케팅확대"], ["ACHIEVEMENT_OMISSION", "교육제휴마케팅확대"], ["TEMPORAL_GAP", "㈜그리드시스템즈"]]}
+{"rid": "R00165", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00165", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00165", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["TEMPORAL_GAP", "터닝웍스㈜"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["ROLE_OMISSION", "인디고커머스주식회사"]]}
+{"rid": "R00165", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["TEMPORAL_GAP", "터닝웍스㈜"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["ROLE_OMISSION", "인디고커머스주식회사"]]}
+{"rid": "R00165", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["TEMPORAL_GAP", "터닝웍스㈜"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["ROLE_OMISSION", "인디고커머스주식회사"]]}
+{"rid": "R00165", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["TEMPORAL_GAP", "터닝웍스㈜"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["ROLE_OMISSION", "인디고커머스주식회사"]]}
+{"rid": "R00165", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00165", "ch": "url", "meth": "direct", "pred": [["ROLE_OMISSION", "인디고커머스주식회사"], ["TEMPORAL_GAP", "터닝웍스㈜"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"], ["EXTRACURRICULAR_OMISSION", "교환학생in네덜란드"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"]]}
+{"rid": "R00165", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["TEMPORAL_GAP", "터닝웍스㈜"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["ROLE_OMISSION", "인디고커머스주식회사"]]}
+{"rid": "R00533", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00533", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00533", "ch": "chat", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "㈜다온소프트"], ["TEMPORAL_GAP", "㈜링크웍스"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"], ["TEMPORAL_GAP", "링크웍스주식회사"], ["DATE_INCOMPLETE", "세움인더스트리㈜"], ["ACHIEVEMENT_OMISSION", "crm리텐션시나리오설계"], ["ACHIEVEMENT_OMISSION", "f&b신규고객유입캠페인"], ["TEMPORAL_GAP", "세움인더스트리㈜"]]}
+{"rid": "R00533", "ch": "file", "meth": "rules", "pred": [["DATE_INCOMPLETE", "㈜다온소프트"], ["TEMPORAL_GAP", "㈜링크웍스"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"], ["TEMPORAL_GAP", "링크웍스주식회사"], ["DATE_INCOMPLETE", "세움인더스트리㈜"], ["ACHIEVEMENT_OMISSION", "crm리텐션시나리오설계"], ["ACHIEVEMENT_OMISSION", "f&b신규고객유입캠페인"], ["TEMPORAL_GAP", "세움인더스트리㈜"]]}
+{"rid": "R00533", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00533", "ch": "file", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "㈜다온소프트"], ["TEMPORAL_GAP", "㈜링크웍스"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"], ["TEMPORAL_GAP", "링크웍스주식회사"], ["DATE_INCOMPLETE", "세움인더스트리㈜"], ["ACHIEVEMENT_OMISSION", "crm리텐션시나리오설계"], ["ACHIEVEMENT_OMISSION", "f&b신규고객유입캠페인"], ["TEMPORAL_GAP", "세움인더스트리㈜"]]}
+{"rid": "R00533", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00533", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00533", "ch": "url", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "㈜다온소프트"], ["TEMPORAL_GAP", "㈜링크웍스"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"], ["TEMPORAL_GAP", "링크웍스주식회사"], ["DATE_INCOMPLETE", "세움인더스트리㈜"], ["ACHIEVEMENT_OMISSION", "crm리텐션시나리오설계"], ["ACHIEVEMENT_OMISSION", "f&b신규고객유입캠페인"], ["TEMPORAL_GAP", "세움인더스트리㈜"]]}
+{"rid": "R00173", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00173", "ch": "chat", "meth": "direct", "pred": [["ROLE_OMISSION", "온새인더스트리㈜"]]}
+{"rid": "R00173", "ch": "chat", "meth": "hybrid", "pred": [["ROLE_OMISSION", "온새인더스트리㈜"]]}
+{"rid": "R00173", "ch": "file", "meth": "rules", "pred": [["ROLE_OMISSION", "온새인더스트리㈜"]]}
+{"rid": "R00173", "ch": "file", "meth": "direct", "pred": [["ROLE_OMISSION", "온새인더스트리㈜"]]}
+{"rid": "R00173", "ch": "file", "meth": "hybrid", "pred": [["ROLE_OMISSION", "온새인더스트리㈜"]]}
+{"rid": "R00173", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00173", "ch": "url", "meth": "direct", "pred": [["ROLE_OMISSION", "온새인더스트리㈜"], ["EXTRACURRICULAR_OMISSION", "어학연수in필리핀"]]}
+{"rid": "R00173", "ch": "url", "meth": "hybrid", "pred": [["ROLE_OMISSION", "온새인더스트리㈜"]]}
+{"rid": "R00458", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00458", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "국비지원디자인부트캠프"], ["EXTRACURRICULAR_OMISSION", "기계아이디어공모전"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00458", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "인턴십"], ["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "공개데이터기반통신분석프로젝트"], ["EXTRACURRICULAR_OMISSION", "국비지원디자인부트캠프"], ["EXTRACURRICULAR_OMISSION", "기계아이디어공모전"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00458", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "국비지원디자인부트캠프"], ["EXTRACURRICULAR_OMISSION", "기계아이디어공모전"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00458", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "공모전기계아이디어공모전"], ["EXTRACURRICULAR_OMISSION", "교육과정국비지원디자인부트캠프"], ["EXTRACURRICULAR_OMISSION", "인턴십참여"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00458", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "공모전기계아이디어공모전"], ["EXTRACURRICULAR_OMISSION", "교육과정국비지원디자인부트캠프"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00458", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00458", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "공개데이터기반통신분석프로젝트"], ["EXTRACURRICULAR_OMISSION", "기계아이디어공모전"], ["EXTRACURRICULAR_OMISSION", "국비지원디자인부트캠프"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00458", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "공개데이터기반통신분석프로젝트"], ["EXTRACURRICULAR_OMISSION", "기계아이디어공모전"], ["EXTRACURRICULAR_OMISSION", "인턴십참여"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00479", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00479", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00479", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "상담품질관리체계수립"], ["ROLE_OMISSION", "세움파트너스주식회사"], ["DATE_INCOMPLETE", "실린소프트㈜"], ["TEMPORAL_GAP", "㈜브릿지시스템즈"], ["TEMPORAL_GAP", "실린소프트㈜"]]}
+{"rid": "R00479", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "상담품질관리체계수립"], ["ROLE_OMISSION", "세움파트너스주식회사"], ["DATE_INCOMPLETE", "실린소프트㈜"], ["TEMPORAL_GAP", "㈜브릿지시스템즈"], ["TEMPORAL_GAP", "실린소프트㈜"]]}
+{"rid": "R00479", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00479", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "상담품질관리체계수립"], ["ROLE_OMISSION", "세움파트너스주식회사"], ["DATE_INCOMPLETE", "실린소프트㈜"], ["TEMPORAL_GAP", "㈜브릿지시스템즈"], ["TEMPORAL_GAP", "실린소프트㈜"]]}
+{"rid": "R00479", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00479", "ch": "url", "meth": "direct", "pred": [["TEMPORAL_GAP", "㈜브릿지시스템즈"], ["DATE_INCOMPLETE", "실린소프트㈜"], ["ACHIEVEMENT_OMISSION", "상담품질관리체계수립"], ["ROLE_OMISSION", "세움파트너스주식회사"]]}
+{"rid": "R00479", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "상담품질관리체계수립"], ["ROLE_OMISSION", "세움파트너스주식회사"], ["DATE_INCOMPLETE", "실린소프트㈜"], ["TEMPORAL_GAP", "㈜브릿지시스템즈"], ["TEMPORAL_GAP", "실린소프트㈜"]]}
+{"rid": "R00429", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00429", "ch": "chat", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "공정개선아이디어대회출품"]]}
+{"rid": "R00429", "ch": "chat", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "공정개선아이디어대회출품"]]}
+{"rid": "R00429", "ch": "file", "meth": "rules", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "공정개선아이디어대회출품"]]}
+{"rid": "R00429", "ch": "file", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "공정개선아이디어대회출품"]]}
+{"rid": "R00429", "ch": "file", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "공정개선아이디어대회출품"]]}
+{"rid": "R00429", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00429", "ch": "url", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "공정개선아이디어대회출품"]]}
+{"rid": "R00429", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "공정개선아이디어대회출품"]]}
+{"rid": "R00597", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00597", "ch": "chat", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00597", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "자동화설비제작"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00597", "ch": "file", "meth": "rules", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "졸업작품자동화설비제작"]]}
+{"rid": "R00597", "ch": "file", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00597", "ch": "file", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "졸업작품자동화설비제작"]]}
+{"rid": "R00597", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00597", "ch": "url", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00597", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "졸업작품자동화설비제작"]]}
+{"rid": "R00027", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00027", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00027", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00027", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00027", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00027", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00027", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00027", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00027", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00274", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00274", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "체험형인턴"], ["EXTRACURRICULAR_OMISSION", "교내데이터분석학회"]]}
+{"rid": "R00274", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "체험형인턴"], ["ACHIEVEMENT_OMISSION", "화장품물류프로세스조사"], ["EXTRACURRICULAR_OMISSION", "교내데이터분석학회"], ["ACHIEVEMENT_OMISSION", "교내매점재고관리개선과제"]]}
+{"rid": "R00274", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "체험형인턴"], ["EXTRACURRICULAR_OMISSION", "교내데이터분석학회"]]}
+{"rid": "R00274", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "체험형인턴"], ["EXTRACURRICULAR_OMISSION", "교내데이터분석학회"]]}
+{"rid": "R00274", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "동아리교내데이터분석학회"], ["EXTRACURRICULAR_OMISSION", "인턴체험형인턴현업부서인턴"]]}
+{"rid": "R00274", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00274", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "체험형인턴"], ["EXTRACURRICULAR_OMISSION", "교내데이터분석학회"]]}
+{"rid": "R00274", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "교내데이터분석학회"]]}
+{"rid": "R00391", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00391", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00391", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00391", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00391", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "직무전환을위한국비교육과정수강"], ["EXTRACURRICULAR_OMISSION", "개인프로젝트및포트폴리오제작"]]}
+{"rid": "R00391", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00391", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00391", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00391", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00403", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00403", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00403", "ch": "chat", "meth": "hybrid", "pred": [["ROLE_OMISSION", "넥스커머스주식회사"], ["ACHIEVEMENT_OMISSION", "신규채용프로세스개선"], ["TEMPORAL_GAP", "㈜링크커머스"], ["ROLE_OMISSION", "㈜링크커머스"], ["EXTRACURRICULAR_OMISSION", "금융아이디어공모전"], ["ACHIEVEMENT_OMISSION", "인사평가제도개편"]]}
+{"rid": "R00403", "ch": "file", "meth": "rules", "pred": [["ROLE_OMISSION", "넥스커머스주식회사"], ["ACHIEVEMENT_OMISSION", "신규채용프로세스개선"], ["TEMPORAL_GAP", "㈜링크커머스"], ["ROLE_OMISSION", "㈜링크커머스"], ["EXTRACURRICULAR_OMISSION", "금융아이디어공모전"], ["ACHIEVEMENT_OMISSION", "인사평가제도개편"]]}
+{"rid": "R00403", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00403", "ch": "file", "meth": "hybrid", "pred": [["ROLE_OMISSION", "넥스커머스주식회사"], ["ACHIEVEMENT_OMISSION", "신규채용프로세스개선"], ["TEMPORAL_GAP", "㈜링크커머스"], ["ROLE_OMISSION", "㈜링크커머스"], ["EXTRACURRICULAR_OMISSION", "공모전금융아이디어공모전"], ["ACHIEVEMENT_OMISSION", "인사평가제도개편"]]}
+{"rid": "R00403", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00403", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00403", "ch": "url", "meth": "hybrid", "pred": [["ROLE_OMISSION", "넥스커머스주식회사"], ["ACHIEVEMENT_OMISSION", "신규채용프로세스개선"], ["TEMPORAL_GAP", "㈜링크커머스"], ["ROLE_OMISSION", "㈜링크커머스"], ["EXTRACURRICULAR_OMISSION", "금융아이디어공모전"], ["ACHIEVEMENT_OMISSION", "인사평가제도개편"]]}
+{"rid": "R00438", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00438", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00438", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "총학생회"], ["ACHIEVEMENT_OMISSION", "제조신규거래처개척"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["DATE_INCOMPLETE", "넥스테크㈜"], ["TEMPORAL_GAP", "넥스테크㈜"], ["ROLE_OMISSION", "넥스테크㈜"], ["ACHIEVEMENT_OMISSION", "it솔루션해외바이어발굴"]]}
+{"rid": "R00438", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "총학생회"], ["ACHIEVEMENT_OMISSION", "제조신규거래처개척"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["DATE_INCOMPLETE", "넥스테크㈜"], ["TEMPORAL_GAP", "넥스테크㈜"], ["ROLE_OMISSION", "넥스테크㈜"], ["ACHIEVEMENT_OMISSION", "it솔루션해외바이어발굴"]]}
+{"rid": "R00438", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00438", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "총학생회"], ["ACHIEVEMENT_OMISSION", "제조신규거래처개척"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["DATE_INCOMPLETE", "넥스테크㈜"], ["TEMPORAL_GAP", "넥스테크㈜"], ["ROLE_OMISSION", "넥스테크㈜"], ["ACHIEVEMENT_OMISSION", "it솔루션해외바이어발굴"]]}
+{"rid": "R00438", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00438", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00438", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "제조신규거래처개척"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["DATE_INCOMPLETE", "넥스테크㈜"], ["TEMPORAL_GAP", "넥스테크㈜"], ["ROLE_OMISSION", "넥스테크㈜"], ["ACHIEVEMENT_OMISSION", "it솔루션해외바이어발굴"]]}
+{"rid": "R00285", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00285", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00285", "ch": "chat", "meth": "hybrid", "pred": [["ROLE_OMISSION", "㈜브릿지네트웍스"], ["ROLE_OMISSION", "㈜밸런시스템즈"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["DATE_INCOMPLETE", "㈜하람다이나믹스"], ["ACHIEVEMENT_OMISSION", "자동차부품라인공정개선"], ["DATE_INCOMPLETE", "㈜브릿지네트웍스"], ["TEMPORAL_GAP", "㈜하람다이나믹스"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00285", "ch": "file", "meth": "rules", "pred": [["ROLE_OMISSION", "㈜브릿지네트웍스"], ["ROLE_OMISSION", "㈜밸런시스템즈"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["DATE_INCOMPLETE", "㈜하람다이나믹스"], ["ACHIEVEMENT_OMISSION", "자동차부품라인공정개선"], ["DATE_INCOMPLETE", "㈜브릿지네트웍스"], ["TEMPORAL_GAP", "㈜하람다이나믹스"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00285", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00285", "ch": "file", "meth": "hybrid", "pred": [["ROLE_OMISSION", "㈜브릿지네트웍스"], ["ROLE_OMISSION", "㈜밸런시스템즈"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["DATE_INCOMPLETE", "㈜하람다이나믹스"], ["ACHIEVEMENT_OMISSION", "자동차부품라인공정개선"], ["DATE_INCOMPLETE", "㈜브릿지네트웍스"], ["TEMPORAL_GAP", "㈜하람다이나믹스"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00285", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00285", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00285", "ch": "url", "meth": "hybrid", "pred": [["ROLE_OMISSION", "㈜브릿지네트웍스"], ["ROLE_OMISSION", "㈜밸런시스템즈"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["DATE_INCOMPLETE", "㈜하람다이나믹스"], ["ACHIEVEMENT_OMISSION", "자동차부품라인공정개선"], ["DATE_INCOMPLETE", "㈜브릿지네트웍스"], ["TEMPORAL_GAP", "㈜하람다이나믹스"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00277", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00277", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "어학연수"]]}
+{"rid": "R00277", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00277", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00277", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00277", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00277", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00277", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "어학연수in영국"]]}
+{"rid": "R00277", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00091", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00091", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00091", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "프로그래밍기업서포터즈"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["ACHIEVEMENT_OMISSION", "사내교육체계구축"]]}
+{"rid": "R00091", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "프로그래밍기업서포터즈"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["ACHIEVEMENT_OMISSION", "사내교육체계구축"]]}
+{"rid": "R00091", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "프로그래밍기업서포터즈"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["ACHIEVEMENT_OMISSION", "사내교육체계구축"]]}
+{"rid": "R00091", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "공모전캡스톤디자인경진대회"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["ACHIEVEMENT_OMISSION", "사내교육체계구축"], ["EXTRACURRICULAR_OMISSION", "서포터즈프로그래밍기업서포터즈"]]}
+{"rid": "R00091", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00091", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00091", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "프로그래밍기업서포터즈"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["ACHIEVEMENT_OMISSION", "근태급여시스템도입"], ["ACHIEVEMENT_OMISSION", "사내교육체계구축"]]}
+{"rid": "R00477", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00477", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00477", "ch": "chat", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "㈜세움랩스"], ["TEMPORAL_GAP", "하람인더스트리"], ["ROLE_OMISSION", "하람인더스트리"], ["TEMPORAL_GAP", "인디고네트웍스주식회사"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "전자부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "품질불량저감활동"]]}
+{"rid": "R00477", "ch": "file", "meth": "rules", "pred": [["TEMPORAL_GAP", "㈜세움랩스"], ["TEMPORAL_GAP", "하람인더스트리"], ["ROLE_OMISSION", "하람인더스트리"], ["TEMPORAL_GAP", "인디고네트웍스주식회사"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "전자부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "품질불량저감활동"]]}
+{"rid": "R00477", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00477", "ch": "file", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "㈜세움랩스"], ["TEMPORAL_GAP", "하람인더스트리"], ["ROLE_OMISSION", "하람인더스트리"], ["TEMPORAL_GAP", "인디고네트웍스주식회사"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "전자부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "품질불량저감활동"]]}
+{"rid": "R00477", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00477", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00477", "ch": "url", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "㈜세움랩스"], ["TEMPORAL_GAP", "하람인더스트리"], ["ROLE_OMISSION", "하람인더스트리"], ["TEMPORAL_GAP", "인디고네트웍스주식회사"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "전자부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "품질불량저감활동"]]}
+{"rid": "R00194", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00194", "ch": "chat", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00194", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "졸업논문물류예측모델"], ["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00194", "ch": "file", "meth": "rules", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00194", "ch": "file", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00194", "ch": "file", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "호주워킹홀리데이"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00194", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00194", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "워킹홀리데이in호주"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00194", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00491", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00491", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00491", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00491", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00491", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00491", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00491", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00491", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00491", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00186", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00186", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00186", "ch": "chat", "meth": "hybrid", "pred": [["ROLE_OMISSION", "온새소프트주식회사"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["THESIS_OMISSION", "백양대학교대학원"], ["ROLE_OMISSION", "물류산업진흥공단"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"]]}
+{"rid": "R00186", "ch": "file", "meth": "rules", "pred": [["ROLE_OMISSION", "온새소프트주식회사"], ["THESIS_OMISSION", "백양대학교"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["ROLE_OMISSION", "물류산업진흥공단"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"]]}
+{"rid": "R00186", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00186", "ch": "file", "meth": "hybrid", "pred": [["ROLE_OMISSION", "온새소프트주식회사"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["THESIS_OMISSION", "백양대학교국제통상학과대학원"], ["ROLE_OMISSION", "물류산업진흥공단"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"]]}
+{"rid": "R00186", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00186", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["ROLE_OMISSION", "물류산업진흥공단"], ["ROLE_OMISSION", "온새소프트주식회사"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"]]}
+{"rid": "R00186", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "영업프로세스표준화"], ["ROLE_OMISSION", "물류산업진흥공단"], ["ROLE_OMISSION", "온새소프트주식회사"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"]]}
+{"rid": "R00255", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00255", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00255", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["DATE_INCOMPLETE", "㈜스카이웍스"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "㈜스카이웍스"], ["ROLE_OMISSION", "㈜스카이웍스"], ["ACHIEVEMENT_OMISSION", "교육회원등급제도입"]]}
+{"rid": "R00255", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["DATE_INCOMPLETE", "㈜스카이웍스"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "㈜스카이웍스"], ["ROLE_OMISSION", "㈜스카이웍스"], ["ACHIEVEMENT_OMISSION", "교육회원등급제도입"]]}
+{"rid": "R00255", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00255", "ch": "file", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "㈜스카이웍스"], ["EXTRACURRICULAR_OMISSION", "서포터즈정부기관대학생기자단"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "㈜스카이웍스"], ["ROLE_OMISSION", "㈜스카이웍스"], ["ACHIEVEMENT_OMISSION", "교육회원등급제도입"]]}
+{"rid": "R00255", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00255", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00255", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["DATE_INCOMPLETE", "㈜스카이웍스"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "㈜스카이웍스"], ["ROLE_OMISSION", "㈜스카이웍스"], ["ACHIEVEMENT_OMISSION", "교육회원등급제도입"]]}
+{"rid": "R00167", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00167", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00167", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00167", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00167", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "가족간병"]]}
+{"rid": "R00167", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00167", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00167", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00167", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00172", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00172", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00172", "ch": "chat", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "코어인더스트리"], ["ROLE_OMISSION", "코어인더스트리"], ["ACHIEVEMENT_OMISSION", "이커머스상세페이지제작"], ["ROLE_OMISSION", "온새랩스㈜"], ["ACHIEVEMENT_OMISSION", "여행앱ui전면리뉴얼"], ["TEMPORAL_GAP", "실린플랫폼주식회사"], ["ACHIEVEMENT_OMISSION", "f&b상세페이지제작"], ["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["ACHIEVEMENT_OMISSION", "브랜드아이덴티티리브랜딩"], ["ACHIEVEMENT_OMISSION", "f&b앱ui전면리뉴얼"], ["ROLE_OMISSION", "소프트웨어산업진흥공단"], ["ROLE_OMISSION", "㈜루미네트웍스"]]}
+{"rid": "R00172", "ch": "file", "meth": "rules", "pred": [["TEMPORAL_GAP", "코어인더스트리"], ["ROLE_OMISSION", "코어인더스트리"], ["ACHIEVEMENT_OMISSION", "이커머스상세페이지제작"], ["ROLE_OMISSION", "온새랩스㈜"], ["ACHIEVEMENT_OMISSION", "여행앱ui전면리뉴얼"], ["TEMPORAL_GAP", "실린플랫폼주식회사"], ["ACHIEVEMENT_OMISSION", "f&b상세페이지제작"], ["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["ACHIEVEMENT_OMISSION", "브랜드아이덴티티리브랜딩"], ["ACHIEVEMENT_OMISSION", "f&b앱ui전면리뉴얼"], ["ROLE_OMISSION", "소프트웨어산업진흥공단"], ["ROLE_OMISSION", "㈜루미네트웍스"]]}
+{"rid": "R00172", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00172", "ch": "file", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "코어인더스트리"], ["ROLE_OMISSION", "코어인더스트리"], ["ACHIEVEMENT_OMISSION", "이커머스상세페이지제작"], ["ROLE_OMISSION", "온새랩스㈜"], ["ACHIEVEMENT_OMISSION", "여행앱ui전면리뉴얼"], ["TEMPORAL_GAP", "실린플랫폼주식회사"], ["ACHIEVEMENT_OMISSION", "f&b상세페이지제작"], ["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["ACHIEVEMENT_OMISSION", "브랜드아이덴티티리브랜딩"], ["ACHIEVEMENT_OMISSION", "f&b앱ui전면리뉴얼"], ["ROLE_OMISSION", "소프트웨어산업진흥공단"], ["ROLE_OMISSION", "㈜루미네트웍스"]]}
+{"rid": "R00172", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00172", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00172", "ch": "url", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "코어인더스트리"], ["ROLE_OMISSION", "코어인더스트리"], ["ACHIEVEMENT_OMISSION", "이커머스상세페이지제작"], ["ROLE_OMISSION", "온새랩스㈜"], ["ACHIEVEMENT_OMISSION", "여행앱ui전면리뉴얼"], ["TEMPORAL_GAP", "실린플랫폼주식회사"], ["ACHIEVEMENT_OMISSION", "f&b상세페이지제작"], ["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["ACHIEVEMENT_OMISSION", "브랜드아이덴티티리브랜딩"], ["ACHIEVEMENT_OMISSION", "f&b앱ui전면리뉴얼"], ["ROLE_OMISSION", "소프트웨어산업진흥공단"], ["ROLE_OMISSION", "㈜루미네트웍스"]]}
+{"rid": "R00464", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00464", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00464", "ch": "chat", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "코어인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "자금수지관리개선"], ["TEMPORAL_GAP", "코어인더스트리주식회사"]]}
+{"rid": "R00464", "ch": "file", "meth": "rules", "pred": [["DATE_INCOMPLETE", "코어인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "자금수지관리개선"], ["TEMPORAL_GAP", "코어인더스트리주식회사"]]}
+{"rid": "R00464", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00464", "ch": "file", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "코어인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "자금수지관리개선"], ["TEMPORAL_GAP", "코어인더스트리주식회사"]]}
+{"rid": "R00464", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00464", "ch": "url", "meth": "direct", "pred": [["DATE_INCOMPLETE", "코어인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "자금수지관리개선"]]}
+{"rid": "R00464", "ch": "url", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "코어인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "자금수지관리개선"], ["TEMPORAL_GAP", "코어인더스트리주식회사"]]}
+{"rid": "R00307", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00307", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "전국대학생창업경진대회"]]}
+{"rid": "R00307", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "전국대학생창업경진대회"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00307", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "전국대학생창업경진대회"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00307", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "전국대학생창업경진대회"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00307", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "공모전전국대학생창업경진대회"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00307", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00307", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "전국대학생창업경진대회"]]}
+{"rid": "R00307", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "전국대학생창업경진대회"]]}
+{"rid": "R00246", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00246", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00246", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["DATE_INCOMPLETE", "아토솔루션㈜"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"], ["EXTRACURRICULAR_OMISSION", "총학생회활동"], ["TEMPORAL_GAP", "아토솔루션㈜"], ["EXTRACURRICULAR_OMISSION", "교내마케팅학회활동"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"], ["TEMPORAL_GAP", "다온다이나믹스"], ["ACHIEVEMENT_OMISSION", "it솔루션대리점채널확대"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"]]}
+{"rid": "R00246", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["DATE_INCOMPLETE", "아토솔루션㈜"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"], ["EXTRACURRICULAR_OMISSION", "총학생회"], ["TEMPORAL_GAP", "아토솔루션㈜"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"], ["TEMPORAL_GAP", "다온다이나믹스"], ["ACHIEVEMENT_OMISSION", "it솔루션대리점채널확대"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"]]}
+{"rid": "R00246", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00246", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["DATE_INCOMPLETE", "아토솔루션㈜"], ["EXTRACURRICULAR_OMISSION", "학생자치총학생회"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"], ["TEMPORAL_GAP", "아토솔루션㈜"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"], ["TEMPORAL_GAP", "다온다이나믹스"], ["ACHIEVEMENT_OMISSION", "it솔루션대리점채널확대"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"]]}
+{"rid": "R00246", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00246", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00246", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["DATE_INCOMPLETE", "아토솔루션㈜"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"], ["EXTRACURRICULAR_OMISSION", "총학생회학생자치"], ["TEMPORAL_GAP", "아토솔루션㈜"], ["ACHIEVEMENT_OMISSION", "제조해외바이어발굴"], ["TEMPORAL_GAP", "다온다이나믹스"], ["ACHIEVEMENT_OMISSION", "it솔루션대리점채널확대"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"]]}
+{"rid": "R00117", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00117", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00117", "ch": "chat", "meth": "hybrid", "pred": [["THESIS_OMISSION", "가온대학교"], ["ACHIEVEMENT_OMISSION", "화학신제품양산이관"], ["TEMPORAL_GAP", "넥스랩스"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "전자부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "식품신제품양산이관"], ["ROLE_OMISSION", "넥스랩스"], ["ACHIEVEMENT_OMISSION", "2차전지라인공정개선"], ["ROLE_OMISSION", "하람소프트㈜"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00117", "ch": "file", "meth": "rules", "pred": [["THESIS_OMISSION", "가온대학교"], ["ACHIEVEMENT_OMISSION", "화학신제품양산이관"], ["TEMPORAL_GAP", "넥스랩스"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "전자부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "식품신제품양산이관"], ["ROLE_OMISSION", "넥스랩스"], ["ACHIEVEMENT_OMISSION", "2차전지라인공정개선"], ["ROLE_OMISSION", "하람소프트㈜"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00117", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00117", "ch": "file", "meth": "hybrid", "pred": [["THESIS_OMISSION", "가온대학교"], ["ACHIEVEMENT_OMISSION", "화학신제품양산이관"], ["TEMPORAL_GAP", "넥스랩스"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "전자부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "식품신제품양산이관"], ["ROLE_OMISSION", "넥스랩스"], ["ACHIEVEMENT_OMISSION", "2차전지라인공정개선"], ["ROLE_OMISSION", "하람소프트㈜"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00117", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00117", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00117", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "화학신제품양산이관"], ["TEMPORAL_GAP", "넥스랩스"], ["ACHIEVEMENT_OMISSION", "iso인증심사대응"], ["ACHIEVEMENT_OMISSION", "전자부품라인공정개선"], ["ACHIEVEMENT_OMISSION", "식품신제품양산이관"], ["ROLE_OMISSION", "넥스랩스"], ["ACHIEVEMENT_OMISSION", "2차전지라인공정개선"], ["ROLE_OMISSION", "하람소프트㈜"], ["ACHIEVEMENT_OMISSION", "설비예방보전체계구축"]]}
+{"rid": "R00175", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00175", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "총학생회"]]}
+{"rid": "R00175", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["ACHIEVEMENT_OMISSION", "교내행사운영총괄"]]}
+{"rid": "R00175", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"]]}
+{"rid": "R00175", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "서포터즈정부기관대학생기자단"]]}
+{"rid": "R00175", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "서포터즈정부기관대학생기자단"], ["ACHIEVEMENT_OMISSION", "교내행사운영총괄"]]}
+{"rid": "R00175", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00175", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00175", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단서포터즈"]]}
+{"rid": "R00504", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00504", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00504", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "교육프로그램기획과제"], ["EXTRACURRICULAR_OMISSION", "it교육재능기부활동"], ["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "교내튜터링활동"]]}
+{"rid": "R00504", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "it교육재능기부"], ["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "교내튜터링활동"]]}
+{"rid": "R00504", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "it교육재능기부"], ["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "교내튜터링활동"]]}
+{"rid": "R00504", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "봉사it교육재능기부"], ["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "교내튜터링활동"]]}
+{"rid": "R00504", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00504", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "it교육재능기부"], ["ACHIEVEMENT_OMISSION", "교내튜터링활동"]]}
+{"rid": "R00504", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "교내튜터링활동"]]}
+{"rid": "R00062", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00062", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00062", "ch": "chat", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "인턴십참여"]]}
+{"rid": "R00062", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00062", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "인턴십참여"]]}
+{"rid": "R00062", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00062", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00062", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00062", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "공개데이터기반이커머스분석프로젝트"], ["EXTRACURRICULAR_OMISSION", "인턴십참여"], ["ACHIEVEMENT_OMISSION", "캐글경진대회참가"]]}
+{"rid": "R00497", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00497", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "뷰티브랜드마케팅공모전출품"], ["EXTRACURRICULAR_OMISSION", "it교육재능기부활동"]]}
+{"rid": "R00497", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "뷰티브랜드마케팅공모전출품"], ["EXTRACURRICULAR_OMISSION", "it교육재능기부활동"]]}
+{"rid": "R00497", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "뷰티브랜드마케팅공모전출품"], ["EXTRACURRICULAR_OMISSION", "it교육재능기부"]]}
+{"rid": "R00497", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "뷰티브랜드마케팅공모전출품"], ["EXTRACURRICULAR_OMISSION", "봉사it교육재능기부"]]}
+{"rid": "R00497", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "뷰티브랜드마케팅공모전출품"], ["EXTRACURRICULAR_OMISSION", "봉사it교육재능기부"], ["EXTRACURRICULAR_OMISSION", "영국어학연수"]]}
+{"rid": "R00497", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00497", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "뷰티브랜드마케팅공모전출품"], ["EXTRACURRICULAR_OMISSION", "어학연수in영국"], ["EXTRACURRICULAR_OMISSION", "it교육재능기부"]]}
+{"rid": "R00497", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "뷰티브랜드마케팅공모전출품"], ["EXTRACURRICULAR_OMISSION", "it교육재능기부"]]}
+{"rid": "R00053", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00053", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00053", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "교육브랜드캠페인집행"], ["ACHIEVEMENT_OMISSION", "이커머스신규고객유입캠페인"], ["TEMPORAL_GAP", "링크시스템즈"], ["ROLE_OMISSION", "링크시스템즈"], ["ACHIEVEMENT_OMISSION", "구독신규고객유입캠페인"], ["EXTRACURRICULAR_OMISSION", "it교육재능기부활동"], ["TEMPORAL_GAP", "㈜세움솔루션"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"]]}
+{"rid": "R00053", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "교육브랜드캠페인집행"], ["ACHIEVEMENT_OMISSION", "이커머스신규고객유입캠페인"], ["TEMPORAL_GAP", "링크시스템즈"], ["ROLE_OMISSION", "링크시스템즈"], ["ACHIEVEMENT_OMISSION", "구독신규고객유입캠페인"], ["TEMPORAL_GAP", "㈜세움솔루션"], ["EXTRACURRICULAR_OMISSION", "it교육재능기부"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"]]}
+{"rid": "R00053", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00053", "ch": "file", "meth": "hybrid", "pred": [["ROLE_OMISSION", "링크시스템즈"], ["EXTRACURRICULAR_OMISSION", "봉사it교육재능기부"], ["ACHIEVEMENT_OMISSION", "교육브랜드캠페인집행"], ["TEMPORAL_GAP", "㈜세움솔루션"], ["ACHIEVEMENT_OMISSION", "이커머스신규고객유입캠페인"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"], ["TEMPORAL_GAP", "링크시스템즈"], ["ACHIEVEMENT_OMISSION", "구독신규고객유입캠페인"]]}
+{"rid": "R00053", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00053", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00053", "ch": "url", "meth": "hybrid", "pred": [["ROLE_OMISSION", "링크시스템즈"], ["ACHIEVEMENT_OMISSION", "교육브랜드캠페인집행"], ["TEMPORAL_GAP", "㈜세움솔루션"], ["ACHIEVEMENT_OMISSION", "이커머스신규고객유입캠페인"], ["ACHIEVEMENT_OMISSION", "seo개선프로젝트"], ["EXTRACURRICULAR_OMISSION", "it교육재능기부봉사"], ["TEMPORAL_GAP", "링크시스템즈"], ["ACHIEVEMENT_OMISSION", "구독신규고객유입캠페인"]]}
+{"rid": "R00557", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00557", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00557", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00557", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00557", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00557", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00557", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00557", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00557", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00073", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00073", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00073", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "사내관리자페이지구축"], ["TEMPORAL_GAP", "터닝테크㈜"], ["THESIS_OMISSION", "한빛대학교"], ["ACHIEVEMENT_OMISSION", "이커머스서비스백엔드api개발"], ["DATE_INCOMPLETE", "㈜메타웍스"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"], ["ROLE_OMISSION", "스카이웍스주식회사"], ["TEMPORAL_GAP", "루미플랫폼주식회사"], ["ROLE_OMISSION", "㈜메타웍스"], ["TEMPORAL_GAP", "㈜메타웍스"]]}
+{"rid": "R00073", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "사내관리자페이지구축"], ["TEMPORAL_GAP", "터닝테크㈜"], ["THESIS_OMISSION", "한빛대학교"], ["ACHIEVEMENT_OMISSION", "이커머스서비스백엔드api개발"], ["DATE_INCOMPLETE", "㈜메타웍스"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"], ["ROLE_OMISSION", "스카이웍스주식회사"], ["TEMPORAL_GAP", "루미플랫폼주식회사"], ["ROLE_OMISSION", "㈜메타웍스"], ["TEMPORAL_GAP", "㈜메타웍스"]]}
+{"rid": "R00073", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00073", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "사내관리자페이지구축"], ["TEMPORAL_GAP", "터닝테크㈜"], ["ACHIEVEMENT_OMISSION", "이커머스서비스백엔드api개발"], ["DATE_INCOMPLETE", "㈜메타웍스"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"], ["ROLE_OMISSION", "스카이웍스주식회사"], ["TEMPORAL_GAP", "루미플랫폼주식회사"], ["ROLE_OMISSION", "㈜메타웍스"], ["TEMPORAL_GAP", "㈜메타웍스"], ["THESIS_OMISSION", "한빛대학교소프트웨어학과대학원"]]}
+{"rid": "R00073", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00073", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00073", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "사내관리자페이지구축"], ["TEMPORAL_GAP", "터닝테크㈜"], ["ACHIEVEMENT_OMISSION", "이커머스서비스백엔드api개발"], ["DATE_INCOMPLETE", "㈜메타웍스"], ["ACHIEVEMENT_OMISSION", "이커머스웹프론트엔드리뉴얼"], ["ACHIEVEMENT_OMISSION", "레거시시스템마이크로서비스전환"], ["ROLE_OMISSION", "스카이웍스주식회사"], ["TEMPORAL_GAP", "루미플랫폼주식회사"], ["ROLE_OMISSION", "㈜메타웍스"], ["TEMPORAL_GAP", "㈜메타웍스"]]}
+{"rid": "R00474", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00474", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00474", "ch": "chat", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "스카이네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["TEMPORAL_GAP", "국가산업기술센터"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"], ["ROLE_OMISSION", "퀀텀랩스㈜"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00474", "ch": "file", "meth": "rules", "pred": [["TEMPORAL_GAP", "스카이네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["TEMPORAL_GAP", "국가산업기술센터"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"], ["ROLE_OMISSION", "퀀텀랩스㈜"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00474", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00474", "ch": "file", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "스카이네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["TEMPORAL_GAP", "국가산업기술센터"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"], ["ROLE_OMISSION", "퀀텀랩스㈜"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00474", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00474", "ch": "url", "meth": "direct", "pred": [["TEMPORAL_GAP", "스카이네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["TEMPORAL_GAP", "국가산업기술센터"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"], ["ROLE_OMISSION", "퀀텀랩스㈜"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00474", "ch": "url", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "스카이네트웍스㈜"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["TEMPORAL_GAP", "국가산업기술센터"], ["ACHIEVEMENT_OMISSION", "화학신규거래처개척"], ["ROLE_OMISSION", "퀀텀랩스㈜"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00524", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00524", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "회계학과학생회"]]}
+{"rid": "R00524", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "회계학과학생회"]]}
+{"rid": "R00524", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "회계학과학생회"]]}
+{"rid": "R00524", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "회계학과학생회"]]}
+{"rid": "R00524", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "학생자치회계학과학생회"]]}
+{"rid": "R00524", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00524", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "회계학과학생회"]]}
+{"rid": "R00524", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "회계학과학생회"]]}
+{"rid": "R00465", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00465", "ch": "chat", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "동계인턴십"]]}
+{"rid": "R00465", "ch": "chat", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00465", "ch": "file", "meth": "rules", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "동계인턴십"], ["THESIS_OMISSION", "동림대학교"]]}
+{"rid": "R00465", "ch": "file", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "동계인턴십"], ["THESIS_OMISSION", "동림대학교"]]}
+{"rid": "R00465", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "졸업작품자동화설비제작"], ["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "동계인턴십"], ["THESIS_OMISSION", "동림대학교"]]}
+{"rid": "R00465", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00465", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "동계인턴십"]]}
+{"rid": "R00465", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "동계인턴십"], ["ACHIEVEMENT_OMISSION", "졸업작품자동화설비제작"]]}
+{"rid": "R00135", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00135", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00135", "ch": "chat", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "메타플랫폼"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["ROLE_OMISSION", "메타플랫폼"], ["ACHIEVEMENT_OMISSION", "핀테크온보딩개선프로젝트"], ["THESIS_OMISSION", "남강대학교대학원"], ["ACHIEVEMENT_OMISSION", "사내업무프로세스자동화"], ["ROLE_OMISSION", "포레파트너스"]]}
+{"rid": "R00135", "ch": "file", "meth": "rules", "pred": [["TEMPORAL_GAP", "메타플랫폼"], ["ROLE_OMISSION", "메타플랫폼"], ["ACHIEVEMENT_OMISSION", "사내업무프로세스자동화"], ["ACHIEVEMENT_OMISSION", "핀테크온보딩개선프로젝트"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["ROLE_OMISSION", "포레파트너스"]]}
+{"rid": "R00135", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00135", "ch": "file", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "메타플랫폼"], ["ROLE_OMISSION", "메타플랫폼"], ["ACHIEVEMENT_OMISSION", "사내업무프로세스자동화"], ["ACHIEVEMENT_OMISSION", "핀테크온보딩개선프로젝트"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["ROLE_OMISSION", "포레파트너스"]]}
+{"rid": "R00135", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00135", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00135", "ch": "url", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "메타플랫폼"], ["ROLE_OMISSION", "메타플랫폼"], ["ACHIEVEMENT_OMISSION", "사내업무프로세스자동화"], ["ACHIEVEMENT_OMISSION", "핀테크온보딩개선프로젝트"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["ROLE_OMISSION", "포레파트너스"]]}
+{"rid": "R00586", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00586", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00586", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "가전신규상품소싱"], ["TEMPORAL_GAP", "그리드커머스주식회사"], ["ROLE_OMISSION", "그리드커머스주식회사"], ["TEMPORAL_GAP", "넥스소프트주식회사"], ["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["ACHIEVEMENT_OMISSION", "물류센터운영효율화"], ["TEMPORAL_GAP", "포레시스템즈"], ["ROLE_OMISSION", "산업기술산업진흥공단"], ["ROLE_OMISSION", "다온커머스"], ["ACHIEVEMENT_OMISSION", "구매단가협상"], ["ACHIEVEMENT_OMISSION", "이커머스신규상품소싱"], ["ROLE_OMISSION", "인디고웍스㈜"]]}
+{"rid": "R00586", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "가전신규상품소싱"], ["TEMPORAL_GAP", "그리드커머스주식회사"], ["ROLE_OMISSION", "그리드커머스주식회사"], ["TEMPORAL_GAP", "넥스소프트주식회사"], ["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["ACHIEVEMENT_OMISSION", "물류센터운영효율화"], ["TEMPORAL_GAP", "포레시스템즈"], ["ROLE_OMISSION", "산업기술산업진흥공단"], ["ROLE_OMISSION", "다온커머스"], ["ACHIEVEMENT_OMISSION", "구매단가협상"], ["ACHIEVEMENT_OMISSION", "이커머스신규상품소싱"], ["ROLE_OMISSION", "인디고웍스㈜"]]}
+{"rid": "R00586", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00586", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "가전신규상품소싱"], ["TEMPORAL_GAP", "그리드커머스주식회사"], ["ROLE_OMISSION", "그리드커머스주식회사"], ["TEMPORAL_GAP", "넥스소프트주식회사"], ["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["ACHIEVEMENT_OMISSION", "물류센터운영효율화"], ["TEMPORAL_GAP", "포레시스템즈"], ["ROLE_OMISSION", "산업기술산업진흥공단"], ["ROLE_OMISSION", "다온커머스"], ["ACHIEVEMENT_OMISSION", "구매단가협상"], ["ACHIEVEMENT_OMISSION", "이커머스신규상품소싱"], ["ROLE_OMISSION", "인디고웍스㈜"]]}
+{"rid": "R00586", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00586", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00586", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "가전신규상품소싱"], ["TEMPORAL_GAP", "그리드커머스주식회사"], ["ROLE_OMISSION", "그리드커머스주식회사"], ["EXTRACURRICULAR_OMISSION", "창업자율동아리"], ["TEMPORAL_GAP", "넥스소프트주식회사"], ["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["ACHIEVEMENT_OMISSION", "물류센터운영효율화"], ["TEMPORAL_GAP", "포레시스템즈"], ["ROLE_OMISSION", "산업기술산업진흥공단"], ["ROLE_OMISSION", "다온커머스"], ["ACHIEVEMENT_OMISSION", "구매단가협상"], ["ACHIEVEMENT_OMISSION", "이커머스신규상품소싱"], ["ROLE_OMISSION", "인디고웍스㈜"]]}
+{"rid": "R00385", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00385", "ch": "chat", "meth": "direct", "pred": [["TEMPORAL_GAP", "링크플랫폼주식회사"]]}
+{"rid": "R00385", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00385", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00385", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00385", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00385", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00385", "ch": "url", "meth": "direct", "pred": [["TEMPORAL_GAP", "링크플랫폼주식회사"]]}
+{"rid": "R00385", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00573", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00573", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "교내창업학회"]]}
+{"rid": "R00573", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00573", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00573", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00573", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00573", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00573", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "교내창업학회"]]}
+{"rid": "R00573", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "교내창업학회"]]}
+{"rid": "R00401", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00401", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00401", "ch": "chat", "meth": "hybrid", "pred": [["THESIS_OMISSION", "서원대학교"]]}
+{"rid": "R00401", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00401", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00401", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00401", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00401", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00401", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00461", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00461", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "체험형인턴"], ["EXTRACURRICULAR_OMISSION", "전국대학생ai경진대회"]]}
+{"rid": "R00461", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "체험형인턴"], ["EXTRACURRICULAR_OMISSION", "전국대학생ai경진대회"]]}
+{"rid": "R00461", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "체험형인턴"], ["EXTRACURRICULAR_OMISSION", "전국대학생ai경진대회"]]}
+{"rid": "R00461", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "공모전전국대학생ai경진대회"], ["EXTRACURRICULAR_OMISSION", "인턴체험형인턴"]]}
+{"rid": "R00461", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "공모전전국대학생ai경진대회"], ["EXTRACURRICULAR_OMISSION", "인턴체험형인턴"]]}
+{"rid": "R00461", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00461", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "체험형인턴"], ["EXTRACURRICULAR_OMISSION", "전국대학생ai경진대회"]]}
+{"rid": "R00461", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "체험형인턴"], ["EXTRACURRICULAR_OMISSION", "전국대학생ai경진대회"]]}
+{"rid": "R00058", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00058", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00058", "ch": "chat", "meth": "hybrid", "pred": [["ROLE_OMISSION", "포레랩스"], ["TEMPORAL_GAP", "㈜밸런파트너스"], ["ACHIEVEMENT_OMISSION", "패션재고관리체계개선"], ["TEMPORAL_GAP", "터닝파트너스주식회사"], ["ROLE_OMISSION", "㈜스카이랩스"], ["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["DATE_INCOMPLETE", "넥스네트웍스"], ["ACHIEVEMENT_OMISSION", "구매단가협상"], ["ACHIEVEMENT_OMISSION", "식품재고관리체계개선"]]}
+{"rid": "R00058", "ch": "file", "meth": "rules", "pred": [["ROLE_OMISSION", "포레랩스"], ["TEMPORAL_GAP", "㈜밸런파트너스"], ["ACHIEVEMENT_OMISSION", "패션재고관리체계개선"], ["TEMPORAL_GAP", "터닝파트너스주식회사"], ["ROLE_OMISSION", "㈜스카이랩스"], ["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["DATE_INCOMPLETE", "넥스네트웍스"], ["ACHIEVEMENT_OMISSION", "구매단가협상"], ["ACHIEVEMENT_OMISSION", "식품재고관리체계개선"]]}
+{"rid": "R00058", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00058", "ch": "file", "meth": "hybrid", "pred": [["ROLE_OMISSION", "포레랩스"], ["TEMPORAL_GAP", "㈜밸런파트너스"], ["ACHIEVEMENT_OMISSION", "패션재고관리체계개선"], ["TEMPORAL_GAP", "터닝파트너스주식회사"], ["ROLE_OMISSION", "㈜스카이랩스"], ["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["DATE_INCOMPLETE", "넥스네트웍스"], ["ACHIEVEMENT_OMISSION", "구매단가협상"], ["ACHIEVEMENT_OMISSION", "식품재고관리체계개선"]]}
+{"rid": "R00058", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00058", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00058", "ch": "url", "meth": "hybrid", "pred": [["ROLE_OMISSION", "포레랩스"], ["TEMPORAL_GAP", "㈜밸런파트너스"], ["ACHIEVEMENT_OMISSION", "패션재고관리체계개선"], ["TEMPORAL_GAP", "터닝파트너스주식회사"], ["ROLE_OMISSION", "㈜스카이랩스"], ["ACHIEVEMENT_OMISSION", "배송리드타임단축"], ["DATE_INCOMPLETE", "넥스네트웍스"], ["ACHIEVEMENT_OMISSION", "구매단가협상"], ["ACHIEVEMENT_OMISSION", "식품재고관리체계개선"]]}
+{"rid": "R00457", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00457", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "헬스케어모바일앱신규개발"], ["EXTRACURRICULAR_OMISSION", "ai아카데미수료"]]}
+{"rid": "R00457", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "헬스케어모바일앱신규개발"], ["EXTRACURRICULAR_OMISSION", "ai아카데미수료"]]}
+{"rid": "R00457", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "헬스케어모바일앱신규개발"], ["EXTRACURRICULAR_OMISSION", "ai아카데미수료"]]}
+{"rid": "R00457", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "헬스케어모바일앱신규개발"], ["EXTRACURRICULAR_OMISSION", "ai아카데미수료"]]}
+{"rid": "R00457", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "헬스케어모바일앱신규개발"]]}
+{"rid": "R00457", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00457", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "헬스케어모바일앱신규개발"], ["EXTRACURRICULAR_OMISSION", "ai아카데미수료"]]}
+{"rid": "R00457", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "헬스케어모바일앱신규개발"]]}
+{"rid": "R00100", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00100", "ch": "chat", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사"]]}
+{"rid": "R00100", "ch": "chat", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["ACHIEVEMENT_OMISSION", "여행브랜드리디자인습작"], ["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사"], ["ACHIEVEMENT_OMISSION", "졸업전시출품작"]]}
+{"rid": "R00100", "ch": "file", "meth": "rules", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사"]]}
+{"rid": "R00100", "ch": "file", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00100", "ch": "file", "meth": "hybrid", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "봉사지역아동센터학습봉사"]]}
+{"rid": "R00100", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00100", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사"]]}
+{"rid": "R00100", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "지역아동센터학습봉사"], ["EXTRACURRICULAR_OMISSION", "단과대학학생회"]]}
+{"rid": "R00076", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00076", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["TEMPORAL_GAP", "코어소프트㈜"], ["EXTRACURRICULAR_OMISSION", "전국대학생봉사경진대회"]]}
+{"rid": "R00076", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["EXTRACURRICULAR_OMISSION", "전국대학생봉사경진대회"]]}
+{"rid": "R00076", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["EXTRACURRICULAR_OMISSION", "전국대학생봉사경진대회"]]}
+{"rid": "R00076", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["EXTRACURRICULAR_OMISSION", "전국대학생봉사경진대회"]]}
+{"rid": "R00076", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["EXTRACURRICULAR_OMISSION", "전국대학생봉사경진대회"]]}
+{"rid": "R00076", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00076", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["EXTRACURRICULAR_OMISSION", "전국대학생봉사경진대회"]]}
+{"rid": "R00076", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["EXTRACURRICULAR_OMISSION", "전국대학생봉사경진대회공모전"]]}
+{"rid": "R00158", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00158", "ch": "chat", "meth": "direct", "pred": [["THESIS_OMISSION", "한빛대학교"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"]]}
+{"rid": "R00158", "ch": "chat", "meth": "hybrid", "pred": [["THESIS_OMISSION", "한빛대학교"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"]]}
+{"rid": "R00158", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"]]}
+{"rid": "R00158", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"]]}
+{"rid": "R00158", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "공모전캡스톤디자인경진대회"]]}
+{"rid": "R00158", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00158", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"]]}
+{"rid": "R00158", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"]]}
+{"rid": "R00230", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00230", "ch": "chat", "meth": "direct", "pred": [["TEMPORAL_GAP", "브릿지웍스㈜"]]}
+{"rid": "R00230", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00230", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00230", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00230", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00230", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00230", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00230", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00050", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00050", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00050", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "제조이탈예측모델개발"], ["ROLE_OMISSION", "㈜코어플랫폼"], ["ACHIEVEMENT_OMISSION", "추천시스템고도화"], ["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"], ["TEMPORAL_GAP", "밸런다이나믹스"], ["ROLE_OMISSION", "퀀텀웍스주식회사"], ["DATE_INCOMPLETE", "넥스다이나믹스㈜"], ["TEMPORAL_GAP", "세움커머스주식회사"], ["ROLE_OMISSION", "㈜실린소프트"], ["ACHIEVEMENT_OMISSION", "금융대시보드구축"]]}
+{"rid": "R00050", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "제조이탈예측모델개발"], ["ROLE_OMISSION", "㈜코어플랫폼"], ["ACHIEVEMENT_OMISSION", "추천시스템고도화"], ["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"], ["TEMPORAL_GAP", "밸런다이나믹스"], ["ROLE_OMISSION", "퀀텀웍스주식회사"], ["DATE_INCOMPLETE", "넥스다이나믹스㈜"], ["TEMPORAL_GAP", "세움커머스주식회사"], ["ROLE_OMISSION", "㈜실린소프트"], ["ACHIEVEMENT_OMISSION", "금융대시보드구축"]]}
+{"rid": "R00050", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00050", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "제조이탈예측모델개발"], ["ROLE_OMISSION", "㈜코어플랫폼"], ["ACHIEVEMENT_OMISSION", "추천시스템고도화"], ["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"], ["TEMPORAL_GAP", "밸런다이나믹스"], ["ROLE_OMISSION", "퀀텀웍스주식회사"], ["DATE_INCOMPLETE", "넥스다이나믹스㈜"], ["TEMPORAL_GAP", "세움커머스주식회사"], ["ROLE_OMISSION", "㈜실린소프트"], ["ACHIEVEMENT_OMISSION", "금융대시보드구축"]]}
+{"rid": "R00050", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00050", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00050", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "제조이탈예측모델개발"], ["ROLE_OMISSION", "㈜코어플랫폼"], ["ACHIEVEMENT_OMISSION", "추천시스템고도화"], ["ACHIEVEMENT_OMISSION", "사내데이터웨어하우스이관"], ["TEMPORAL_GAP", "밸런다이나믹스"], ["ROLE_OMISSION", "퀀텀웍스주식회사"], ["DATE_INCOMPLETE", "넥스다이나믹스㈜"], ["TEMPORAL_GAP", "세움커머스주식회사"], ["ROLE_OMISSION", "㈜실린소프트"], ["ACHIEVEMENT_OMISSION", "금융대시보드구축"]]}
+{"rid": "R00220", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00220", "ch": "chat", "meth": "direct", "pred": [["TEMPORAL_GAP", "넥스솔루션"]]}
+{"rid": "R00220", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00220", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00220", "ch": "file", "meth": "direct", "pred": [["TEMPORAL_GAP", "넥스솔루션"], ["EXTRACURRICULAR_OMISSION", "건강회복"]]}
+{"rid": "R00220", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00220", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00220", "ch": "url", "meth": "direct", "pred": [["TEMPORAL_GAP", "넥스솔루션"], ["EXTRACURRICULAR_OMISSION", "건강회복"]]}
+{"rid": "R00220", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00338", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00338", "ch": "chat", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "마케팅소모임"]]}
+{"rid": "R00338", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00338", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00338", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "건강회복"]]}
+{"rid": "R00338", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00338", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00338", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "마케팅소모임"]]}
+{"rid": "R00338", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00294", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00294", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00294", "ch": "chat", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "브릿지인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"], ["TEMPORAL_GAP", "브릿지인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00294", "ch": "file", "meth": "rules", "pred": [["DATE_INCOMPLETE", "브릿지인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"], ["TEMPORAL_GAP", "브릿지인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00294", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00294", "ch": "file", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "브릿지인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"], ["TEMPORAL_GAP", "브릿지인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00294", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00294", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00294", "ch": "url", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "브릿지인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "제조대리점채널확대"], ["TEMPORAL_GAP", "브릿지인더스트리주식회사"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00316", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00316", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00316", "ch": "chat", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "㈜아토소프트"], ["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["ACHIEVEMENT_OMISSION", "패션상세페이지제작"]]}
+{"rid": "R00316", "ch": "file", "meth": "rules", "pred": [["DATE_INCOMPLETE", "㈜아토소프트"], ["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["ACHIEVEMENT_OMISSION", "패션상세페이지제작"]]}
+{"rid": "R00316", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00316", "ch": "file", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "㈜아토소프트"], ["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["ACHIEVEMENT_OMISSION", "패션상세페이지제작"]]}
+{"rid": "R00316", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00316", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00316", "ch": "url", "meth": "hybrid", "pred": [["DATE_INCOMPLETE", "㈜아토소프트"], ["ACHIEVEMENT_OMISSION", "디자인시스템컴포넌트정비"], ["ACHIEVEMENT_OMISSION", "패션상세페이지제작"]]}
+{"rid": "R00541", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00541", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00541", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "개인포트폴리오웹서비스개발"]]}
+{"rid": "R00541", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00541", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "개인프로젝트및포트폴리오제작"]]}
+{"rid": "R00541", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00541", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00541", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00541", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00337", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00337", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00337", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "핀테크모바일앱신규개발"], ["EXTRACURRICULAR_OMISSION", "단과대학학생회"]]}
+{"rid": "R00337", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "핀테크모바일앱신규개발"], ["EXTRACURRICULAR_OMISSION", "단과대학학생회"]]}
+{"rid": "R00337", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "단과대학학생회"]]}
+{"rid": "R00337", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "학생자치단과대학학생회"], ["ACHIEVEMENT_OMISSION", "핀테크모바일앱신규개발"]]}
+{"rid": "R00337", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00337", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "교환학생in중국"], ["ACHIEVEMENT_OMISSION", "핀테크모바일앱신규개발"], ["EXTRACURRICULAR_OMISSION", "단과대학학생회"]]}
+{"rid": "R00337", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "핀테크모바일앱신규개발"], ["EXTRACURRICULAR_OMISSION", "단과대학학생회"]]}
+{"rid": "R00102", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00102", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00102", "ch": "chat", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "방과후프로그래밍자격과정"], ["EXTRACURRICULAR_OMISSION", "지역프로그래밍대회"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00102", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "방과후프로그래밍자격과정"], ["EXTRACURRICULAR_OMISSION", "지역프로그래밍대회"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00102", "ch": "file", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "대회지역프로그래밍대회"], ["EXTRACURRICULAR_OMISSION", "자격취득방과후프로그래밍자격과정"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00102", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "방과후프로그래밍자격과정"], ["EXTRACURRICULAR_OMISSION", "지역프로그래밍대회"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00102", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00102", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "방과후프로그래밍자격과정"], ["EXTRACURRICULAR_OMISSION", "지역프로그래밍대회"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00102", "ch": "url", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "방과후프로그래밍자격과정"], ["EXTRACURRICULAR_OMISSION", "지역프로그래밍대회"], ["ACHIEVEMENT_OMISSION", "영업프로세스표준화"]]}
+{"rid": "R00160", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00160", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00160", "ch": "chat", "meth": "hybrid", "pred": []}
+{"rid": "R00160", "ch": "file", "meth": "rules", "pred": []}
+{"rid": "R00160", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00160", "ch": "file", "meth": "hybrid", "pred": []}
+{"rid": "R00160", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00160", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00160", "ch": "url", "meth": "hybrid", "pred": []}
+{"rid": "R00516", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00516", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00516", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "it신입온보딩교육설계"], ["ROLE_OMISSION", "그리드커머스㈜"], ["TEMPORAL_GAP", "온새솔루션"], ["ROLE_OMISSION", "포레인더스트리㈜"], ["ACHIEVEMENT_OMISSION", "제조신입온보딩교육설계"], ["DATE_INCOMPLETE", "코어플랫폼"], ["TEMPORAL_GAP", "㈜인디고웍스"], ["ACHIEVEMENT_OMISSION", "lms도입및운영"], ["DATE_INCOMPLETE", "㈜인디고네트웍스"], ["TEMPORAL_GAP", "㈜인디고네트웍스"], ["ACHIEVEMENT_OMISSION", "제조직무교육과정개발"]]}
+{"rid": "R00516", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "it신입온보딩교육설계"], ["ROLE_OMISSION", "그리드커머스㈜"], ["TEMPORAL_GAP", "온새솔루션"], ["ROLE_OMISSION", "포레인더스트리㈜"], ["ACHIEVEMENT_OMISSION", "제조신입온보딩교육설계"], ["DATE_INCOMPLETE", "코어플랫폼"], ["TEMPORAL_GAP", "㈜인디고웍스"], ["ACHIEVEMENT_OMISSION", "lms도입및운영"], ["DATE_INCOMPLETE", "㈜인디고네트웍스"], ["TEMPORAL_GAP", "㈜인디고네트웍스"], ["ACHIEVEMENT_OMISSION", "제조직무교육과정개발"]]}
+{"rid": "R00516", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00516", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "it신입온보딩교육설계"], ["ROLE_OMISSION", "그리드커머스㈜"], ["TEMPORAL_GAP", "온새솔루션"], ["ROLE_OMISSION", "포레인더스트리㈜"], ["ACHIEVEMENT_OMISSION", "제조신입온보딩교육설계"], ["DATE_INCOMPLETE", "코어플랫폼"], ["TEMPORAL_GAP", "㈜인디고웍스"], ["ACHIEVEMENT_OMISSION", "lms도입및운영"], ["DATE_INCOMPLETE", "㈜인디고네트웍스"], ["TEMPORAL_GAP", "㈜인디고네트웍스"], ["ACHIEVEMENT_OMISSION", "제조직무교육과정개발"]]}
+{"rid": "R00516", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00516", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00516", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "it신입온보딩교육설계"], ["ROLE_OMISSION", "그리드커머스㈜"], ["TEMPORAL_GAP", "온새솔루션"], ["ROLE_OMISSION", "포레인더스트리㈜"], ["ACHIEVEMENT_OMISSION", "제조신입온보딩교육설계"], ["DATE_INCOMPLETE", "코어플랫폼"], ["TEMPORAL_GAP", "㈜인디고웍스"], ["ACHIEVEMENT_OMISSION", "lms도입및운영"], ["DATE_INCOMPLETE", "㈜인디고네트웍스"], ["TEMPORAL_GAP", "㈜인디고네트웍스"], ["ACHIEVEMENT_OMISSION", "제조직무교육과정개발"]]}
+{"rid": "R00075", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00075", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00075", "ch": "chat", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "포레웍스주식회사"], ["EXTRACURRICULAR_OMISSION", "국비지원ai부트캠프"], ["ACHIEVEMENT_OMISSION", "교육신규서비스런칭기획"], ["TEMPORAL_GAP", "링크웍스주식회사"], ["DATE_INCOMPLETE", "링크웍스주식회사"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "브릿지소프트㈜"], ["TEMPORAL_GAP", "세움랩스㈜"], ["ACHIEVEMENT_OMISSION", "사내업무프로세스자동화"], ["ROLE_OMISSION", "세움랩스㈜"], ["ROLE_OMISSION", "㈜퀀텀웍스"], ["THESIS_OMISSION", "소로대학교"]]}
+{"rid": "R00075", "ch": "file", "meth": "rules", "pred": [["TEMPORAL_GAP", "포레웍스주식회사"], ["EXTRACURRICULAR_OMISSION", "국비지원ai부트캠프"], ["ACHIEVEMENT_OMISSION", "교육신규서비스런칭기획"], ["TEMPORAL_GAP", "링크웍스주식회사"], ["DATE_INCOMPLETE", "링크웍스주식회사"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "브릿지소프트㈜"], ["TEMPORAL_GAP", "세움랩스㈜"], ["ACHIEVEMENT_OMISSION", "사내업무프로세스자동화"], ["ROLE_OMISSION", "세움랩스㈜"], ["ROLE_OMISSION", "㈜퀀텀웍스"], ["THESIS_OMISSION", "소로대학교"]]}
+{"rid": "R00075", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00075", "ch": "file", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "포레웍스주식회사"], ["ACHIEVEMENT_OMISSION", "교육신규서비스런칭기획"], ["TEMPORAL_GAP", "링크웍스주식회사"], ["DATE_INCOMPLETE", "링크웍스주식회사"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "브릿지소프트㈜"], ["TEMPORAL_GAP", "세움랩스㈜"], ["ACHIEVEMENT_OMISSION", "사내업무프로세스자동화"], ["ROLE_OMISSION", "세움랩스㈜"], ["ROLE_OMISSION", "㈜퀀텀웍스"], ["THESIS_OMISSION", "소로대학교"]]}
+{"rid": "R00075", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00075", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00075", "ch": "url", "meth": "hybrid", "pred": [["TEMPORAL_GAP", "포레웍스주식회사"], ["EXTRACURRICULAR_OMISSION", "국비지원ai부트캠프"], ["ACHIEVEMENT_OMISSION", "교육신규서비스런칭기획"], ["TEMPORAL_GAP", "링크웍스주식회사"], ["DATE_INCOMPLETE", "링크웍스주식회사"], ["ACHIEVEMENT_OMISSION", "결제프로세스개편"], ["TEMPORAL_GAP", "브릿지소프트㈜"], ["TEMPORAL_GAP", "세움랩스㈜"], ["ACHIEVEMENT_OMISSION", "사내업무프로세스자동화"], ["ROLE_OMISSION", "세움랩스㈜"], ["ROLE_OMISSION", "㈜퀀텀웍스"]]}
+{"rid": "R00378", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00378", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "식품해외바이어발굴"], ["THESIS_OMISSION", "남강대학교"], ["ROLE_OMISSION", "넥스랩스주식회사"], ["ACHIEVEMENT_OMISSION", "의료기기해외바이어발굴"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"]]}
+{"rid": "R00378", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "식품해외바이어발굴"], ["THESIS_OMISSION", "남강대학교"], ["ROLE_OMISSION", "넥스랩스주식회사"], ["ACHIEVEMENT_OMISSION", "의료기기해외바이어발굴"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"]]}
+{"rid": "R00378", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "식품해외바이어발굴"], ["THESIS_OMISSION", "남강대학교"], ["ROLE_OMISSION", "넥스랩스주식회사"], ["ACHIEVEMENT_OMISSION", "의료기기해외바이어발굴"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"]]}
+{"rid": "R00378", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "식품해외바이어발굴"], ["THESIS_OMISSION", "남강대학교"], ["ROLE_OMISSION", "넥스랩스주식회사"], ["ACHIEVEMENT_OMISSION", "의료기기해외바이어발굴"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"]]}
+{"rid": "R00378", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "식품해외바이어발굴"], ["THESIS_OMISSION", "남강대학교"], ["ROLE_OMISSION", "넥스랩스주식회사"], ["ACHIEVEMENT_OMISSION", "의료기기해외바이어발굴"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"]]}
+{"rid": "R00378", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00378", "ch": "url", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "의료기기해외바이어발굴"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["ROLE_OMISSION", "넥스랩스주식회사"]]}
+{"rid": "R00378", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "의료기기해외바이어발굴"], ["ACHIEVEMENT_OMISSION", "식품해외바이어발굴"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"], ["ROLE_OMISSION", "넥스랩스주식회사"]]}
+{"rid": "R00071", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00071", "ch": "chat", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "챗봇도입프로젝트"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["TEMPORAL_GAP", "링크네트웍스"]]}
+{"rid": "R00071", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "챗봇도입프로젝트"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["TEMPORAL_GAP", "링크네트웍스"]]}
+{"rid": "R00071", "ch": "file", "meth": "rules", "pred": [["ACHIEVEMENT_OMISSION", "챗봇도입프로젝트"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["TEMPORAL_GAP", "링크네트웍스"]]}
+{"rid": "R00071", "ch": "file", "meth": "direct", "pred": [["ACHIEVEMENT_OMISSION", "챗봇도입프로젝트"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["TEMPORAL_GAP", "링크네트웍스"]]}
+{"rid": "R00071", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "챗봇도입프로젝트"], ["TEMPORAL_GAP", "링크네트웍스"], ["EXTRACURRICULAR_OMISSION", "서포터즈정부기관대학생기자단"]]}
+{"rid": "R00071", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00071", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단"], ["TEMPORAL_GAP", "링크네트웍스"]]}
+{"rid": "R00071", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "챗봇도입프로젝트"], ["TEMPORAL_GAP", "링크네트웍스"], ["EXTRACURRICULAR_OMISSION", "정부기관대학생기자단서포터즈"]]}
+{"rid": "R00487", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00487", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00487", "ch": "chat", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "모의채용프로세스설계과제"], ["EXTRACURRICULAR_OMISSION", "마케팅소모임"], ["EXTRACURRICULAR_OMISSION", "전기아이디어공모전"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00487", "ch": "file", "meth": "rules", "pred": [["EXTRACURRICULAR_OMISSION", "전기아이디어공모전"], ["EXTRACURRICULAR_OMISSION", "마케팅소모임"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00487", "ch": "file", "meth": "direct", "pred": [["POST_GRAD_GAP", "edu"], ["EXTRACURRICULAR_OMISSION", "마케팅소모임"], ["EXTRACURRICULAR_OMISSION", "전기아이디어공모전"]]}
+{"rid": "R00487", "ch": "file", "meth": "hybrid", "pred": [["EXTRACURRICULAR_OMISSION", "전기아이디어공모전"], ["EXTRACURRICULAR_OMISSION", "마케팅소모임"], ["POST_GRAD_GAP", "edu"]]}
+{"rid": "R00487", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00487", "ch": "url", "meth": "direct", "pred": [["EXTRACURRICULAR_OMISSION", "전기아이디어공모전"], ["EXTRACURRICULAR_OMISSION", "워킹홀리데이in뉴질랜드"], ["EXTRACURRICULAR_OMISSION", "마케팅소모임"]]}
+{"rid": "R00487", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "모의채용프로세스설계과제"], ["EXTRACURRICULAR_OMISSION", "마케팅소모임"], ["EXTRACURRICULAR_OMISSION", "전기아이디어공모전"]]}
+{"rid": "R00342", "ch": "chat", "meth": "rules", "pred": []}
+{"rid": "R00342", "ch": "chat", "meth": "direct", "pred": []}
+{"rid": "R00342", "ch": "chat", "meth": "hybrid", "pred": [["THESIS_OMISSION", "서원대학교"], ["ACHIEVEMENT_OMISSION", "식품해외바이어발굴"], ["TEMPORAL_GAP", "스카이네트웍스주식회사"], ["ACHIEVEMENT_OMISSION", "화학대리점채널확대"], ["ACHIEVEMENT_OMISSION", "화학해외바이어발굴"], ["ROLE_OMISSION", "스카이네트웍스주식회사"], ["TEMPORAL_GAP", "물류산업진흥공단"], ["TEMPORAL_GAP", "㈜코어커머스"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["DATE_INCOMPLETE", "㈜코어커머스"], ["ACHIEVEMENT_OMISSION", "식품신규거래처개척"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"]]}
+{"rid": "R00342", "ch": "file", "meth": "rules", "pred": [["THESIS_OMISSION", "서원대학교"], ["ACHIEVEMENT_OMISSION", "식품해외바이어발굴"], ["TEMPORAL_GAP", "스카이네트웍스주식회사"], ["ACHIEVEMENT_OMISSION", "화학대리점채널확대"], ["ACHIEVEMENT_OMISSION", "화학해외바이어발굴"], ["ROLE_OMISSION", "스카이네트웍스주식회사"], ["TEMPORAL_GAP", "물류산업진흥공단"], ["TEMPORAL_GAP", "㈜코어커머스"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["DATE_INCOMPLETE", "㈜코어커머스"], ["ACHIEVEMENT_OMISSION", "식품신규거래처개척"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"]]}
+{"rid": "R00342", "ch": "file", "meth": "direct", "pred": []}
+{"rid": "R00342", "ch": "file", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "식품해외바이어발굴"], ["THESIS_OMISSION", "서원대학교경영학과대학원"], ["TEMPORAL_GAP", "스카이네트웍스주식회사"], ["ACHIEVEMENT_OMISSION", "화학대리점채널확대"], ["ACHIEVEMENT_OMISSION", "화학해외바이어발굴"], ["ROLE_OMISSION", "스카이네트웍스주식회사"], ["TEMPORAL_GAP", "물류산업진흥공단"], ["TEMPORAL_GAP", "㈜코어커머스"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["DATE_INCOMPLETE", "㈜코어커머스"], ["ACHIEVEMENT_OMISSION", "식품신규거래처개척"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"]]}
+{"rid": "R00342", "ch": "url", "meth": "rules", "pred": []}
+{"rid": "R00342", "ch": "url", "meth": "direct", "pred": []}
+{"rid": "R00342", "ch": "url", "meth": "hybrid", "pred": [["ACHIEVEMENT_OMISSION", "식품해외바이어발굴"], ["TEMPORAL_GAP", "스카이네트웍스주식회사"], ["ACHIEVEMENT_OMISSION", "화학대리점채널확대"], ["ACHIEVEMENT_OMISSION", "화학해외바이어발굴"], ["ROLE_OMISSION", "스카이네트웍스주식회사"], ["TEMPORAL_GAP", "물류산업진흥공단"], ["TEMPORAL_GAP", "㈜코어커머스"], ["EXTRACURRICULAR_OMISSION", "캡스톤디자인경진대회"], ["DATE_INCOMPLETE", "㈜코어커머스"], ["ACHIEVEMENT_OMISSION", "식품신규거래처개척"], ["ACHIEVEMENT_OMISSION", "주요고객사계약갱신"]]}

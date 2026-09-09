@@ -706,7 +706,10 @@ def render_file(r):
                 f"{e['school']} {e['major']} ({tag}, 학점 {e['gpa']})")
         L.append(line)
         if e.get("thesis"):
-            L.append(f"    연구 주제: {e.get('research_topic') or '(미기재)'}")
+            # 결측은 '표시'가 아니라 '부재'로 나타나야 한다.
+            # (미기재) 같은 표지를 남기면 탐지 과제가 무의미해진다.
+            if e.get("research_topic"):
+                L.append(f"    연구 주제: {e['research_topic']}")
     L += ["", "[경력]"]
     if not r["careers"]:
         L.append("  해당 없음 (신입)")
@@ -779,6 +782,8 @@ def render_chat(rng, r):
                 frag += " " + ", ".join(metric_phrase(m) for m in p["metrics"]) + " 했습니다."
             else:
                 frag += " 그거 참여했습니다."
+            if p["result"]:
+                frag += f" 최종적으로 {p['result']}됐고요."
             outs.append(frag)
     for a in r["activities"]:
         outs.append(f"{a['period']['start']}~{a['period']['end']}에는 {a['title']} 했어요.")
@@ -820,15 +825,23 @@ def render_url(r):
                 bits.append(p["role"])
             if p["metrics"]:
                 bits.append(" / ".join(metric_phrase(m) for m in p["metrics"]))
+            if p["result"]:
+                bits.append(p["result"])
             if bits:
                 line += " — " + " · ".join(bits)
             L.append(line)
     if r.get("personal_projects"):
         L += ["", "## Projects"]
         for p in r["personal_projects"]:
-            bits = [x for x in (p.get("role"),
-                                ", ".join(metric_phrase(m) for m in p.get("metrics", [])) or None) if x]
+            bits = [x for x in (
+                p.get("role"),
+                ", ".join(metric_phrase(m) for m in p.get("metrics", [])) or None,
+                p.get("result")) if x]
             L.append(f"* **{p['name']}**" + (" — " + " · ".join(bits) if bits else ""))
+    if r["activities"]:
+        L += ["", "## Other"]
+        for a in r["activities"]:
+            L.append(f"* {a['title']} ({a['period']['start']}–{a['period']['end']})")
     if r.get("extracurricular"):
         L += ["", "## Activities"]
         for a in r["extracurricular"]:

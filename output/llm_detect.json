@@ -1,149 +1,404 @@
 {
   "model": "claude-sonnet-5",
-  "n": 60,
+  "n": 120,
+  "methods": [
+    "rules",
+    "direct",
+    "hybrid"
+  ],
   "summary": {
-    "chat": {
-      "tp": 62,
-      "fp": 16,
-      "fn": 99,
-      "P": 0.7948717948717948,
-      "R": 0.38509316770186336,
-      "F1": 0.5188284518828452,
-      "clean_fp": 8,
-      "errors": 0
+    "rules/chat": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 430,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "clean_fp": 0,
+      "errors": 0,
+      "per_type": {
+        "TEMPORAL_GAP": [
+          0,
+          0,
+          67
+        ],
+        "POST_GRAD_GAP": [
+          0,
+          0,
+          18
+        ],
+        "ROLE_OMISSION": [
+          0,
+          0,
+          67
+        ],
+        "ACHIEVEMENT_OMISSION": [
+          0,
+          0,
+          181
+        ],
+        "THESIS_OMISSION": [
+          0,
+          0,
+          12
+        ],
+        "EXTRACURRICULAR_OMISSION": [
+          0,
+          0,
+          59
+        ],
+        "DATE_INCOMPLETE": [
+          0,
+          0,
+          26
+        ]
+      }
     },
-    "file": {
-      "tp": 66,
-      "fp": 18,
-      "fn": 95,
-      "P": 0.7857142857142857,
-      "R": 0.40993788819875776,
-      "F1": 0.5387755102040817,
-      "clean_fp": 7,
-      "errors": 0
+    "rules/file": {
+      "tp": 429,
+      "fp": 14,
+      "fn": 1,
+      "P": 0.9683972911963883,
+      "R": 0.9976744186046511,
+      "F1": 0.9828178694158075,
+      "clean_fp": 0,
+      "errors": 0,
+      "per_type": {
+        "TEMPORAL_GAP": [
+          66,
+          14,
+          1
+        ],
+        "POST_GRAD_GAP": [
+          18,
+          0,
+          0
+        ],
+        "ROLE_OMISSION": [
+          67,
+          0,
+          0
+        ],
+        "ACHIEVEMENT_OMISSION": [
+          181,
+          0,
+          0
+        ],
+        "THESIS_OMISSION": [
+          12,
+          0,
+          0
+        ],
+        "EXTRACURRICULAR_OMISSION": [
+          59,
+          0,
+          0
+        ],
+        "DATE_INCOMPLETE": [
+          26,
+          0,
+          0
+        ]
+      }
     },
-    "url": {
-      "tp": 63,
-      "fp": 36,
-      "fn": 83,
-      "P": 0.6363636363636364,
-      "R": 0.4315068493150685,
-      "F1": 0.5142857142857142,
-      "clean_fp": 22,
-      "errors": 0
-    }
-  },
-  "per_type": {
-    "chat": {
-      "TEMPORAL_GAP": [
-        5,
-        5,
-        14
-      ],
-      "POST_GRAD_GAP": [
-        9,
-        0,
-        2
-      ],
-      "ROLE_OMISSION": [
-        6,
-        0,
-        12
-      ],
-      "ACHIEVEMENT_OMISSION": [
-        18,
-        3,
-        49
-      ],
-      "THESIS_OMISSION": [
-        3,
-        4,
-        1
-      ],
-      "EXTRACURRICULAR_OMISSION": [
-        19,
-        4,
-        17
-      ],
-      "DATE_INCOMPLETE": [
-        2,
-        0,
-        4
-      ]
+    "rules/url": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 400,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "clean_fp": 0,
+      "errors": 0,
+      "per_type": {
+        "TEMPORAL_GAP": [
+          0,
+          0,
+          67
+        ],
+        "ROLE_OMISSION": [
+          0,
+          0,
+          67
+        ],
+        "ACHIEVEMENT_OMISSION": [
+          0,
+          0,
+          181
+        ],
+        "EXTRACURRICULAR_OMISSION": [
+          0,
+          0,
+          59
+        ],
+        "DATE_INCOMPLETE": [
+          0,
+          0,
+          26
+        ]
+      }
     },
-    "file": {
-      "TEMPORAL_GAP": [
-        8,
-        0,
-        11
-      ],
-      "POST_GRAD_GAP": [
-        9,
-        0,
-        2
-      ],
-      "ROLE_OMISSION": [
-        5,
-        0,
-        13
-      ],
-      "ACHIEVEMENT_OMISSION": [
-        22,
-        1,
-        45
-      ],
-      "THESIS_OMISSION": [
-        3,
-        1,
-        1
-      ],
-      "EXTRACURRICULAR_OMISSION": [
-        17,
-        16,
-        19
-      ],
-      "DATE_INCOMPLETE": [
-        2,
-        0,
-        4
-      ]
+    "direct/chat": {
+      "tp": 84,
+      "fp": 27,
+      "fn": 346,
+      "P": 0.7567567567567568,
+      "R": 0.19534883720930232,
+      "F1": 0.3105360443622921,
+      "clean_fp": 12,
+      "errors": 0,
+      "per_type": {
+        "TEMPORAL_GAP": [
+          4,
+          8,
+          63
+        ],
+        "POST_GRAD_GAP": [
+          14,
+          0,
+          4
+        ],
+        "ROLE_OMISSION": [
+          4,
+          0,
+          63
+        ],
+        "ACHIEVEMENT_OMISSION": [
+          30,
+          2,
+          151
+        ],
+        "THESIS_OMISSION": [
+          2,
+          7,
+          10
+        ],
+        "EXTRACURRICULAR_OMISSION": [
+          29,
+          10,
+          30
+        ],
+        "DATE_INCOMPLETE": [
+          1,
+          0,
+          25
+        ]
+      }
     },
-    "url": {
-      "TEMPORAL_GAP": [
-        7,
-        20,
-        12
-      ],
-      "POST_GRAD_GAP": [
-        0,
-        0,
-        0
-      ],
-      "ROLE_OMISSION": [
-        5,
-        0,
-        13
-      ],
-      "ACHIEVEMENT_OMISSION": [
-        24,
-        9,
-        43
-      ],
-      "THESIS_OMISSION": [
-        0,
-        0,
-        0
-      ],
-      "EXTRACURRICULAR_OMISSION": [
-        25,
-        7,
-        11
-      ],
-      "DATE_INCOMPLETE": [
-        2,
-        0,
-        4
-      ]
+    "direct/file": {
+      "tp": 105,
+      "fp": 30,
+      "fn": 325,
+      "P": 0.7777777777777778,
+      "R": 0.2441860465116279,
+      "F1": 0.37168141592920356,
+      "clean_fp": 15,
+      "errors": 0,
+      "per_type": {
+        "TEMPORAL_GAP": [
+          5,
+          1,
+          62
+        ],
+        "POST_GRAD_GAP": [
+          18,
+          0,
+          0
+        ],
+        "ROLE_OMISSION": [
+          6,
+          0,
+          61
+        ],
+        "ACHIEVEMENT_OMISSION": [
+          40,
+          2,
+          141
+        ],
+        "THESIS_OMISSION": [
+          3,
+          0,
+          9
+        ],
+        "EXTRACURRICULAR_OMISSION": [
+          32,
+          27,
+          27
+        ],
+        "DATE_INCOMPLETE": [
+          1,
+          0,
+          25
+        ]
+      }
+    },
+    "direct/url": {
+      "tp": 101,
+      "fp": 29,
+      "fn": 299,
+      "P": 0.7769230769230769,
+      "R": 0.2525,
+      "F1": 0.3811320754716981,
+      "clean_fp": 14,
+      "errors": 0,
+      "per_type": {
+        "TEMPORAL_GAP": [
+          11,
+          3,
+          56
+        ],
+        "ROLE_OMISSION": [
+          11,
+          0,
+          56
+        ],
+        "ACHIEVEMENT_OMISSION": [
+          40,
+          3,
+          141
+        ],
+        "EXTRACURRICULAR_OMISSION": [
+          36,
+          23,
+          23
+        ],
+        "DATE_INCOMPLETE": [
+          3,
+          0,
+          23
+        ]
+      }
+    },
+    "hybrid/chat": {
+      "tp": 416,
+      "fp": 64,
+      "fn": 14,
+      "P": 0.8666666666666667,
+      "R": 0.9674418604651163,
+      "F1": 0.9142857142857143,
+      "clean_fp": 10,
+      "errors": 0,
+      "per_type": {
+        "TEMPORAL_GAP": [
+          66,
+          14,
+          1
+        ],
+        "POST_GRAD_GAP": [
+          18,
+          2,
+          0
+        ],
+        "ROLE_OMISSION": [
+          67,
+          0,
+          0
+        ],
+        "ACHIEVEMENT_OMISSION": [
+          179,
+          18,
+          2
+        ],
+        "THESIS_OMISSION": [
+          9,
+          18,
+          3
+        ],
+        "EXTRACURRICULAR_OMISSION": [
+          51,
+          12,
+          8
+        ],
+        "DATE_INCOMPLETE": [
+          26,
+          0,
+          0
+        ]
+      }
+    },
+    "hybrid/file": {
+      "tp": 380,
+      "fp": 66,
+      "fn": 50,
+      "P": 0.852017937219731,
+      "R": 0.8837209302325582,
+      "F1": 0.8675799086757991,
+      "clean_fp": 1,
+      "errors": 0,
+      "per_type": {
+        "TEMPORAL_GAP": [
+          66,
+          14,
+          1
+        ],
+        "POST_GRAD_GAP": [
+          18,
+          0,
+          0
+        ],
+        "ROLE_OMISSION": [
+          65,
+          2,
+          2
+        ],
+        "ACHIEVEMENT_OMISSION": [
+          181,
+          2,
+          0
+        ],
+        "THESIS_OMISSION": [
+          7,
+          6,
+          5
+        ],
+        "EXTRACURRICULAR_OMISSION": [
+          17,
+          42,
+          42
+        ],
+        "DATE_INCOMPLETE": [
+          26,
+          0,
+          0
+        ]
+      }
+    },
+    "hybrid/url": {
+      "tp": 378,
+      "fp": 39,
+      "fn": 22,
+      "P": 0.9064748201438849,
+      "R": 0.945,
+      "F1": 0.9253365973072215,
+      "clean_fp": 5,
+      "errors": 0,
+      "per_type": {
+        "TEMPORAL_GAP": [
+          65,
+          14,
+          2
+        ],
+        "ROLE_OMISSION": [
+          67,
+          0,
+          0
+        ],
+        "ACHIEVEMENT_OMISSION": [
+          181,
+          10,
+          0
+        ],
+        "EXTRACURRICULAR_OMISSION": [
+          39,
+          15,
+          20
+        ],
+        "DATE_INCOMPLETE": [
+          26,
+          0,
+          0
+        ]
+      }
     }
   }
 }
