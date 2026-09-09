@@ -123,22 +123,57 @@ def order_severity(M, rng):
     return sorted(M, key=lambda lb: (PRIORITY[lb["type"]], -n_fields(lb)))
 
 
-def order_oracle(M, rng):
-    """회복 가중치가 큰 질문부터 (탐욕적 상한)."""
+def order_gain(M, rng):
+    """회복 가중치가 큰 질문부터. 가중치와 필드 수 모두 관측 가능하다."""
     return sorted(M, key=lambda lb: -gain(lb))
+
+
+def order_gain_dep(M, rng):
+    """이득 정렬하되, 다른 질문을 잠금 해제하는 질문을 앞으로 당긴다."""
+    return sorted(M, key=lambda lb: (0 if lb["type"] == "DATE_INCOMPLETE" else 1,
+                                     -gain(lb)))
 
 
 POLICIES = {
     "random": order_random,
     "sweep": order_sweep,
     "severity": order_severity,
-    "oracle": order_oracle,
+    "gain": order_gain,
+    "gain+dep": order_gain_dep,
 }
+
+
+# ------------------------------------------------------------------ 탐지
+def label_key(lb):
+    t, L = lb["type"], lb["locator"]
+    if t in ("TEMPORAL_GAP", "POST_GRAD_GAP"):
+        return (t, tuple(L["between"]))
+    if t == "ACHIEVEMENT_OMISSION":
+        return (t, (L["career_id"], L["project_id"]))
+    if t == "THESIS_OMISSION":
+        return (t, (L["degree"], L["school"]))
+    if t == "EXTRACURRICULAR_OMISSION":
+        return (t, (L["activity_id"],))
+    return (t, (L["career_id"],))
+
+
+def visible(rec, answered_dates):
+    """현재 상태에서 탐지기가 찾아내는 결측 라벨. 날짜 질문에 답한 만큼 시야가 열린다."""
+    from detect_eval import detect
+    obs = rec["observed"]
+    if answered_dates:
+        obs = json.loads(json.dumps(obs, ensure_ascii=False))
+        for lb in rec["missingness"]:
+            if lb["type"] == "DATE_INCOMPLETE" and label_key(lb) in answered_dates:
+                for c in obs["careers"]:
+                    if c["career_id"] == lb["locator"]["career_id"]:
+                        c["period"] = dict(lb["gold_answer"])
+    return detect(obs, 3)
 
 
 # ------------------------------------------------------------------ 평가
 def curve(rec, order, budget):
-    """k=0..budget 에서의 완성도 곡선."""
+    """결측 목록을 모두 안다고 가정한 완성도 곡선."""
     W = total_slot_weight(rec)
     missing = sum(gain(lb) for lb in rec["missingness"])
     phi = [(W - missing) / W]
@@ -146,6 +181,28 @@ def curve(rec, order, budget):
     for k in range(1, budget + 1):
         if k <= len(order):
             recovered += gain(order[k - 1])
+        phi.append((W - missing + recovered) / W)
+    return phi
+
+
+def curve_discovery(rec, order_fn, rng, budget):
+    """탐지기가 찾은 것만 물을 수 있는, 현실적인 곡선."""
+    W = total_slot_weight(rec)
+    missing = sum(gain(lb) for lb in rec["missingness"])
+    by_key = {label_key(lb): lb for lb in rec["missingness"]}
+    answered, answered_dates = set(), set()
+    recovered = 0.0
+    phi = [(W - missing) / W]
+    for _ in range(budget):
+        seen = visible(rec, answered_dates)
+        queue = [by_key[k] for k in seen if k in by_key and k not in answered]
+        if queue:
+            pick = order_fn(queue, rng)[0]
+            k = label_key(pick)
+            answered.add(k)
+            if pick["type"] == "DATE_INCOMPLETE":
+                answered_dates.add(k)
+            recovered += gain(pick)
         phi.append((W - missing + recovered) / W)
     return phi
 
@@ -170,6 +227,8 @@ def main():
     ap.add_argument("--budget", type=int, default=10)
     ap.add_argument("--seeds", type=int, default=5)
     ap.add_argument("--fig", default="output/figures/budget_curve.pdf")
+    ap.add_argument("--discovery", action="store_true",
+                    help="탐지기가 찾은 것만 물을 수 있는 현실적 시뮬레이션")
     args = ap.parse_args()
 
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -181,6 +240,9 @@ def main():
         "entry-level": [r for r in records if r["gold"]["entry_type"] == "신입"],
         # 결측이 예산보다 많은 구간 — 정책 차이가 실제로 드러나는 영역
         "high-missingness": [r for r in records if len(r["missingness"]) >= 6],
+        # 연 단위 기간이 있어 질문 간 의존관계가 발생하는 구간
+        "year-only dates": [r for r in records if any(
+            m["type"] == "DATE_INCOMPLETE" for m in r["missingness"])],
     }
 
     results = {}
@@ -190,8 +252,12 @@ def main():
             seeds = args.seeds if pname == "random" else 1
             for s in range(seeds):
                 rng = random.Random(1000 + s)
-                all_curves += [curve(r, fn(r["missingness"], rng), args.budget)
-                               for r in recs]
+                if args.discovery:
+                    all_curves += [curve_discovery(r, fn, rng, args.budget)
+                                   for r in recs]
+                else:
+                    all_curves += [curve(r, fn(r["missingness"], rng), args.budget)
+                                   for r in recs]
             mean, auc, ks = summarize(all_curves, args.budget)
             results[(gname, pname)] = {"mean": mean, "auc": auc, "ks": ks}
         # 전량 질의: 모든 질문을 던졌을 때 (예산 무시)
@@ -204,13 +270,15 @@ def main():
     # ---------------------------------------------------------- 출력
     B = args.budget
     print(f"질문 예산 K={B}, 이력서 {len(records)}건\n")
-    for gname in ("all", "experienced", "entry-level", "high-missingness"):
+    for gname in ("all", "experienced", "entry-level", "high-missingness",
+                  "year-only dates"):
         recs = groups[gname]
         base = sum(curve(r, [], B)[0] for r in recs) / len(recs)
         print(f"[{gname}]  n={len(recs)}  질문 전 완성도 phi(R_0)={base:.3f}")
         print(f"  {'policy':10s} {'AUC_K':>7s} {'k*(0.8)':>8s} {'k*(0.95)':>9s} "
               f"{'phi(1)':>7s} {'phi(2)':>7s} {'phi(3)':>7s} {'phi(5)':>7s}")
-        for pname in ("ask_all", "random", "sweep", "severity", "oracle"):
+        for pname in ("ask_all", "random", "sweep", "severity", "gain",
+                      "gain+dep"):
             r = results[(gname, pname)]
             if r["mean"] is None:
                 print(f"  {pname:10s} {r['auc']:7.3f} {r['ks'][0.8]:8.2f} "
@@ -229,13 +297,15 @@ def main():
 
         fig, axes = plt.subplots(1, 2, figsize=(7.0, 2.7), sharey=True)
         style = {"random": ("--", "#888888"), "sweep": (":", "#555555"),
-                 "severity": ("-", "#1f3864"), "oracle": ("-.", "#b03a2e")}
+                 "severity": ("-", "#1f3864"), "gain": ("-.", "#b03a2e"),
+                 "gain+dep": ("-", "#1e7a4c")}
         label = {"random": "Random", "sweep": "Field-by-field sweep",
-                 "severity": "Severity-ordered", "oracle": "Greedy oracle"}
-        for ax, gname, title in zip(axes, ("experienced", "high-missingness"),
-                                    ("Experienced (all)",
-                                     r"High-missingness ($|M|\geq 6$)")):
-            for pname in ("random", "sweep", "severity", "oracle"):
+                 "severity": "Severity-ordered", "gain": "Gain-ordered",
+                 "gain+dep": "Gain + dependency"}
+        for ax, gname, title in zip(axes, ("high-missingness", "year-only dates"),
+                                    (r"High-missingness ($|M|\geq 6$)",
+                                     "Year-only dates present")):
+            for pname in ("random", "sweep", "severity", "gain", "gain+dep"):
                 ls, col = style[pname]
                 ax.plot(range(B + 1), results[(gname, pname)]["mean"],
                         ls, color=col, linewidth=1.4, label=label[pname])
