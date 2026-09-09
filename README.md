@@ -34,6 +34,9 @@ python3 src/generate.py --n 400 --seed 42 --out output/resumes.jsonl
 # 라벨 정합성 검증 (규칙 기반 탐지기)
 python3 src/detect_eval.py --data output/resumes.jsonl
 
+# 질문 예산 정책 비교 (실험 C)
+python3 src/policy_eval.py --data output/resumes.jsonl --budget 10
+
 # 예시 Word 문서 일괄 생성 (Node.js + docx 필요)
 npm install
 python3 src/build_examples.py --data output/resumes.jsonl
@@ -46,11 +49,13 @@ python3 src/build_examples.py --data output/resumes.jsonl
 | `src/domains.py` | 12개 직군 사전 + 학위·대외활동·해외경험·고졸 트랙 |
 | `src/generate.py` | gold 생성 → 결측 주입 → 3채널 렌더링 |
 | `src/detect_eval.py` | 규칙 기반 결측 탐지기 + 유형별 P/R/F1 |
+| `src/policy_eval.py` | 질문 예산 정책 비교 + 완성도 곡선 |
 | `src/make_doc.js` | 샘플 1건을 3부 구성 Word 문서로 출력 |
 | `src/build_examples.py` | 직군별·프로필별 예시 문서 일괄 생성 |
 | `output/resumes.jsonl` | 생성 결과 (기본 400건) |
 | `output/examples/by-domain/` | 직군별 예시 문서 12건 |
 | `output/examples/by-profile/` | 프로필 유형별 예시 문서 5건 |
+| `output/figures/budget_curve.pdf` | 완성도–질문수 곡선 |
 | `docs/SAMPLES.md` | 텍스트 미리보기 |
 
 ## 지원자 구성
@@ -168,6 +173,26 @@ TEMPORAL_GAP 재현율이 1.0이 아닌 것은 버그가 아니다. 기간이 `2
 기재된 경력을 날짜 보정 규칙으로 채우면 그 안에 있던 공백이 덮여버리기 때문이다.
 **기간 해상도 저하가 공백 탐지 실패로 이어진다**는 관찰은 그대로 논문에 쓸 수 있다.
 
+## 질문 예산 정책 비교
+
+`gold_answer` 를 모의 응답자로 사용해 탐지–질의–파싱–병합 루프 전체를 돌린 결과다.
+완성도는 채워진 근거 슬롯의 중요도 가중 비율이며, 예산이 실제로 구속력을 갖는
+`|M| >= 6` 부분집합(n=137) 기준이다.
+
+| 정책 | AUC(K=10) | k*(0.8) |
+|---|---|---|
+| 전량 질의 | 1.000 | 8.71 |
+| 무작위 | 0.874 | 3.65 |
+| 순차 스윕 | 0.875 | 3.63 |
+| 중요도 정렬 | 0.882 | 3.52 |
+| 탐욕적 오라클 | 0.900 | 2.66 |
+
+전량 질의는 8.71개의 질문을 요구하지만 오라클은 2.66개로 완성도 80%에 도달한다.
+다만 유형 우선순위 기반 중요도 정렬은 무작위 대비 0.008을 얻는 데 그쳤고, 오라클은
+그 두 배인 0.018을 더 얻는다. **유형은 정보 이득의 좋은 대리 지표가 아니다** — 역할·성과·결과가
+모두 빠진 프로젝트(가중치 6)보다 직무명 누락(가중치 3)을 먼저 묻기 때문이다. 기대 이득으로
+점수화하는 정책이 다음 개선 대상이다.
+
 ## 알려진 한계
 
 - 완전 합성 데이터이므로 실제 이력서의 표현 다양성·오타·비정형성을 과소 반영한다.
@@ -177,6 +202,8 @@ TEMPORAL_GAP 재현율이 1.0이 아닌 것은 버그가 아니다. 기간이 `2
   음성 샘플을 15~20% 섞는 작업이 남아 있다.
 - 재직 구간 **내부**의 프로젝트 공백(프리랜서·1인 법인에서 구조적으로 발생)은
   현재 탐지 대상이 아니다.
+- 예산 실험의 모의 응답자는 항상·정확히·완전히 답한다. 실제 지원자의 거부와 부분 응답을
+  반영하지 않으므로 완성 곡선은 상한이다.
 
 ## 요구 사항
 
