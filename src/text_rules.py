@@ -44,13 +44,38 @@ def to_month(v):
 
 
 # ================================================================ 파서
-PERIOD = r"(\d{4}-\d{2}|\d{4}년)\s*~\s*(\d{4}-\d{2}|\d{4}년|현재)"
+# 실제 이력서는 구분자와 날짜 표기가 제각각이다. '~' 대신 '-', '~.' 같은 오타,
+# '2014.02', '2014년 2월' 표기를 모두 받아들인다.
+DATE = r"\d{4}\s*[-./년]\s*\d{1,2}\s*월?|\d{4}\s*년|\d{4}"
+SEP = r"\s*(?:[~\-–—]|부터)\s*\.?\s*"
+PERIOD = rf"({DATE}){SEP}({DATE}|\ud604\uc7ac|\uc7ac\uc9c1\uc911)"
+
+# 회사명과 직무를 가르는 구분자. '/' 외에 '.', '·', '|', '-' 도 흔히 쓰인다.
+SPLIT_RE = re.compile(r"\s*[/|·]\s*|\.\s+|\s+[-–]\s+")
+
+DEGREE_RE = re.compile(r"(전문학사|학사|석사|박사|고졸|수료|졸업)")
+
+
+def norm_date(v):
+    """'2014.02', '2014년 2월', '2014-2' 등을 'YYYY-MM' 으로 맞춘다."""
+    v = str(v).strip()
+    if v in ("현재", "재직중"):
+        return v
+    m = re.match(r"(\d{4})\s*[-./년]\s*(\d{1,2})", v)
+    if m:
+        return f"{m.group(1)}-{int(m.group(2)):02d}"
+    m = re.match(r"(\d{4})", v)
+    return f"{m.group(1)}년" if m else v
 
 
 def parse_document(text):
     """문서 채널(render_file) 템플릿을 레코드로 복원한다."""
-    rec = {"education": [], "careers": [], "personal_projects": [],
+    rec = {"name": None, "education": [], "careers": [], "personal_projects": [],
            "activities": [], "extracurricular": []}
+    first = next((l.strip() for l in text.split("\n") if l.strip()), "")
+    mname = re.match(r"^(\S{2,6})\s*이력서\s*$", first)
+    if mname:
+        rec["name"] = mname.group(1)
     section = None
     cur_career = None
     cur_proj = None
@@ -67,11 +92,26 @@ def parse_document(text):
             continue
 
         if section == "학력":
-            m = re.match(r"^" + PERIOD + r"\s+(.+?)\s+\((.+?),", line.strip())
+            m = re.match(r"^" + PERIOD + r"\s+(.+)$", line.strip())
             if m:
-                cur_edu = {"school": m.group(3).split()[0],
-                           "degree": m.group(4),
-                           "period_start": m.group(1), "period_end": m.group(2),
+                tail = m.group(3).strip()
+                deg = None
+                mp = re.search(r"\((.+?)(?:,|\))", tail)
+                if mp:
+                    deg = DEGREE_RE.search(mp.group(1))
+                    deg = deg.group(1) if deg else mp.group(1)
+                    tail = tail[:mp.start()].strip()
+                else:
+                    md = DEGREE_RE.search(tail)
+                    if md:
+                        deg = md.group(1)
+                        tail = tail[:md.start()].strip()
+                parts = tail.split()
+                cur_edu = {"school": parts[0] if parts else tail,
+                           "major": " ".join(parts[1:]),
+                           "degree": deg,
+                           "period_start": norm_date(m.group(1)),
+                           "period_end": norm_date(m.group(2)),
                            "research_topic": None}
                 rec["education"].append(cur_edu)
             elif cur_edu is not None and "연구 주제" in line:
@@ -80,16 +120,14 @@ def parse_document(text):
         elif section == "경력":
             m = re.match(r"^" + PERIOD + r"\s+(.+)$", line.strip())
             if m and not line.startswith("  "):
-                tail = m.group(3)
-                role = None
-                if "/" in tail:
-                    company, role = tail.split("/", 1)
-                    role = role.strip() or None
-                else:
-                    company = tail
+                tail = m.group(3).strip()
+                pieces = [x for x in SPLIT_RE.split(tail) if x and x.strip()]
+                company = pieces[0].strip()
+                role = pieces[1].strip() if len(pieces) > 1 else None
                 company = re.sub(r"\s*\(.*?\)\s*$", "", company).strip()
                 cur_career = {"company": company, "role": role,
-                              "period_start": m.group(1), "period_end": m.group(2),
+                              "period_start": norm_date(m.group(1)),
+                              "period_end": norm_date(m.group(2)),
                               "projects": []}
                 rec["careers"].append(cur_career)
                 cur_proj = None
@@ -139,8 +177,8 @@ def parse_document(text):
             m = re.match(r"^" + PERIOD + r"\s+(.+)$", line.strip())
             if m:
                 rec["activities"].append({"title": m.group(3).strip(),
-                                          "period_start": m.group(1),
-                                          "period_end": m.group(2)})
+                                          "period_start": norm_date(m.group(1)),
+                                          "period_end": norm_date(m.group(2))})
     return rec
 
 

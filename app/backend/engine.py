@@ -126,7 +126,10 @@ PERIOD_RE = re.compile(r"(\d{4})[-./년]\s*(\d{1,2})")
 
 
 TAIL_RE = re.compile(r"(?:을|를|이|가|은|는)?\s*$")
-END_RE = re.compile(r"(?:이었습니다|였습니다|입니다|이다|했습니다|됐어요|됐습니다|이에요|예요)\s*$")
+END_RE = re.compile(
+    r"(?:이었습니다|였습니다|입니다|이다|했습니다|하였습니다|했어요|하였어요|"
+    r"됐어요|됐습니다|이에요|예요|하였고|했고|했으며|하였으며|하며|이며|였고|"
+    r"진행했어요|진행했습니다|담당하였고|담당했고)\s*$")
 
 
 def strip_tail(x):
@@ -144,9 +147,17 @@ def parse_answer(inst, text):
         return {}
 
     if t == "ROLE_OMISSION":
-        role = text.split(".")[0].split(",")[0].strip()
+        # 쉼표는 열거일 수 있으므로 자르지 않고 문장 단위로만 끊는다
+        role = re.split(r"[.。\n]", text)[0].strip()
         role = re.sub(r"(으)?로\s*(일했|근무|있었).*$", "", role).strip()
-        return {"role": strip_tail(role) or text}
+        role = strip_tail(role)
+        # 연결어미가 반복되면 한 번 더 떼어낸다 ("...담당하였고" 같은 경우)
+        for _ in range(2):
+            new = strip_tail(role)
+            if new == role:
+                break
+            role = new
+        return {"role": role or text.strip()}
 
     if t == "DATE_INCOMPLETE":
         found = PERIOD_RE.findall(text)
@@ -200,8 +211,9 @@ def parse_answer(inst, text):
     if t in ("TEMPORAL_GAP", "POST_GRAD_GAP"):
         title = re.split(r"[.。]", text)[0]
         title = re.sub(r"^(그\s*기간에는?|그때는?)\s*", "", title).strip()
-        title = re.sub(r"\s*했(습니다|어요|고요)$", "", title).strip()
-        return {"activity_title": title or text}
+        title = re.sub(r"\s*(?:을|를)?\s*(?:다녀왔|수강했|참여했|준비했|했)"
+                       r"(?:습니다|어요|고요)?\s*$", "", title).strip()
+        return {"activity_title": strip_tail(title) or text.strip()}
 
     return {}
 
@@ -290,7 +302,7 @@ def build_preview(rec, missing_keys):
         edu.append({
             "period": f"{e['period']['start']} ~ {e['period']['end']}",
             "title": f"{e['school']} {e['major']}",
-            "meta": e.get("degree", ""),
+            "meta": e.get("degree") or "",
             "lines": ([f"연구 주제: {e['research_topic']}"] if e.get("research_topic")
                       else ([{"missing": "연구 주제"}]
                             if ("THESIS_OMISSION", (e.get("degree"), e.get("school"))) in missing_keys

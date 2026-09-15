@@ -97,14 +97,15 @@ def create_session(req: CreateReq):
 
 def to_internal(parsed):
     """text_rules 파서 출력(이름 기반)을 내부 레코드 스키마로 변환한다."""
-    rec = {"profile": {"name": "", "target_job": ""},
+    rec = {"profile": {"name": parsed.get("name") or "", "target_job": ""},
            "education": [], "careers": [], "activities": [],
            "extracurricular": [], "personal_projects": [],
            "skills": [], "certificates": [], "languages": []}
     for i, e in enumerate(parsed.get("education", []), 1):
         rec["education"].append({
             "period": {"start": e.get("period_start"), "end": e.get("period_end")},
-            "school": e.get("school"), "major": "", "degree": e.get("degree"),
+            "school": e.get("school"), "major": e.get("major", ""),
+            "degree": e.get("degree"),
             "thesis": e.get("degree") in ("석사", "박사"),
             "research_topic": e.get("research_topic")})
     for i, c in enumerate(parsed.get("careers", []), 1):
