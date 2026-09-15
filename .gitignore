@@ -5,3 +5,5 @@ node_modules/
 *.jpg
 .DS_Store
 .env
+app/frontend/node_modules/
+app/frontend/dist/

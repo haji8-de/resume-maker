@@ -67,6 +67,18 @@ python3 src/build_examples.py --data output/resumes.jsonl
 | `output/examples/by-profile/` | 프로필 유형별 예시 문서 5건 |
 | `output/figures/budget_curve.pdf` | 완성도–질문수 곡선 |
 | `docs/SAMPLES.md` | 텍스트 미리보기 |
+| `app/` | **실시 앱** — FastAPI + React, 질의·응답 / 미리보기·확정 2화면 |
+
+## 실시 앱
+
+특허 구성요소를 사용자 단말에서 동작하는 형태로 구현한 것. 자세한 내용과 청구항
+대비표는 [`app/README.md`](app/README.md) 참조.
+
+```bash
+pip install fastapi uvicorn
+uvicorn app.backend.main:app --port 8000
+cd app/frontend && npm install && npm run build   # http://localhost:8000
+```
 
 ## 지원자 구성
 
