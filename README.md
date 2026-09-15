@@ -75,10 +75,13 @@ python3 src/build_examples.py --data output/resumes.jsonl
 대비표는 [`app/README.md`](app/README.md) 참조.
 
 ```bash
+cp .env.example .env          # ANTHROPIC_API_KEY 를 넣으면 LLM 정규화가 켜진다
 pip install fastapi uvicorn
 uvicorn app.backend.main:app --port 8000
 cd app/frontend && npm install && npm run build   # http://localhost:8000
 ```
+
+키가 없으면 규칙 파서로 동작하므로 키 없이도 전체를 시험할 수 있다.
 
 ## 지원자 구성
 

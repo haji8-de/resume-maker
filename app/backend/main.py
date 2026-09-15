@@ -34,7 +34,7 @@ sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(ROOT, "src"))
 
 from engine import Session, TYPE_KO  # noqa: E402
-from text_rules import parse_document  # noqa: E402
+from normalize import normalize, config as norm_config  # noqa: E402
 
 app = FastAPI(title="Interactive Resume Generator", version="0.1.0")
 app.add_middleware(
@@ -57,14 +57,16 @@ def corpus():
 
 # ------------------------------------------------------------------ 수집부(110)
 class CreateReq(BaseModel):
-    mode: str = "sample"          # sample | document | record
-    resume_id: str | None = None  # mode=sample
-    text: str | None = None       # mode=document (파일/붙여넣기 경로)
-    record: dict | None = None    # mode=record
+    mode: str = "sample"           # sample | document | record
+    resume_id: str | None = None   # mode=sample
+    text: str | None = None        # mode=document (파일/붙여넣기 경로)
+    record: dict | None = None     # mode=record
+    normalizer: str | None = None  # auto | llm | rules  (mode=document)
 
 
 @app.post("/api/sessions")
 def create_session(req: CreateReq):
+    norm_meta = {"path": "n/a"}
     if req.mode == "sample":
         pool = [r for r in corpus() if r["missingness"]]
         if not pool:
@@ -78,9 +80,11 @@ def create_session(req: CreateReq):
     elif req.mode == "document":
         if not req.text or not req.text.strip():
             raise HTTPException(400, "본문이 비어 있습니다.")
-        parsed = parse_document(req.text)
-        record = to_internal(parsed)
-        source = "document"
+        record, meta = normalize(req.text, mode=req.normalizer)
+        if record is None:
+            raise HTTPException(502, f"정규화에 실패했습니다: {meta.get('reason')}")
+        source = f"document({meta['path']})"
+        norm_meta = meta
     elif req.mode == "record":
         if not req.record:
             raise HTTPException(400, "record 가 필요합니다.")
@@ -90,50 +94,10 @@ def create_session(req: CreateReq):
         raise HTTPException(400, f"알 수 없는 mode: {req.mode}")
 
     s = Session(record, source=source)
+    s.norm_meta = norm_meta
     SESSIONS[s.id] = s
-    return {"session_id": s.id, "source": s.source,
+    return {"session_id": s.id, "source": s.source, "normalizer": norm_meta,
             "progress": s.progress(), "profile": record.get("profile", {})}
-
-
-def to_internal(parsed):
-    """text_rules 파서 출력(이름 기반)을 내부 레코드 스키마로 변환한다."""
-    rec = {"profile": {"name": parsed.get("name") or "", "target_job": ""},
-           "education": [], "careers": [], "activities": [],
-           "extracurricular": [], "personal_projects": [],
-           "skills": [], "certificates": [], "languages": []}
-    for i, e in enumerate(parsed.get("education", []), 1):
-        rec["education"].append({
-            "period": {"start": e.get("period_start"), "end": e.get("period_end")},
-            "school": e.get("school"), "major": e.get("major", ""),
-            "degree": e.get("degree"),
-            "thesis": e.get("degree") in ("석사", "박사"),
-            "research_topic": e.get("research_topic")})
-    for i, c in enumerate(parsed.get("careers", []), 1):
-        projects = []
-        for j, p in enumerate(c.get("projects", []), 1):
-            projects.append({
-                "project_id": f"C{i}-P{j}", "name": p.get("name"),
-                "period": {"start": c.get("period_start"), "end": c.get("period_end")},
-                "role": p.get("role"),
-                "metrics": [] if not p.get("metrics") else [
-                    {"name": p["metrics"], "value": 0, "unit": "", "direction": "up"}],
-                "result": p.get("result")})
-        rec["careers"].append({
-            "career_id": f"C{i}", "company": c.get("company"), "company_scale": "",
-            "period": {"start": c.get("period_start"), "end": c.get("period_end")},
-            "role": c.get("role"), "department": None, "position": None,
-            "projects": projects})
-    for i, a in enumerate(parsed.get("extracurricular", []), 1):
-        rec["extracurricular"].append({
-            "activity_id": f"E{i}", "category": "활동", "name": a.get("name"),
-            "period": {"start": "", "end": ""},
-            "role": a.get("role"), "result": a.get("result")})
-    for i, a in enumerate(parsed.get("activities", []), 1):
-        rec["activities"].append({
-            "activity_id": f"A{i}",
-            "period": {"start": a.get("period_start"), "end": a.get("period_end")},
-            "title": a.get("title"), "covers_gap_between": ["", ""]})
-    return rec
 
 
 # ------------------------------------------------------------------ 분석부(120)
@@ -186,7 +150,10 @@ def confirm(sid: str):
 
 @app.get("/api/health")
 def health():
-    return {"ok": True, "sessions": len(SESSIONS), "corpus": len(corpus())}
+    c = norm_config()
+    return {"ok": True, "sessions": len(SESSIONS), "corpus": len(corpus()),
+            "normalizer": {"mode": c["mode"], "model": c["model"],
+                           "api_key": bool(c["api_key"])}}
 
 
 # ------------------------------------------------------------------ 정적 파일
