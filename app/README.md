@@ -54,11 +54,47 @@ pip install fastapi uvicorn
 uvicorn app.backend.main:app --port 8000
 
 # 3) 프런트엔드 — 개발 모드 (HMR, /api 는 8000 으로 프록시)
-cd app/frontend && npm install && npm run dev     # http://localhost:5173
+cd app/frontend
+npm ci            # vite 는 devDependency 라 설치를 건너뛰면 "vite: not found"
+npm run dev                                       # http://localhost:5173
 
-# 3') 또는 빌드 후 백엔드가 함께 서빙
-cd app/frontend && npm run build                  # http://localhost:8000
+# 3') 또는 빌드해서 백엔드가 함께 서빙
+cd app/frontend && npm ci && npm run build        # http://localhost:8000
 ```
+
+### 두 방식의 차이
+
+| | 개발 모드 (`npm run dev`) | 빌드 서빙 (`npm run build`) |
+|---|---|---|
+| 접속 주소 | `localhost:5173` | `localhost:8000` |
+| 띄우는 서버 | Vite + uvicorn 둘 다 | uvicorn 하나 |
+| `/api` 요청 | Vite 가 8000 으로 프록시 | 같은 서버라 프록시 불필요 |
+| 코드 수정 | 즉시 반영(HMR) | 다시 빌드해야 반영 |
+| 용도 | 개발 | 시연·증빙 캡처 |
+
+## 백엔드가 dist 를 서빙하는 방식
+
+`npm run build` 는 `app/frontend/dist/` 에 `index.html` 과 해시가 붙은 자산
+(`assets/index-XXXX.js`, `assets/index-XXXX.css`)을 만든다. 백엔드는 이 폴더를
+두 개의 라우트로 내보낸다(`app/backend/main.py` 하단).
+
+```
+GET /assets/{path}   dist/assets/ 아래 파일을 그대로 반환
+GET /{path}          /api 로 시작하지 않는 모든 경로 → dist/index.html
+```
+
+두 번째 라우트가 **SPA 폴백**이다. React 앱은 주소가 `/` 든 `/preview` 든 같은
+`index.html` 을 받아 화면을 그리므로, 어떤 경로로 들어와도 앱이 뜨고 새로고침해도
+404 가 나지 않는다. API 라우트가 파일보다 먼저 선언되어 있어 `/api/...` 는 이 폴백에
+걸리지 않는다.
+
+`dist` 존재 여부는 **서버 시작 시점이 아니라 요청 시점에** 확인한다. 서버를 먼저
+띄우고 나중에 빌드해도 새로고침만 하면 되고, 재시작할 필요가 없다. 아직 빌드하지
+않았다면 `/` 가 503 과 함께 빌드 방법을 안내하는 페이지를 반환한다 — 흰 화면이나
+404 대신 원인이 바로 보인다.
+
+경로 검증도 걸려 있다. `/assets/../../etc/passwd` 같은 요청은 정규화 후 `dist/assets`
+바깥을 가리키므로 404 로 막힌다.
 
 ## 화면
 

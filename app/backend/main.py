@@ -24,8 +24,7 @@ import sys
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
-from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse, HTMLResponse
 from pydantic import BaseModel
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -157,11 +156,48 @@ def health():
 
 
 # ------------------------------------------------------------------ 정적 파일
-DIST = os.path.join(ROOT, "app", "frontend", "dist")
-if os.path.isdir(DIST):
-    app.mount("/assets", StaticFiles(directory=os.path.join(DIST, "assets")),
-              name="assets")
+#
+# 프런트엔드 빌드 산출물(app/frontend/dist)을 백엔드가 함께 서빙한다.
+# 존재 여부를 요청 시점에 확인하므로, 서버를 먼저 띄운 뒤 빌드해도 재시작이
+# 필요 없다. dist 가 없으면 빌드 방법을 안내하는 페이지를 대신 보여준다.
 
-    @app.get("/")
-    def index():
-        return FileResponse(os.path.join(DIST, "index.html"))
+DIST = os.path.join(ROOT, "app", "frontend", "dist")
+
+NO_BUILD_PAGE = """<!doctype html><html lang="ko"><meta charset="utf-8">
+<title>프런트엔드 빌드 필요</title>
+<body style="font-family:system-ui,sans-serif;max-width:640px;margin:80px auto;
+             line-height:1.7;color:#14171c">
+<h1 style="color:#1f3864;font-size:20px">프런트엔드가 아직 빌드되지 않았습니다</h1>
+<p>API 서버는 정상 동작 중입니다. 화면을 보려면 아래를 실행하세요.</p>
+<pre style="background:#f6f7f9;border-left:3px solid #1f3864;padding:12px">
+cd app/frontend
+npm ci
+npm run build</pre>
+<p>빌드가 끝나면 이 페이지를 새로고침하면 됩니다. 서버를 다시 띄울 필요는 없습니다.</p>
+<p style="color:#6b7280;font-size:14px">개발 중에는
+<code>npm run dev</code> (http://localhost:5173) 를 쓰는 편이 편합니다.
+해당 서버가 <code>/api</code> 요청을 이 백엔드로 프록시합니다.</p>
+</body></html>"""
+
+
+@app.get("/assets/{path:path}")
+def assets(path: str):
+    """Vite 가 생성한 해시 파일명 자산(js/css)을 서빙한다."""
+    full = os.path.normpath(os.path.join(DIST, "assets", path))
+    if not full.startswith(os.path.join(DIST, "assets")) or not os.path.isfile(full):
+        raise HTTPException(404, "asset not found")
+    return FileResponse(full)
+
+
+@app.get("/{path:path}")
+def spa(path: str):
+    """SPA 진입점. /api 로 시작하지 않는 모든 경로는 index.html 로 보낸다."""
+    if path.startswith("api/"):
+        raise HTTPException(404, "not found")
+    index = os.path.join(DIST, "index.html")
+    if not os.path.isfile(index):
+        return HTMLResponse(NO_BUILD_PAGE, status_code=503)
+    direct = os.path.normpath(os.path.join(DIST, path))
+    if path and direct.startswith(DIST) and os.path.isfile(direct):
+        return FileResponse(direct)
+    return FileResponse(index)
