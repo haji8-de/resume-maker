@@ -224,21 +224,70 @@ function PreviewScreen({ sid, onBack }) {
 }
 
 /* -------------------------------------------- 시작 화면: 샘플을 보고 고른다 */
+function SampleCard({ s, onStart }) {
+  /* 본문은 기본으로 접어 둔다. 펼치면 화면을 많이 차지하므로,
+     고를 때만 열어보고 다시 닫을 수 있게 한다. */
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="card">
+      <div className="chead">
+        <b>{s.name || s.resume_id}</b>
+        <span className="cid">{s.resume_id}</span>
+      </div>
+      <div className="cmeta">
+        {s.domain} · {s.target_job} · {s.entry_type}
+        {s.careers > 0 && ` · 경력 ${s.careers}건`}
+      </div>
+      <div className="ctags">
+        <span className="count">결측 {s.missing_count}건</span>
+        {s.missing_types.slice(0, 3).map((t) => (
+          <span className="ctag" key={t}>{t}</span>
+        ))}
+        {s.missing_types.length > 3 && (
+          <span className="ctag">외 {s.missing_types.length - 3}종</span>
+        )}
+      </div>
+
+      <button className="toggle" onClick={() => setOpen(!open)}>
+        {open ? '▾ 이력서 본문 접기' : '▸ 이력서 본문 보기'}
+      </button>
+      {open && <pre className="cdoc">{s.document}</pre>}
+
+      <button className="primary wide"
+              onClick={() => onStart({ mode: 'sample', resume_id: s.resume_id })}>
+        이 이력서로 시작
+      </button>
+    </div>
+  )
+}
+
 function StartScreen({ onStart, err }) {
-  const [samples, setSamples] = useState(null)
-  const [picked, setPicked] = useState(null)
-  const [text, setText] = useState('')
+  const [deck, setDeck] = useState([])   // 미리 받아 둔 후보들
+  const [i, setI] = useState(0)          // 지금 보여주는 후보
   const [loading, setLoading] = useState(false)
   const [loadErr, setLoadErr] = useState(null)
+  const [paste, setPaste] = useState(false)
+  const [text, setText] = useState('')
 
-  const draw = async () => {
-    setLoading(true); setLoadErr(null); setPicked(null)
-    try { setSamples((await listSamples(3)).samples) }
-    catch (e) { setLoadErr(String(e)) }
+  const fetchDeck = async (reset = true) => {
+    setLoading(true); setLoadErr(null)
+    try {
+      const d = (await listSamples(5)).samples
+      setDeck(reset ? d : [...deck, ...d])
+      if (reset) setI(0)
+    } catch (e) { setLoadErr(String(e)) }
     finally { setLoading(false) }
   }
 
-  useEffect(() => { draw() }, [])
+  useEffect(() => { fetchDeck() }, [])
+
+  /* 받아 둔 후보를 먼저 소진하고, 다 쓰면 새로 받아온다 */
+  const nextOne = async () => {
+    if (i + 1 < deck.length) { setI(i + 1); return }
+    await fetchDeck(true)
+  }
+
+  const cur = deck[i]
 
   return (
     <div className="wrap start">
@@ -249,59 +298,40 @@ function StartScreen({ onStart, err }) {
       {err && <div className="error">{err}</div>}
 
       <div className="row">
-        <h2 className="h2">샘플 이력서 고르기</h2>
-        <button className="ghost" onClick={draw} disabled={loading}>
-          {loading ? '뽑는 중…' : '다시 뽑기'}
+        <h2 className="h2">
+          샘플 이력서
+          {deck.length > 0 && <span className="idx"> {i + 1} / {deck.length}</span>}
+        </h2>
+        <button className="ghost" onClick={nextOne} disabled={loading}>
+          {loading ? '뽑는 중…' : '다른 이력서 뽑기 ↻'}
         </button>
       </div>
       {loadErr && <div className="error">{loadErr}</div>}
 
-      <div className="cards">
-        {(samples || []).map((s) => (
-          <div key={s.resume_id}
-               className={`card ${picked === s.resume_id ? 'on' : ''}`}
-               onClick={() => setPicked(picked === s.resume_id ? null : s.resume_id)}>
-            <div className="chead">
-              <b>{s.name || s.resume_id}</b>
-              <span className="cid">{s.resume_id}</span>
-            </div>
-            <div className="cmeta">
-              {s.domain} · {s.target_job} · {s.entry_type}
-              {s.careers > 0 && ` · 경력 ${s.careers}건`}
-            </div>
-            <div className="ctags">
-              <span className="count">결측 {s.missing_count}건</span>
-              {s.missing_types.slice(0, 3).map((t) => (
-                <span className="ctag" key={t}>{t}</span>
-              ))}
-              {s.missing_types.length > 3 && (
-                <span className="ctag">외 {s.missing_types.length - 3}종</span>
-              )}
-            </div>
-            <pre className="cdoc">{s.document}</pre>
-            <button className="primary wide"
-                    onClick={(e) => { e.stopPropagation()
-                                      onStart({ mode: 'sample', resume_id: s.resume_id }) }}>
-              이 이력서로 시작
-            </button>
-          </div>
-        ))}
-      </div>
+      {cur
+        ? <SampleCard s={cur} onStart={onStart} />
+        : !loading && <div className="muted">후보를 불러오지 못했습니다.</div>}
 
-      <div className="or">또는 이력서 본문을 직접 붙여넣기</div>
-      <textarea
-        rows={7} value={text} onChange={(e) => setText(e.target.value)}
-        placeholder={'[학력]\n2019-03 ~ 2023-02  OO대학교 ...\n\n[경력]\n2023-03 ~ 2026-09  OO회사 ...'}
-      />
-      <button className="ghost" disabled={!text.trim()}
-              onClick={() => onStart({ mode: 'document', text })}>
-        이 내용으로 시작
+      <button className="toggle mt" onClick={() => setPaste(!paste)}>
+        {paste ? '▾ 직접 붙여넣기 접기' : '▸ 이력서 본문을 직접 붙여넣기'}
       </button>
-      <p className="note">
-        붙여넣기로 시작하면 데이터 형식 변환부(114)가 동작합니다. API 키가 설정되어
-        있으면 LLM 정규화를, 없으면 규칙 파서를 사용하며 어느 경로를 탔는지 상단에
-        표시됩니다.
-      </p>
+      {paste && (
+        <>
+          <textarea
+            rows={7} value={text} onChange={(e) => setText(e.target.value)}
+            placeholder={'[학력]\n2019-03 ~ 2023-02  OO대학교 ...\n\n[경력]\n2023-03 ~ 2026-09  OO회사 ...'}
+          />
+          <button className="ghost" disabled={!text.trim()}
+                  onClick={() => onStart({ mode: 'document', text })}>
+            이 내용으로 시작
+          </button>
+          <p className="note">
+            붙여넣기로 시작하면 데이터 형식 변환부(114)가 동작합니다. API 키가 설정되어
+            있으면 LLM 정규화를, 없으면 규칙 파서를 사용하며 어느 경로를 탔는지 상단에
+            표시됩니다.
+          </p>
+        </>
+      )}
     </div>
   )
 }
