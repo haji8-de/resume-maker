@@ -62,6 +62,22 @@ npm run dev                                       # http://localhost:5173
 cd app/frontend && npm ci && npm run build        # http://localhost:8000
 ```
 
+### 소스를 고쳤는데 화면이 그대로일 때
+
+`dist/` 는 저장소에 포함되지 않는다(`.gitignore`). **`git pull` 로는 화면이 갱신되지
+않으며, 반드시 다시 빌드해야 한다.**
+
+```bash
+cd app/frontend && npm run build     # 서버 재시작 불필요, 새로고침만
+curl -s localhost:8000/api/health | python3 -m json.tool   # frontend.built_at 확인
+```
+
+`/api/health` 의 `frontend.built_at` 과 `assets` 가 지금 서빙 중인 빌드를 알려준다.
+빌드 시각이 과거면 빌드가 안 된 것이다.
+
+`index.html` 은 `no-store` 로, 해시가 붙은 자산은 `immutable` 로 서빙하므로 브라우저
+캐시 때문에 옛 화면이 남는 일은 없다. 개발 모드(`npm run dev`)에서는 빌드가 필요 없다.
+
 ### 두 방식의 차이
 
 | | 개발 모드 (`npm run dev`) | 빌드 서빙 (`npm run build`) |

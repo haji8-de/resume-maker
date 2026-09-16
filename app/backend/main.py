@@ -231,10 +231,25 @@ def confirm(sid: str):
     return s.confirm()
 
 
+def dist_info():
+    """현재 서빙 중인 프런트엔드 빌드 정보. 화면이 갱신되지 않을 때 확인용."""
+    index = os.path.join(DIST, "index.html")
+    if not os.path.isfile(index):
+        return {"built": False}
+    import datetime
+    assets_dir = os.path.join(DIST, "assets")
+    files = sorted(os.listdir(assets_dir)) if os.path.isdir(assets_dir) else []
+    return {"built": True,
+            "built_at": datetime.datetime.fromtimestamp(
+                os.path.getmtime(index)).isoformat(timespec="seconds"),
+            "assets": files}
+
+
 @app.get("/api/health")
 def health():
     c = norm_config()
     return {"ok": True, "sessions": len(SESSIONS), "corpus": len(corpus()),
+            "frontend": dist_info(),
             "normalizer": {"mode": c["mode"], "model": c["model"],
                            "api_key": bool(c["api_key"])}}
 
@@ -266,11 +281,15 @@ npm run build</pre>
 
 @app.get("/assets/{path:path}")
 def assets(path: str):
-    """Vite 가 생성한 해시 파일명 자산(js/css)을 서빙한다."""
+    """Vite 가 생성한 해시 파일명 자산(js/css)을 서빙한다.
+
+    파일명에 내용 해시가 들어가므로 내용이 바뀌면 이름도 바뀐다. 따라서
+    오래 캐시해도 안전하다.
+    """
     full = os.path.normpath(os.path.join(DIST, "assets", path))
     if not full.startswith(os.path.join(DIST, "assets")) or not os.path.isfile(full):
         raise HTTPException(404, "asset not found")
-    return FileResponse(full)
+    return FileResponse(full, headers={"cache-control": "public, max-age=31536000, immutable"})
 
 
 @app.get("/{path:path}")
@@ -284,4 +303,8 @@ def spa(path: str):
     direct = os.path.normpath(os.path.join(DIST, path))
     if path and direct.startswith(DIST) and os.path.isfile(direct):
         return FileResponse(direct)
-    return FileResponse(index)
+    # index.html 은 절대 캐시하지 않는다. 캐시되면 다시 빌드해도 브라우저가
+    # 예전 자산 해시를 계속 요청해, 소스를 고쳤는데 화면이 그대로인 상태가 된다.
+    return FileResponse(index, headers={
+        "cache-control": "no-store, no-cache, must-revalidate",
+        "pragma": "no-cache"})
