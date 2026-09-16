@@ -94,12 +94,13 @@ def config():
 
 
 # ------------------------------------------------------------------ LLM 호출
-def call_llm(text, cfg):
+def call_llm(text, cfg, system=None, max_tokens=8000, prefix="Resume:\n\n"):
+    """system 과 prefix 를 바꿔 다른 용도로도 재사용한다 (예: suggest.py)."""
     body = json.dumps({
         "model": cfg["model"],
-        "max_tokens": 8000,
-        "system": NORMALIZE_PROMPT,
-        "messages": [{"role": "user", "content": "Resume:\n\n" + text}],
+        "max_tokens": max_tokens,
+        "system": system or NORMALIZE_PROMPT,
+        "messages": [{"role": "user", "content": prefix + text}],
     }).encode()
     req = urllib.request.Request(API_URL, data=body, headers={
         "x-api-key": cfg["api_key"],
@@ -111,9 +112,10 @@ def call_llm(text, cfg):
     return "".join(b.get("text", "") for b in d.get("content", []))
 
 
-def parse_json(raw):
+def parse_json(raw, array=False):
+    """모델 응답에서 JSON 을 꺼낸다. array=True 면 배열을 찾는다."""
     s = re.sub(r"^```(?:json)?|```$", "", raw.strip(), flags=re.MULTILINE).strip()
-    m = re.search(r"\{.*\}", s, flags=re.DOTALL)
+    m = re.search(r"\[.*\]" if array else r"\{.*\}", s, flags=re.DOTALL)
     if not m:
         return None
     try:

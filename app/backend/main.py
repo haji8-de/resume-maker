@@ -34,6 +34,7 @@ sys.path.insert(0, os.path.join(ROOT, "src"))
 
 from engine import Session, TYPE_KO  # noqa: E402
 from normalize import normalize, config as norm_config  # noqa: E402
+from suggest import suggest as make_suggestions  # noqa: E402
 
 app = FastAPI(title="Interactive Resume Generator", version="0.1.0")
 app.add_middleware(
@@ -210,6 +211,30 @@ def info(sid: str):
                        "api_key": bool(c["api_key"])},
             "document": render_document(s.record),
             "progress": s.progress()}
+
+
+class SuggestReq(BaseModel):
+    key: str
+    n: int = 3
+    exclude: list[str] = []      # 이미 보여준 초안. 다시 누르면 다른 문장이 나온다
+    mode: str | None = None      # auto | llm | rules
+
+
+@app.post("/api/sessions/{sid}/suggest")
+def suggest_answers(sid: str, req: SuggestReq):
+    """현재 질문에 대한 답변 초안을 만든다.
+
+    사실을 지어내지 않는다. 빈칸(____)이 있는 문장 틀만 돌려주며,
+    숫자와 성과는 사용자가 채워야 한다.
+    """
+    s = get(sid)
+    q = next((q for q in s.next_questions(limit=99) if q["key"] == req.key), None)
+    if q is None:
+        raise HTTPException(404, "해당 질의를 찾을 수 없습니다.")
+    items, path = make_suggestions(q["instance"], s.record, q["text"],
+                                   n=max(1, min(req.n, 5)),
+                                   exclude=tuple(req.exclude), mode=req.mode)
+    return {"suggestions": items, "path": path}
 
 
 @app.get("/api/sessions/{sid}/preview")

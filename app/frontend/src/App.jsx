@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {
   listSamples, createSession, getInfo,
-  nextQuestion, sendAnswer, getPreview, confirmResume,
+  nextQuestion, suggestAnswers, sendAnswer, getPreview, confirmResume,
 } from './api.js'
 
 /* ------------------------------------------------------------------ 공통 */
@@ -77,6 +77,10 @@ function AskScreen({ sid, onDone, progress, setProgress, info, reloadInfo }) {
   const [busy, setBusy] = useState(false)
   const [last, setLast] = useState(null)
   const [err, setErr] = useState(null)
+  const [drafts, setDrafts] = useState([])     // 지금 보여주는 초안
+  const [seen, setSeen] = useState([])         // 이미 보여준 초안 (중복 방지)
+  const [draftPath, setDraftPath] = useState(null)
+  const [drafting, setDrafting] = useState(false)
 
   const load = async () => {
     try {
@@ -84,6 +88,7 @@ function AskScreen({ sid, onDone, progress, setProgress, info, reloadInfo }) {
       setProgress(d.progress)
       if (!d.questions.length) { onDone(); return }
       setQ(d.questions[0]); setText('')
+      setDrafts([]); setSeen([]); setDraftPath(null)
     } catch (e) { setErr(String(e)) }
   }
 
@@ -100,6 +105,21 @@ function AskScreen({ sid, onDone, progress, setProgress, info, reloadInfo }) {
       reloadInfo && reloadInfo()
     } catch (e) { setErr(String(e)) } finally { setBusy(false) }
   }
+
+  const draw = async () => {
+    if (!q || drafting) return
+    setDrafting(true)
+    try {
+      const d = await suggestAnswers(sid, q.key, seen, 3)
+      setDrafts(d.suggestions)
+      setDraftPath(d.path)
+      setSeen([...seen, ...d.suggestions].slice(-12))
+    } catch (e) { setErr(String(e)) } finally { setDrafting(false) }
+  }
+
+  /* 초안을 누르면 입력창에 넣는다. 덮어쓰지 않고 이어 붙여,
+     이미 쓰던 내용이 사라지지 않게 한다. */
+  const useDraft = (d) => setText(text.trim() ? `${text.trim()} ${d}` : d)
 
   if (err) return <div className="error">오류: {err}</div>
   if (!q) return <div className="muted">질문을 불러오는 중…</div>
@@ -123,6 +143,26 @@ function AskScreen({ sid, onDone, progress, setProgress, info, reloadInfo }) {
             if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) submit()
           }}
         />
+        <div className="drafts">
+          <button className="ghost small" onClick={draw} disabled={drafting}>
+            {drafting ? '만드는 중…' : drafts.length ? '다른 예시 문장 ↻' : '예시 문장 만들기'}
+          </button>
+          {draftPath && (
+            <span className={`dpath ${draftPath}`}>
+              {draftPath === 'llm' ? 'LLM 생성' : '문장 틀'}
+            </span>
+          )}
+          {drafts.length > 0 && (
+            <p className="dnote">
+              빈칸(____)은 직접 채워주세요. 수치와 성과는 본인만 알 수 있어
+              시스템이 만들지 않습니다.
+            </p>
+          )}
+          {drafts.map((d, i) => (
+            <button className="draft" key={i} onClick={() => useDraft(d)}>{d}</button>
+          ))}
+        </div>
+
         <div className="row">
           <span className="hint">⌘/Ctrl + Enter 로 제출</span>
           <div>

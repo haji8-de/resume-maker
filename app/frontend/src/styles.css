@@ -151,3 +151,16 @@ button:disabled { opacity: .5; cursor: default; }
        font-variant-numeric: tabular-nums; }
 .card { cursor: default; }
 .cdoc { max-height: 260px; }
+
+/* ---------------------------------------------- 예시 답변 초안 */
+.drafts { margin-top: 12px; display: flex; flex-direction: column;
+          align-items: flex-start; gap: 6px; }
+.small { padding: 5px 12px; font-size: 13px; }
+.dpath { font-size: 11px; padding: 2px 8px; border-radius: 999px;
+         border: 1px solid var(--line); }
+.dpath.llm { background: #ecfdf5; border-color: #a7f3d0; color: var(--ok); }
+.dpath.rules { background: #f3f4f6; color: var(--grey); }
+.dnote { font-size: 12px; color: var(--grey); margin: 2px 0 2px; }
+.draft { width: 100%; text-align: left; background: #fbfbfc; border: 1px dashed #cbd2df;
+         color: #33383f; font-size: 13.5px; padding: 9px 12px; line-height: 1.5; }
+.draft:hover { background: #f3f5f8; border-color: var(--navy); }
