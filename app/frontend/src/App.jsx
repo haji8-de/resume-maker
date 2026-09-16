@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {
-  createSession, nextQuestion, sendAnswer, getPreview, confirmResume,
+  listSamples, createSession, getInfo,
+  nextQuestion, sendAnswer, getPreview, confirmResume,
 } from './api.js'
 
 /* ------------------------------------------------------------------ 공통 */
@@ -17,6 +18,36 @@ function Progress({ p }) {
   )
 }
 
+/* 데이터 형식 변환부(114)가 어느 경로를 탔는지 표시한다.
+   llm / rules / corpus 가 눈에 보이지 않으면, 키를 잘못 넣고도 규칙 파서로
+   돌고 있다는 사실을 알 수 없다. */
+const PATH_LABEL = {
+  llm: { text: 'LLM 정규화', cls: 'llm' },
+  rules: { text: '규칙 파서', cls: 'rules' },
+  corpus: { text: '말뭉치 레코드', cls: 'corpus' },
+  failed: { text: '정규화 실패', cls: 'failed' },
+  'n/a': { text: '변환 없음', cls: 'corpus' },
+}
+
+function NormBadge({ info }) {
+  if (!info) return null
+  const { normalizer: n, config: c } = info
+  const l = PATH_LABEL[n.path] || { text: n.path, cls: 'rules' }
+  const title = [
+    `설정 모드: ${c.mode}`,
+    `모델: ${c.model}`,
+    `API 키: ${c.api_key ? '설정됨' : '없음'}`,
+    n.reason ? `사유: ${n.reason}` : null,
+    n.elapsed != null ? `소요: ${n.elapsed}초` : null,
+  ].filter(Boolean).join('\n')
+  return (
+    <span className={`normbadge ${l.cls}`} title={title}>
+      <b>{l.text}</b>
+      <span className="mode">mode={c.mode}{c.api_key ? '' : ' · 키 없음'}</span>
+    </span>
+  )
+}
+
 /* 미리보기에서 아직 비어 있는 항목은 회색 표시로 남겨 사용자가 확인할 수 있게 한다 */
 function Slot({ value }) {
   if (value && typeof value === 'object' && value.missing) {
@@ -26,7 +57,21 @@ function Slot({ value }) {
 }
 
 /* ------------------------------------------------- 화면 1: 질의 · 응답 (120→130) */
-function AskScreen({ sid, onDone, progress, setProgress }) {
+function SourcePanel({ info }) {
+  const [open, setOpen] = useState(false)
+  if (!info?.document) return null
+  return (
+    <div className="source">
+      <button className="srchead" onClick={() => setOpen(!open)}>
+        <span>{open ? '▾' : '▸'} 지금 보완 중인 이력서</span>
+        <NormBadge info={info} />
+      </button>
+      {open && <pre className="srcbody">{info.document}</pre>}
+    </div>
+  )
+}
+
+function AskScreen({ sid, onDone, progress, setProgress, info, reloadInfo }) {
   const [q, setQ] = useState(null)
   const [text, setText] = useState('')
   const [busy, setBusy] = useState(false)
@@ -52,6 +97,7 @@ function AskScreen({ sid, onDone, progress, setProgress }) {
       setLast({ question: q, parsed: d.parsed, ok: d.ok })
       setProgress(d.progress)
       await load()
+      reloadInfo && reloadInfo()
     } catch (e) { setErr(String(e)) } finally { setBusy(false) }
   }
 
@@ -60,6 +106,7 @@ function AskScreen({ sid, onDone, progress, setProgress }) {
 
   return (
     <div className="ask">
+      <SourcePanel info={info} />
       <Progress p={progress} />
 
       <div className="qcard">
@@ -176,14 +223,101 @@ function PreviewScreen({ sid, onBack }) {
   )
 }
 
+/* -------------------------------------------- 시작 화면: 샘플을 보고 고른다 */
+function StartScreen({ onStart, err }) {
+  const [samples, setSamples] = useState(null)
+  const [picked, setPicked] = useState(null)
+  const [text, setText] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [loadErr, setLoadErr] = useState(null)
+
+  const draw = async () => {
+    setLoading(true); setLoadErr(null); setPicked(null)
+    try { setSamples((await listSamples(3)).samples) }
+    catch (e) { setLoadErr(String(e)) }
+    finally { setLoading(false) }
+  }
+
+  useEffect(() => { draw() }, [])
+
+  return (
+    <div className="wrap start">
+      <h1>상호작용형 이력서 자동 생성</h1>
+      <p className="lead">
+        이력서에서 빠진 정보를 찾아 질문하고, 답변을 항목으로 분해해 다시 채워 넣습니다.
+      </p>
+      {err && <div className="error">{err}</div>}
+
+      <div className="row">
+        <h2 className="h2">샘플 이력서 고르기</h2>
+        <button className="ghost" onClick={draw} disabled={loading}>
+          {loading ? '뽑는 중…' : '다시 뽑기'}
+        </button>
+      </div>
+      {loadErr && <div className="error">{loadErr}</div>}
+
+      <div className="cards">
+        {(samples || []).map((s) => (
+          <div key={s.resume_id}
+               className={`card ${picked === s.resume_id ? 'on' : ''}`}
+               onClick={() => setPicked(picked === s.resume_id ? null : s.resume_id)}>
+            <div className="chead">
+              <b>{s.name || s.resume_id}</b>
+              <span className="cid">{s.resume_id}</span>
+            </div>
+            <div className="cmeta">
+              {s.domain} · {s.target_job} · {s.entry_type}
+              {s.careers > 0 && ` · 경력 ${s.careers}건`}
+            </div>
+            <div className="ctags">
+              <span className="count">결측 {s.missing_count}건</span>
+              {s.missing_types.slice(0, 3).map((t) => (
+                <span className="ctag" key={t}>{t}</span>
+              ))}
+              {s.missing_types.length > 3 && (
+                <span className="ctag">외 {s.missing_types.length - 3}종</span>
+              )}
+            </div>
+            <pre className="cdoc">{s.document}</pre>
+            <button className="primary wide"
+                    onClick={(e) => { e.stopPropagation()
+                                      onStart({ mode: 'sample', resume_id: s.resume_id }) }}>
+              이 이력서로 시작
+            </button>
+          </div>
+        ))}
+      </div>
+
+      <div className="or">또는 이력서 본문을 직접 붙여넣기</div>
+      <textarea
+        rows={7} value={text} onChange={(e) => setText(e.target.value)}
+        placeholder={'[학력]\n2019-03 ~ 2023-02  OO대학교 ...\n\n[경력]\n2023-03 ~ 2026-09  OO회사 ...'}
+      />
+      <button className="ghost" disabled={!text.trim()}
+              onClick={() => onStart({ mode: 'document', text })}>
+        이 내용으로 시작
+      </button>
+      <p className="note">
+        붙여넣기로 시작하면 데이터 형식 변환부(114)가 동작합니다. API 키가 설정되어
+        있으면 LLM 정규화를, 없으면 규칙 파서를 사용하며 어느 경로를 탔는지 상단에
+        표시됩니다.
+      </p>
+    </div>
+  )
+}
+
 /* ------------------------------------------------------------------ 앱 */
 export default function App() {
   const [sid, setSid] = useState(null)
   const [screen, setScreen] = useState('ask')
   const [progress, setProgress] = useState(null)
   const [source, setSource] = useState('')
-  const [text, setText] = useState('')
+  const [info, setInfo] = useState(null)
   const [err, setErr] = useState(null)
+
+  const reloadInfo = async (id) => {
+    try { setInfo(await getInfo(id || sid)) } catch { /* 표시용이라 무시 */ }
+  }
 
   const start = async (body) => {
     setErr(null)
@@ -191,31 +325,12 @@ export default function App() {
       const d = await createSession(body)
       setSid(d.session_id); setSource(d.source)
       setProgress(d.progress); setScreen('ask')
+      reloadInfo(d.session_id)
     } catch (e) { setErr(String(e)) }
   }
 
   if (!sid) {
-    return (
-      <div className="wrap start">
-        <h1>상호작용형 이력서 자동 생성</h1>
-        <p className="lead">
-          이력서에서 빠진 정보를 찾아 질문하고, 답변을 항목으로 분해해 다시 채워 넣습니다.
-        </p>
-        {err && <div className="error">{err}</div>}
-        <button className="primary big" onClick={() => start({ mode: 'sample' })}>
-          샘플 이력서로 시작
-        </button>
-        <div className="or">또는 이력서 본문을 붙여넣기</div>
-        <textarea
-          rows={8} value={text} onChange={(e) => setText(e.target.value)}
-          placeholder={'[학력]\n2019-03 ~ 2023-02  OO대학교 ...\n\n[경력]\n2023-03 ~ 2026-09  OO회사 ...'}
-        />
-        <button className="ghost" disabled={!text.trim()}
-                onClick={() => start({ mode: 'document', text })}>
-          이 내용으로 시작
-        </button>
-      </div>
-    )
+    return <StartScreen onStart={start} err={err} />
   }
 
   return (
@@ -231,11 +346,15 @@ export default function App() {
             미리보기 · 확정
           </button>
         </div>
-        <div className="sid">{source}</div>
+        <div className="sid">
+          <span>{source}</span>
+          <NormBadge info={info} />
+        </div>
       </header>
 
       {screen === 'ask'
         ? <AskScreen sid={sid} progress={progress} setProgress={setProgress}
+                     info={info} reloadInfo={() => reloadInfo()}
                      onDone={() => setScreen('preview')} />
         : <PreviewScreen sid={sid} onBack={() => setScreen('ask')} />}
     </div>

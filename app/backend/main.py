@@ -54,6 +54,75 @@ def corpus():
     return _corpus
 
 
+# ------------------------------------------------------------------ 샘플 목록
+def render_document(rec):
+    """말뭉치 레코드를 사람이 읽을 수 있는 이력서 본문으로 되돌린다."""
+    L = [f"[학력]"]
+    for e in rec.get("education", []):
+        L.append(f"{e['period']['start']} ~ {e['period']['end']}  "
+                 f"{e['school']} {e.get('major','')} ({e.get('degree','')})")
+        if e.get("research_topic"):
+            L.append(f"    연구 주제: {e['research_topic']}")
+    L += ["", "[경력]"]
+    if not rec.get("careers"):
+        L.append("  해당 없음 (신입)")
+    for c in rec.get("careers", []):
+        head = f"{c['period']['start']} ~ {c['period']['end']}  {c['company']}"
+        if c.get("role"):
+            head += f" / {c['role']}"
+        L.append(head)
+        for p in c.get("projects", []):
+            L.append(f"  - {p['name']}")
+            if p.get("role"):
+                L.append(f"    담당: {p['role']}")
+            if p.get("metrics"):
+                L.append("    성과: " + ", ".join(
+                    f"{m['name']} {m['value']}{m.get('unit','')}" for m in p["metrics"]))
+            if p.get("result"):
+                L.append(f"    결과: {p['result']}")
+    for key, title in (("personal_projects", "[프로젝트]"),):
+        if rec.get(key):
+            L += ["", title]
+            for p in rec[key]:
+                L.append(f"  - {p['name']}")
+    if rec.get("extracurricular"):
+        L += ["", "[대외활동]"]
+        for a in rec["extracurricular"]:
+            line = f"{a['period']['start']} ~ {a['period']['end']}  [{a.get('category','활동')}] {a['name']}"
+            if a.get("role"):
+                line += f" / {a['role']}"
+            L.append(line)
+    if rec.get("skills"):
+        L += ["", "[기술]", ", ".join(rec["skills"])]
+    return "\n".join(L)
+
+
+@app.get("/api/samples")
+def samples(n: int = 3, seed: int | None = None):
+    """무작위 샘플 후보를 본문과 함께 돌려준다. 사용자가 보고 고를 수 있게 한다."""
+    pool = [r for r in corpus() if r["missingness"]]
+    if not pool:
+        raise HTTPException(503, "말뭉치가 없습니다. src/generate.py 를 먼저 실행하세요.")
+    rng = random.Random(seed) if seed is not None else random
+    picked = rng.sample(pool, min(n, len(pool)))
+    out = []
+    for r in picked:
+        obs = r["observed"]
+        types = sorted({m["type"] for m in r["missingness"]})
+        out.append({
+            "resume_id": r["resume_id"],
+            "domain": r["domain"],
+            "name": obs.get("profile", {}).get("name", ""),
+            "target_job": obs.get("profile", {}).get("target_job", ""),
+            "entry_type": r["gold"].get("entry_type", ""),
+            "careers": len(obs.get("careers", [])),
+            "missing_count": len(r["missingness"]),
+            "missing_types": [TYPE_KO.get(t, t) for t in types],
+            "document": render_document(obs),
+        })
+    return {"samples": out}
+
+
 # ------------------------------------------------------------------ 수집부(110)
 class CreateReq(BaseModel):
     mode: str = "sample"           # sample | document | record
@@ -76,6 +145,8 @@ def create_session(req: CreateReq):
             raise HTTPException(404, "해당 이력서를 찾을 수 없습니다.")
         record = json.loads(json.dumps(rec["observed"], ensure_ascii=False))
         source = f"sample:{rec['resume_id']}"
+        norm_meta = {"path": "corpus",
+                     "reason": "말뭉치의 구조화 레코드라 정규화 단계를 거치지 않습니다."}
     elif req.mode == "document":
         if not req.text or not req.text.strip():
             raise HTTPException(400, "본문이 비어 있습니다.")
@@ -126,6 +197,19 @@ def answer(sid: str, req: AnswerReq):
     s = get(sid)
     res = s.submit(req.key, req.answer)
     return {**res, "progress": s.progress(), "trace": s.trace[-1] if s.trace else None}
+
+
+@app.get("/api/sessions/{sid}/info")
+def info(sid: str):
+    """세션 개요. 화면 상단 배지에 쓰인다."""
+    s = get(sid)
+    c = norm_config()
+    return {"source": s.source,
+            "normalizer": getattr(s, "norm_meta", {"path": "n/a"}),
+            "config": {"mode": c["mode"], "model": c["model"],
+                       "api_key": bool(c["api_key"])},
+            "document": render_document(s.record),
+            "progress": s.progress()}
 
 
 @app.get("/api/sessions/{sid}/preview")

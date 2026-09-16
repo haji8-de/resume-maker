@@ -12,7 +12,9 @@ const json = (body) => ({
   body: JSON.stringify(body),
 })
 
+export const listSamples = (n = 3) => call(`/api/samples?n=${n}&_=${Date.now()}`)
 export const createSession = (body) => call('/api/sessions', json(body))
+export const getInfo = (id) => call(`/api/sessions/${id}/info`)
 export const nextQuestion = (id) => call(`/api/sessions/${id}/next`)
 export const sendAnswer = (id, key, answer) =>
   call(`/api/sessions/${id}/answer`, json({ key, answer }))

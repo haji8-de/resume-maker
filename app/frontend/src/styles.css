@@ -87,3 +87,56 @@ button:disabled { opacity: .5; cursor: default; }
 .start { max-width: 620px; text-align: left; }
 .start .or { margin: 22px 0 8px; color: var(--grey); font-size: 13px; }
 .start textarea { margin-bottom: 10px; }
+
+/* ---------------------------------------------- 정규화 경로 배지 */
+.normbadge { display: inline-flex; align-items: center; gap: 6px; cursor: help;
+             font-size: 12px; padding: 3px 10px; border-radius: 999px;
+             border: 1px solid var(--line); background: #fff; }
+.normbadge b { font-weight: 600; }
+.normbadge .mode { color: var(--grey); font-family: ui-monospace, monospace;
+                   font-size: 11px; }
+.normbadge.llm { border-color: #a7f3d0; background: #ecfdf5; }
+.normbadge.llm b { color: var(--ok); }
+.normbadge.rules { border-color: #fed7aa; background: #fff7ed; }
+.normbadge.rules b { color: var(--warn); }
+.normbadge.corpus { border-color: var(--line); background: #f3f4f6; }
+.normbadge.corpus b { color: var(--grey); }
+.normbadge.failed { border-color: #fecaca; background: #fef2f2; }
+.normbadge.failed b { color: #b91c1c; }
+
+.sid { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+/* ---------------------------------------------- 원본 이력서 패널 */
+.source { border: 1px solid var(--line); border-radius: 10px; background: #fff;
+          margin-bottom: 16px; overflow: hidden; }
+.srchead { width: 100%; display: flex; align-items: center; justify-content: space-between;
+           gap: 10px; background: none; border: none; padding: 11px 14px;
+           font-size: 13px; color: var(--navy); font-weight: 600; text-align: left; }
+.srcbody { margin: 0; padding: 14px 16px; border-top: 1px solid var(--line);
+           background: #fbfbfc; font-size: 12.5px; line-height: 1.6;
+           font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+           white-space: pre-wrap; max-height: 320px; overflow: auto; }
+
+/* ---------------------------------------------- 시작 화면 샘플 카드 */
+.start .row { align-items: baseline; margin: 26px 0 10px; }
+.h2 { font-size: 15px; color: var(--navy); margin: 0; }
+.cards { display: grid; gap: 12px; }
+.card { border: 1px solid var(--line); border-radius: 10px; background: #fff;
+        padding: 14px 16px; cursor: pointer; transition: border-color .15s; }
+.card:hover { border-color: #c3cde2; }
+.card.on { border-color: var(--navy); box-shadow: 0 0 0 2px #e8edf5; }
+.chead { display: flex; align-items: baseline; gap: 8px; }
+.chead b { font-size: 15px; }
+.cid { font-size: 11px; color: var(--grey); font-family: ui-monospace, monospace; }
+.cmeta { font-size: 13px; color: var(--grey); margin-top: 2px; }
+.ctags { display: flex; flex-wrap: wrap; gap: 5px; margin: 9px 0; }
+.count { font-size: 11px; font-weight: 600; background: #fef2f2; color: var(--miss);
+         border-radius: 999px; padding: 2px 9px; }
+.ctag { font-size: 11px; background: #f3f4f6; color: #4b5563;
+        border-radius: 999px; padding: 2px 9px; }
+.cdoc { margin: 0 0 10px; padding: 10px 12px; background: #fbfbfc;
+        border: 1px solid var(--line); border-radius: 6px; font-size: 11.5px;
+        line-height: 1.55; font-family: ui-monospace, Menlo, monospace;
+        white-space: pre-wrap; max-height: 150px; overflow: auto; color: #33383f; }
+.wide { width: 100%; }
+.note { font-size: 12.5px; color: var(--grey); margin-top: 12px; line-height: 1.6; }
